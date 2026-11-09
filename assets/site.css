@@ -203,3 +203,14 @@
 .hero h1{font-size:clamp(2rem,8vw,3rem)}
 }
 @media(max-width:350px){.hero-brand{font-size:15vw}}
+
+/* Etappe B: legible legal material, and transparent inquiry state */
+.legal h3{font-size:1.2rem;letter-spacing:-.02em;margin:26px 0 12px}
+.legal-review{background:#f9f2e4;color:#624d26;border-left:4px solid #d5a447;border-radius:0 8px 8px 0;padding:18px 20px;max-width:76ch}
+.privacy-content{max-width:920px}
+.privacy-content h2{font-size:clamp(1.5rem,2.4vw,2rem);margin-top:37px}
+.privacy-content p{max-width:78ch;line-height:1.8}
+.form-alternative{font-size:.86rem;margin:15px 0 5px}
+.form-alternative a{text-decoration:underline;text-underline-offset:3px}
+.form-status{font-size:.88rem;color:#245877;min-height:1.4em;margin:13px 0 0}
+@media(max-width:600px){.legal-review{padding:14px 16px}.privacy-content h2{margin-top:28px}}
