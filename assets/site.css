@@ -49,3 +49,6 @@
 @media(max-width:600px){.client-strip-row{min-height:76px}.client-end{flex-basis:130px;gap:5px;padding-left:8px}.client-end .client-note{font-size:.58rem;line-height:1.25}.client-end .rail-pause{flex-basis:26px;min-width:26px}}
 
 .mobile-primary{display:none}@media(max-width:900px){.mobile-primary{display:flex;justify-content:center;gap:30px;padding:10px 14px;border-bottom:1px solid #e6eef4;background:#fff;font-size:.88rem;font-weight:650}.mobile-primary a{text-decoration:none}}
+/* Volkswagen flagship case details */
+.case-detail{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:40px 55px;margin-top:54px}.case-detail article{border-top:1px solid var(--line);padding-top:20px}.case-detail h3{font-size:1.35rem}.case-detail p{color:#53677b}
+@media(max-width:650px){.case-detail{grid-template-columns:1fr;gap:25px;margin-top:33px}}
