@@ -2,7 +2,7 @@ name: Deploy Clouds Sky to GitHub Pages
 on:
   push:
     branches: [main]
-    paths: ['de/**', 'en/**', 'assets/**', 'index.html', '404.html', '.github/workflows/pages.yml', 'branding/logo/**']
+    paths: ['de/**', 'en/**', 'assets/**', 'index.html', '404.html', '.github/workflows/pages.yml', 'branding/logo/**', 'scripts/prerender.mjs']
   workflow_dispatch:
 permissions:
   contents: read
@@ -20,6 +20,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/configure-pages@v5
+      - name: Pre-render localized pages
+        run: node scripts/prerender.mjs
       - uses: actions/upload-pages-artifact@v3
         with:
           path: .
