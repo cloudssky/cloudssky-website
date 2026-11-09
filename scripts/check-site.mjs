@@ -31,6 +31,8 @@ for(const lang of ['de','en']){
     if(page==='contact' && !html.includes('data-email-form'))fail(file+': contact form missing');
     if(page==='contact' && !html.includes('mailto:support@cloudssky.com'))fail(file+': email fallback missing');
     if(page==='imprint' && !html.includes('legal-review'))fail(file+': unverified corporate disclosures not flagged');
+    if(page==='imprint' && !['HRB 70999','DE815247371','215/5808/2975','Stephan Hartmann','Arash Kaffamanesh'].every(token=>html.includes(token)))fail(file+': restored imprint details missing');
+    if(page==='imprint' && !html.includes('DDG'))fail(file+': updated German legal reference missing');
     if(page==='privacy' && !html.includes('privacy-content'))fail(file+': expanded privacy notice missing');
     if(['enterprise','company','method','work','volkswagen','bayer','man-industrial-messaging','insights','architecture-decisions','event-driven-architecture'].includes(page) && !html.includes('aria-current="page"'))
       fail(file+': active navigation missing');
