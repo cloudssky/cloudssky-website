@@ -17,3 +17,24 @@
 @media(max-width:900px){.language-menu{font-size:.75rem}.language-menu summary{padding:8px}.kubernautic-panel{grid-template-columns:1fr;padding:33px}.kubernautic-mark{justify-content:flex-start}}
 @media(max-width:600px){.language-menu summary{padding:8px 6px;gap:3px}.navigation{gap:7px}.kubernautic-mark span{width:81px;height:81px;font-size:.62rem}.client{min-width:130px;padding:0 20px}}
 @media(prefers-reduced-motion:reduce){.client-inner{animation:none}.client-track[aria-hidden="true"]{display:none}.client-rail{overflow-x:auto;mask-image:none;-webkit-mask-image:none}.rail-pause{display:none}}
+
+/* Header controls V1.2: enlarged elegant menu and balanced control rhythm */
+.navigation{gap:16px}
+.navigation .nav-normal{margin-right:9px}
+.navigation>.button{min-height:46px;white-space:nowrap}
+.menu{position:relative;flex:none}
+.menu>summary{width:48px;height:48px;display:grid;place-items:center;border:1px solid #dce7ef;background:#f2f6f9;border-radius:13px;padding:0;cursor:pointer;transition:background .18s,border-color .18s}
+.menu>summary:hover,.menu[open]>summary{background:#e8f2f8;border-color:#bfdae7}
+.menu>summary:focus-visible{outline:3px solid #2479a4;outline-offset:3px}
+.hamburger{display:flex;width:23px;height:20px;flex-direction:column;justify-content:space-between;align-items:center}
+.hamburger span{display:block;background:#0e1a2b;height:2px;width:100%;border-radius:3px;transform-origin:center;transition:transform .2s,opacity .2s}
+.menu[open] .hamburger span:nth-child(1){transform:translateY(9px) rotate(45deg)}
+.menu[open] .hamburger span:nth-child(2){opacity:0}
+.menu[open] .hamburger span:nth-child(3){transform:translateY(-9px) rotate(-45deg)}
+.menu .dropdown{top:calc(100% + 11px);right:0;width:260px;min-width:260px;border:1px solid #e3ebf2;border-radius:13px;padding:10px;box-shadow:0 17px 40px #0c213329}
+.menu .dropdown a{font-size:.93rem;font-weight:600;line-height:1.4;padding:12px 14px;border-radius:8px}
+.language-menu summary{min-height:46px;min-width:83px;justify-content:center}
+@media(max-width:900px){.navigation{gap:10px}.navigation .nav-normal{display:none}.navigation>.button{min-height:44px}.menu>summary{width:46px;height:46px}.language-menu summary{min-height:44px}}
+@media(max-width:600px){.header .wrap{gap:8px}.navigation{gap:7px}.navigation>.button{padding:10px 11px;font-size:.74rem}.menu>summary{width:44px;height:44px;border-radius:12px}.hamburger{width:21px;height:19px}.menu[open] .hamburger span:nth-child(1){transform:translateY(8.5px) rotate(45deg)}.menu[open] .hamburger span:nth-child(3){transform:translateY(-8.5px) rotate(-45deg)}.language-menu summary{min-width:66px;min-height:44px;padding:7px 6px}}
+@media(max-width:380px){.logo{width:112px}.navigation>.button{padding:9px 8px}.language-menu summary{min-width:57px}}
+@media(prefers-reduced-motion:reduce){.hamburger span,.menu>summary{transition:none}}
