@@ -142,3 +142,50 @@
 .menu .dropdown .nav-section[data-active-section="true"]>summary .nav-chevron{border-color:#1688c5}
 .menu .dropdown .nav-submenu a[aria-current="page"],.menu .dropdown a.menu-standalone[aria-current="page"]{background:#dceffc;color:#074e7d;font-weight:800;border-radius:8px;box-shadow:inset 3px 0 0 #1a8fca}
 .menu .dropdown .nav-submenu a[aria-current="page"]:hover,.menu .dropdown a.menu-standalone[aria-current="page"]:hover{background:#d0eafa}
+
+/* V2.4: refine smaller devices and preserve accessible navigation */
+@media(max-width:900px){
+ .header .wrap{min-width:0}
+ .navigation{flex-shrink:0}
+ .menu .dropdown{max-height:min(68vh,570px);overscroll-behavior:contain}
+ .project-grid{gap:27px}
+ .timeline{min-width:0}
+}
+@media(max-width:600px){
+ .wrap{width:calc(100% - 32px)}
+ .hero:after{right:-35%;bottom:-220px;opacity:.48}
+ .header .wrap{min-height:70px}
+ .logo{width:118px}
+ .navigation{gap:6px}
+ .navigation>.button{font-size:.72rem;padding:10px}
+ .menu .dropdown{right:-54px}
+ .timeline{flex-direction:column;gap:11px}
+ .timeline>div{width:100%;max-width:100%}
+ .timeline>.timeline-arrow{display:block;transform:none;line-height:1;font-size:1.6rem}
+ .timeline .tech-pair,.timeline .tech-pair .tech-mark{transform:none}
+ .dark.project-grid{padding:25px}
+ .dark.project-grid h2{font-size:clamp(1.8rem,8vw,2.5rem);overflow-wrap:break-word}
+ .card-visual{height:160px}
+ .client-strip{overflow:hidden}
+ .client-inner{padding:12px 0}
+ .client-end{flex-basis:160px;padding-left:9px}
+ .client-end .client-note{font-size:.7rem;line-height:1.32}
+ .client-end .rail-pause{min-width:32px;min-height:36px}
+}
+@media(max-width:420px){
+ .header .navigation>.button{display:none}
+ .mobile-primary{justify-content:space-between;gap:6px;font-size:.78rem;padding:10px 16px}
+ .mobile-primary .mobile-contact{display:inline-block}
+ .logo{width:126px}
+ .menu .dropdown{right:-63px}
+ .language-menu summary{min-width:66px}
+}
+@media(min-width:421px){.mobile-primary .mobile-contact{display:none}}
+@media(max-width:350px){
+ .logo{width:108px}
+ .mobile-primary{font-size:.73rem}
+ .menu .dropdown{right:-55px}
+ .client-end{flex-basis:145px}
+ .client-end .client-note{font-size:.65rem}
+}
+:where(a,button,summary,input,textarea):focus-visible{outline:3px solid #2086bc;outline-offset:3px}
