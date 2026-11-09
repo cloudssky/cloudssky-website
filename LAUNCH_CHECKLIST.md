@@ -1,12 +1,28 @@
-# Launch checklist
+# Clouds Sky relaunch — launch readiness
 
-- Confirm the original CSG logo asset against the approved master and replace any provisional SVG reconstruction if necessary.
-- Replace typographic customer names with approved original logos.
-- Review all customer references and roles (including VW / SYNAOS / MAN distinctions).
-- Confirm company and team information.
-- Legal review of imprint and expanded privacy notice, including GitHub Pages hosting disclosures.
-- Contact form currently uses mailto:support@cloudssky.com; validate this is the desired sales inbox and that mailto is sufficient. No server-side contact form is connected.
-- Preview and test desktop/mobile, screen readers, keyboard, all localized routes and all links.
-- For SEO, consider prerendering content into HTML at build time; this first version renders via JavaScript.
-- Enable Pages → GitHub Actions in Settings, then check deployment at https://cloudssky.github.io/cloudssky-website/.
-- Add cloudssky.com custom domain in Pages, update only web DNS records, preserve MX/TXT, enable HTTPS, test redirects and plan legacy URL redirects.
+## Completed on website-relaunch-v1
+- Responsive DE/EN page structure, original repository CSG logo.
+- 20 localized pages including Volkswagen flagship case.
+- Client ticker, pause control and language dropdown.
+- Volkswagen architecture evolution + technical case narrative.
+- Build-time static HTML pre-rendering and CI link checks; first PR QA passed.
+- Four PROVISIONAL monochrome SVG customer icons from Simple Icons: Volkswagen, MAN, SAP and Deutsche Telekom; the remaining names are text.
+- Vaillant Kafka/Azure is included in the client strip and work overview.
+- Kubernautic invitation on the homepage (currently links to kubernautic.com, not directly to an authenticated trial).
+
+## Must resolve before production
+1. Replace provisional third-party brand icons with the officially approved logo versions, or verify their use and brand-asset guidelines. **Customer names may be approved while specific marks/artwork remain restricted.**
+2. Confirm all published project assertions, contractual attribution and project partner relationships, especially Volkswagen / SYNAOS / Kubernauts / MAN.
+3. Verify the Company team roster and role labels. Obtain optional real photographs, or retain text-only team profiles.
+4. Complete legal imprint (registry, VAT, managing directors as applicable) and full privacy notice with hosting-specific disclosures; seek legal review.
+5. Decide on contact process. Current inquiry form opens a mail client via `mailto:support@cloudssky.com`; it does not submit on its own.
+6. Verify canonical URLs and link redirects for the old cloudssky.com content; preserve SEO equity.
+7. Do a real browser QA pass: desktop, narrow mobile, Safari, Chromium, keyboard controls, screen readers, visual spacing and reduced motion.
+8. Enable Pages → GitHub Actions, review the new site preview and confirm its actual URL.
+9. Confirm target hosting and custom domain. Change only website A/AAAA/CNAME records; preserve MX, SPF, DKIM, DMARC and other records.
+10. After domain cutover, enable HTTPS and validate www, old URLs, search metadata, links, forms and certificates.
+
+## Asset provenance
+The preliminary client marks under `public/clients/` were copied from the public Simple Icons open-source collection (https://github.com/simple-icons/simple-icons) on 2026-11-09. Their brand/trademark usage is governed by each trademark owner. They are review assets, not proof of approval.
+
+The actual live domain and production DNS are untouched. The PR is a draft; it has not been merged.
