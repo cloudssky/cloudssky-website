@@ -11,6 +11,8 @@ const meta = {
     volkswagen:['Volkswagen Shared Platform | Clouds Sky','Engineering einer Shared Platform für Volkswagen Business Units: Kops, EKS, GKE, Terraform, Pulumi, Java und Node.js.'],
     method:['Engineering Method | Clouds Sky','Von Requirements zu Contracts, ADRs und Engineering Evidence: nachvollziehbare Architekturentscheidungen in der Praxis.'],
     insights:['Insights & Research | Clouds Sky','Fachliche Perspektiven auf Event-Driven Architecture, Softwarearchitektur, AI Engineering und Quantum Research.'],
+    'architecture-decisions':['Architecture Decisions in Practice | Clouds Sky','ADRs, Architecture Contracts und überprüfbare Engineering-Ergebnisse für langlebige Systeme.'],
+    'event-driven-architecture':['Event-Driven Architecture | Clouds Sky','Event Contracts, Delivery Semantics, Idempotenz und resilienter Betrieb von Messaging-Systemen.'],
     contact:['Projekt anfragen | Clouds Sky','Sprechen Sie mit Clouds Sky über Software Engineering, Systems Integration, Cloud und Data Engineering.'],
     imprint:['Impressum | Clouds Sky','Anbieterinformationen und Kontaktdaten der Clouds Sky GmbH.'],
     privacy:['Datenschutz | Clouds Sky','Informationen zum Datenschutz auf der Website der Clouds Sky GmbH.']
@@ -23,6 +25,8 @@ const meta = {
     volkswagen:['Volkswagen Shared Platform | Clouds Sky','Long-term Volkswagen platform engineering across Kops, EKS, GKE, Terraform, Pulumi, Java and Node.js.'],
     method:['Engineering Method | Clouds Sky','Engineering from requirements and contracts to architecture decisions, implementation and evidence.'],
     insights:['Insights & Research | Clouds Sky','Engineering perspectives on event-driven architecture, software design, AI engineering and quantum research.'],
+    'architecture-decisions':['Architecture Decisions in Practice | Clouds Sky','Architecture Decision Records, explicit contracts and engineering evidence for durable software systems.'],
+    'event-driven-architecture':['Event-Driven Architecture | Clouds Sky','Event contracts, delivery semantics, idempotency and resilient messaging operations.'],
     contact:['Discuss a Project | Clouds Sky','Connect with Clouds Sky for software architecture, systems integration, cloud and data engineering.'],
     imprint:['Imprint | Clouds Sky','Corporate contact and provider details for Clouds Sky GmbH.'],
     privacy:['Privacy | Clouds Sky','Privacy information for the Clouds Sky GmbH website.']
@@ -31,7 +35,7 @@ const meta = {
 const escapeHtml = value => value.replaceAll('&','&amp;').replaceAll('"','&quot;').replaceAll('<','&lt;');
 
 const source = fs.readFileSync('assets/site.js', 'utf8');
-const pages = ['home','enterprise','company','work','volkswagen','method','insights','contact','imprint','privacy'];
+const pages = ['home','enterprise','company','work','volkswagen','method','insights','architecture-decisions','event-driven-architecture','contact','imprint','privacy'];
 let written = 0;
 for (const lang of ['de','en']) {
   for (const page of pages) {
