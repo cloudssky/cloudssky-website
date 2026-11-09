@@ -1,0 +1,38 @@
+name: Export CSG logo PNGs
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'branding/logo/exports/*.svg'
+      - 'scripts/export_csg_pngs.py'
+      - '.github/workflows/export-logos.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install SVG renderer
+        run: |
+          python -m pip install --disable-pip-version-check cairosvg==2.7.1
+      - name: Render transparent PNGs
+        run: python scripts/export_csg_pngs.py
+      - name: Commit generated assets
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add branding/logo/exports/*.png
+          if ! git diff --cached --quiet; then
+            git commit -m "brand: generate CSG transparent PNG assets"
+            git push
+          fi
