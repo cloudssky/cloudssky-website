@@ -189,3 +189,6 @@
  .client-end .client-note{font-size:.65rem}
 }
 :where(a,button,summary,input,textarea):focus-visible{outline:3px solid #2086bc;outline-offset:3px}
+
+/* Cancel legacy mobile rotation for text labels; rotate arrows only when intended */
+@media(max-width:600px){.timeline .tech-placeholder,.timeline .tech-pair,.timeline .tech-pair .tech-mark{transform:none!important}.timeline>.timeline-arrow{transform:none!important}}
