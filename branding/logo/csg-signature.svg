@@ -1,18 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" role="img" aria-labelledby="title desc">
-<title id="title">CSG Signature — Clouds Sky — WE DO.</title>
-<desc id="desc">CSG signature logo in white and electric cyan on deep black, with CLOUDS SKY and WE DO. framed by tapered cyan lines.</desc>
+<title id="title">CSG Signature Dark — Clouds Sky — WE DO.</title>
+<desc id="desc">CSG monogram, Clouds Sky wordmark and WE DO. slogan with subtle electric cyan tapered accents.</desc>
 <defs>
-<linearGradient id="cyan" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#60F5FA"/><stop offset=".45" stop-color="#00D8EA"/><stop offset="1" stop-color="#00A6ED"/></linearGradient>
-<linearGradient id="leftLine"><stop offset="0" stop-color="#00D8EA" stop-opacity="0"/><stop offset=".72" stop-color="#00D8EA"/><stop offset="1" stop-color="#00D8EA" stop-opacity="0"/></linearGradient>
-<linearGradient id="rightLine"><stop offset="0" stop-color="#00D8EA" stop-opacity="0"/><stop offset=".28" stop-color="#00D8EA"/><stop offset="1" stop-color="#00D8EA" stop-opacity="0"/></linearGradient>
+ <linearGradient id="cyan" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#3EF3F4"/><stop offset="55%" stop-color="#00D8EA"/><stop offset="100%" stop-color="#00A6ED"/></linearGradient>
+ <linearGradient id="accentLeft" x1="0%" x2="100%"><stop offset="0%" stop-color="#00D8EA" stop-opacity="0"/><stop offset="55%" stop-color="#00D8EA"/><stop offset="100%" stop-color="#00D8EA" stop-opacity=".12"/></linearGradient>
+ <linearGradient id="accentRight" x1="0%" x2="100%"><stop offset="0%" stop-color="#00D8EA" stop-opacity=".12"/><stop offset="45%" stop-color="#00D8EA"/><stop offset="100%" stop-color="#00D8EA" stop-opacity="0"/></linearGradient>
 </defs>
 <rect width="1200" height="620" fill="#080E19"/>
-<!-- Drawn geometric monogram: independent of installed typefaces. -->
-<path d="M413 172 H278 C204 172 157 217 157 291 C157 365 204 408 278 408 H413" fill="none" stroke="#FFFFFF" stroke-width="70" stroke-linecap="square" stroke-linejoin="round"/>
-<path d="M696 172 H536 C474 172 452 197 452 233 C452 269 477 285 523 285 H617 C679 285 707 312 707 353 C707 390 680 408 617 408 H449" fill="none" stroke="#FFFFFF" stroke-width="70" stroke-linecap="square" stroke-linejoin="round"/>
-<path d="M1013 172 H860 C782 172 747 219 747 291 C747 365 784 408 860 408 H1014 V302 H882" fill="none" stroke="url(#cyan)" stroke-width="70" stroke-linecap="square" stroke-linejoin="round"/>
-<text x="600" y="479" text-anchor="middle" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="50" font-weight="600" letter-spacing="22">CLOUDS SKY</text>
-<path d="M108 552 Q 240 545 400 552 Q 240 558 108 552 Z" fill="url(#leftLine)"/>
-<path d="M800 552 Q 960 545 1092 552 Q 960 558 800 552 Z" fill="url(#rightLine)"/>
-<text x="600" y="575" text-anchor="middle" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="64" font-style="italic" font-weight="800" letter-spacing="2">WE DO.</text>
+<!-- Monogram paths intentionally independent of fonts. Generous spacing prevents collisions. -->
+<g fill="none" stroke="#FFFFFF" stroke-width="54" stroke-linecap="butt" stroke-linejoin="round">
+ <path d="M382 160 H273 C210 160 170 210 170 273 C170 336 210 386 273 386 H382"/>
+ <path d="M665 160 H518 C466 160 446 185 446 219 C446 253 468 272 514 272 H601 C654 272 674 297 674 327 C674 361 650 386 602 386 H442"/>
+</g>
+<path d="M1030 160 H879 C815 160 776 210 776 273 C776 336 815 386 879 386 H1030 V281 H902" fill="none" stroke="url(#cyan)" stroke-width="54" stroke-linejoin="round" stroke-linecap="butt"/>
+<text x="600" y="467" text-anchor="middle" fill="#FFFFFF" font-family="Arial,Helvetica,sans-serif" font-size="44" font-weight="600" letter-spacing="14">CLOUDS SKY</text>
+<path d="M120 535 Q260 529 420 535 Q260 541 120 535 Z" fill="url(#accentLeft)"/>
+<path d="M780 535 Q940 529 1080 535 Q940 541 780 535 Z" fill="url(#accentRight)"/>
+<text x="600" y="556" text-anchor="middle" fill="#FFFFFF" font-family="Arial,Helvetica,sans-serif" font-size="64" font-weight="800" font-style="italic" letter-spacing="2">WE DO.</text>
 </svg>
