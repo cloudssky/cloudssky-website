@@ -1,0 +1,13 @@
+{
+  "approved": false,
+  "reviewReference": "Pending review of official company records, legal text, brand usage, customer attribution and browser tests",
+  "checks": {
+    "legal": false,
+    "privacy": false,
+    "branding": false,
+    "references": false,
+    "contact": false,
+    "browserQA": false,
+    "hostingAndRedirects": false
+  }
+}
