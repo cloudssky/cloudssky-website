@@ -134,3 +134,11 @@
 .menu .dropdown a:hover{background:#edf6fc;text-decoration:none}
 @media(max-width:600px){.menu .dropdown{right:-61px;max-height:calc(100dvh - 115px)}.menu .dropdown .nav-submenu a{font-size:.85rem}}
 @media(prefers-reduced-motion:reduce){.nav-chevron{transition:none}}
+
+/* V2.3 — active page is visible independently of hover/open state */
+.navigation .nav-normal[aria-current="page"]{color:#126a9b;text-decoration:underline;text-underline-offset:9px;text-decoration-thickness:2px}
+.mobile-primary a[aria-current="page"]{color:#126a9b;text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:5px}
+.menu .dropdown .nav-section[data-active-section="true"]>summary{background:#e5f3fc;color:#0a5686;border-left:3px solid #1688c5;padding-left:10px}
+.menu .dropdown .nav-section[data-active-section="true"]>summary .nav-chevron{border-color:#1688c5}
+.menu .dropdown .nav-submenu a[aria-current="page"],.menu .dropdown a.menu-standalone[aria-current="page"]{background:#dceffc;color:#074e7d;font-weight:800;border-radius:8px;box-shadow:inset 3px 0 0 #1a8fca}
+.menu .dropdown .nav-submenu a[aria-current="page"]:hover,.menu .dropdown a.menu-standalone[aria-current="page"]:hover{background:#d0eafa}
