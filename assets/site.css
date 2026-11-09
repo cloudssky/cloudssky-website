@@ -217,3 +217,13 @@
 .form-alternative a{text-decoration:underline;text-underline-offset:3px}
 .form-status{font-size:.88rem;color:#245877;min-height:1.4em;margin:13px 0 0}
 @media(max-width:600px){.legal-review{padding:14px 16px}.privacy-content h2{margin-top:28px}}
+
+/* Privacy notice: truthful transparency only; no unnecessary opt-in or third-party script */
+.privacy-notice{position:fixed;z-index:50;bottom:20px;left:50%;transform:translateX(-50%);display:flex;align-items:center;justify-content:space-between;gap:20px;width:min(760px,calc(100% - 32px));padding:20px 22px;background:#0e1a2b;color:#fff;border:1px solid #35607d;border-radius:14px;box-shadow:0 12px 48px #07172765}
+.privacy-notice[hidden]{display:none!important}
+.privacy-notice strong{display:block;font-size:1.03rem;letter-spacing:-.01em;margin-bottom:4px}
+.privacy-notice p{font-size:.86rem;line-height:1.55;color:#d8e5f1;margin:0}
+.privacy-notice a{color:#abeaff;text-underline-offset:3px}
+.privacy-notice .privacy-notice-dismiss{flex:none;border-color:#d6e8f3;color:#0e1a2b;background:#fff;padding:11px 17px}
+.privacy-notice .privacy-notice-dismiss:hover{background:#e1f4ff}
+@media(max-width:650px){.privacy-notice{bottom:10px;padding:18px;align-items:stretch;flex-direction:column;gap:13px}.privacy-notice .privacy-notice-dismiss{align-self:flex-end}}
