@@ -12,7 +12,7 @@
 - Downloadable static preview artifact from the PR quality workflow.
 
 ## Mandatory sign-offs — all currently pending
-1. **Legal:** Validate official company address, commercial register court and number, applicable VAT ID, legal representative and additional mandatory provider notices. Legal review required.
+1. **Legal:** The user supplied the old imprint with both managing directors (Stephan Hartmann and Arash Kaffamanesh), Amtsgericht Köln HRB 70999, VAT ID DE815247371, tax number 215/5808/2975 and Finance Office: Cologne Center. These details are now included, but current registry/tax data and the historical five-section disclaimer still require legal verification. The cited law was modernized from § 5 TMG to § 5 DDG. Confirm editorial responsibility and other mandatory notices.
 2. **Privacy:** Confirm the actual live web host, access logging, retention, processor agreements, third-country transfers, controller details and internal handling of contact requests; finalize GDPR Art. 13 notice.
 3. **Branding:** Approve customer logo usage and replace preliminary Simple Icons SVGs with approved marks when needed. Customer name permission is not the same as trademark asset approval.
 4. **References:** Approve customer project narratives and contracting attributions, especially MAN / SYNAOS / Kubernauts and Volkswagen partner relationships. Validate Company roles and imagery.
