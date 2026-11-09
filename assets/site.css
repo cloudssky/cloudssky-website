@@ -52,3 +52,6 @@
 /* Volkswagen flagship case details */
 .case-detail{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:40px 55px;margin-top:54px}.case-detail article{border-top:1px solid var(--line);padding-top:20px}.case-detail h3{font-size:1.35rem}.case-detail p{color:#53677b}
 @media(max-width:650px){.case-detail{grid-template-columns:1fr;gap:25px;margin-top:33px}}
+
+/* Third-party brand icon previews, original proportions preserved */
+.client{min-height:52px}.client img{display:block;width:auto;height:38px;max-width:120px;object-fit:contain;opacity:.83}.client img:hover{opacity:1}@media(max-width:600px){.client img{height:33px}}
