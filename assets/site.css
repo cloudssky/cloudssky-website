@@ -38,3 +38,12 @@
 @media(max-width:600px){.header .wrap{gap:8px}.navigation{gap:7px}.navigation>.button{padding:10px 11px;font-size:.74rem}.menu>summary{width:44px;height:44px;border-radius:12px}.hamburger{width:21px;height:19px}.menu[open] .hamburger span:nth-child(1){transform:translateY(8.5px) rotate(45deg)}.menu[open] .hamburger span:nth-child(3){transform:translateY(-8.5px) rotate(-45deg)}.language-menu summary{min-width:66px;min-height:44px;padding:7px 6px}}
 @media(max-width:380px){.logo{width:112px}.navigation>.button{padding:9px 8px}.language-menu summary{min-width:57px}}
 @media(prefers-reduced-motion:reduce){.hamburger span,.menu>summary{transition:none}}
+
+/* V1.3: client attribution stays inline at the right edge, never below the carousel */
+.client-strip-row{display:flex;align-items:center;gap:0;min-height:86px}
+.client-strip-row .client-rail{flex:1;min-width:0}
+.client-end{display:flex;align-items:center;justify-content:flex-end;flex:0 0 335px;gap:12px;padding:10px 0 10px 21px;border-left:1px solid var(--line);background:#fff}
+.client-end .client-note{padding:0;margin:0;flex:1;min-width:0;font-size:.69rem;line-height:1.4;color:#53677b}
+.client-end .rail-pause{position:static;flex:0 0 33px;align-self:center}
+@media(max-width:900px){.client-end{flex-basis:230px;padding-left:12px}.client-end .client-note{font-size:.64rem}}
+@media(max-width:600px){.client-strip-row{min-height:76px}.client-end{flex-basis:130px;gap:5px;padding-left:8px}.client-end .client-note{font-size:.58rem;line-height:1.25}.client-end .rail-pause{flex-basis:26px;min-width:26px}}
