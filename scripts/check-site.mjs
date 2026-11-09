@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
-const pages=['home','enterprise','company','work','volkswagen','method','insights','contact','imprint','privacy'];
+const pages=['home','enterprise','company','work','volkswagen','method','insights','architecture-decisions','event-driven-architecture','contact','imprint','privacy'];
 let passed=0;
 const errors=[];
 function fail(s){errors.push(s)}
