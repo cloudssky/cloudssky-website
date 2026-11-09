@@ -28,6 +28,8 @@ for(const lang of ['de','en']){
         fail(file+': missing local asset/page '+target);
     }
     if(page==='home' && !html.includes('class="hero-brand"'))fail(file+': WE DO. hero brand missing');
+    if(!html.includes('data-privacy-notice'))fail(file+': privacy notice missing');
+    if(!html.includes('data-dismiss-privacy'))fail(file+': privacy notice dismiss missing');
     if(page==='contact' && !html.includes('data-email-form'))fail(file+': contact form missing');
     if(page==='contact' && !html.includes('mailto:support@cloudssky.com'))fail(file+': email fallback missing');
     if(page==='imprint' && !html.includes('legal-review'))fail(file+': unverified corporate disclosures not flagged');
