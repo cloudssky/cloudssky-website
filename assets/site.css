@@ -192,3 +192,14 @@
 
 /* Cancel legacy mobile rotation for text labels; rotate arrows only when intended */
 @media(max-width:600px){.timeline .tech-placeholder,.timeline .tech-pair,.timeline .tech-pair .tech-mark{transform:none!important}.timeline>.timeline-arrow{transform:none!important}}
+
+/* Hero brand: WE DO. is the bold opening statement, paired with existing CSG logo */
+.hero-brand{display:block;font-size:clamp(5.1rem,12vw,10.3rem);font-weight:850;line-height:.94;letter-spacing:-.092em;color:#0e1a2b;margin:0 0 33px;white-space:nowrap}
+.hero-brand-dot{color:#188bc3;padding-left:.025em}
+.hero .hero-brand+.eyebrow{margin-bottom:15px}
+.hero h1{font-size:clamp(2.4rem,4.3vw,4.2rem);margin-bottom:18px}
+@media(max-width:600px){
+.hero-brand{font-size:clamp(3.65rem,15.2vw,6rem);letter-spacing:-.085em;margin-bottom:28px}
+.hero h1{font-size:clamp(2rem,8vw,3rem)}
+}
+@media(max-width:350px){.hero-brand{font-size:15vw}}
