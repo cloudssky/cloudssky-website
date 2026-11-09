@@ -88,3 +88,23 @@
 .technology-logo .tech-mark{width:38px;height:38px;object-fit:contain}
 @media(max-width:900px){.technology-logos{grid-template-columns:repeat(4,minmax(0,1fr))}.tech-stack span{font-size:.7rem}}
 @media(max-width:600px){.field-icon{width:40px;height:40px}.technology-logos{grid-template-columns:repeat(2,minmax(0,1fr))}.tech-stack{grid-template-columns:1fr}.tech-stack span{border-right:0;border-bottom:1px solid #83aac6}.timeline .tech-mark{width:27px;height:27px}}
+
+/* V2 Insights — long-form editorial reading experience */
+.insight-article{max-width:860px}
+.insight-article h2{font-size:clamp(1.75rem,3.1vw,2.55rem);margin:52px 0 20px;letter-spacing:-.035em}
+.insight-article>p{font-size:1.075rem;line-height:1.85;max-width:73ch;color:#36516b}
+.insight-article .article-lede{border-left:4px solid #35a5de;background:linear-gradient(110deg,#eff8ff,#fff);padding:28px 30px;margin-bottom:40px;border-radius:0 12px 12px 0}
+.article-lede p{font-size:1.18rem;line-height:1.65;margin-bottom:0;color:#254661}
+.method-steps{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:24px 0 36px}
+.method-steps>div{background:#f3f8fc;border:1px solid #d8e8f5;border-radius:10px;padding:22px 20px;color:#2479ad;font-weight:800}
+.method-steps b{display:block;color:#0e1a2b;margin-top:6px}
+.method-steps small{display:block;color:#526d80;font-weight:400;font-size:.91rem;line-height:1.65;margin-top:7px}
+.article-example{border:1px solid #a7cbe3;background:#eff7fc;border-radius:12px;padding:26px;margin:25px 0 32px}
+.article-example strong{display:block;font-size:1.02rem;margin-bottom:14px}
+.article-example p{font-size:.97rem;line-height:1.75;margin-bottom:9px}
+.article-example small{display:block;font-size:.8rem;color:#567388}
+.article-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:25px}
+.article-list article{padding:30px;border:1px solid var(--line);background:#fafdff;border-radius:13px}
+.article-list h2{font-size:clamp(1.55rem,2.4vw,2.1rem)}
+.insight-future{margin-top:68px}
+@media(max-width:700px){.method-steps,.article-list{grid-template-columns:1fr}.insight-article .article-lede{padding:22px}.insight-article h2{margin-top:34px}}
