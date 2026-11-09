@@ -1,30 +1,31 @@
-# Clouds Sky relaunch — launch readiness
+# Clouds Sky relaunch — Go-live readiness
 
-## Completed on website-relaunch-v1
-- Responsive DE/EN page structure, original repository CSG logo.
-- 28 localized pages including Volkswagen, Bayer and MAN / SYNAOS case studies plus two technical insights articles.
-- Client ticker, pause control and language dropdown.
-- Expandable Selected Work / Insights menu with active-page highlighting, including mobile navigation.
-- V2.4 narrow-mobile CSS adjustments: 320–420px navigation, readable Volkswagen timeline and customer-band attribution. Browser visual validation is still pending.
-- Volkswagen architecture evolution + technical case narrative; Bayer enterprise applications and MAN industrial messaging with explicit attribution.
-- Build-time static HTML pre-rendering, localized SEO metadata, CI link checks and downloadable review artifact.
-- Four PROVISIONAL monochrome SVG customer icons from Simple Icons: Volkswagen, MAN, SAP and Deutsche Telekom; the remaining names are text.
-- Vaillant Kafka/Azure is included in the client strip and work overview.
-- Kubernautic invitation on the homepage (currently links to kubernautic.com, not directly to an authenticated trial).
+## Completed in website-relaunch-v1
+- 28 localized static pages (DE and EN), 3 case studies, 2 engineering insights.
+- Large WE DO. brand statement leads the homepage hero.
+- Responsive header and hierarchical Selected Work / Insights menu with active-page states.
+- Customer experience ticker, preliminary visual assets, technology landscape and selected work diagrams.
+- Static HTML pre-rendering, localized SEO metadata and GitHub Actions link/route QA.
+- Expanded two-language imprint and privacy **review drafts**; explicitly identify missing legal and operational facts.
+- Contact form remains a transparent mailto **draft creation** experience; no claim that the web page sends requests.
+- Protected production Pages workflow: `scripts/launch-gate.mjs` requires `LAUNCH_APPROVAL.json` with all seven verified sign-offs before deployment.
+- Downloadable static preview artifact from the PR quality workflow.
 
-## Must resolve before production
-1. Replace provisional third-party brand icons with the officially approved logo versions, or verify their use and brand-asset guidelines. **Customer names may be approved while specific marks/artwork remain restricted.**
-2. Confirm all published project assertions, contractual attribution and project partner relationships, especially Volkswagen / SYNAOS / Kubernauts / MAN.
-3. Verify the Company team roster and role labels. Obtain optional real photographs, or retain text-only team profiles.
-4. Complete legal imprint (registry, VAT, managing directors as applicable) and full privacy notice with hosting-specific disclosures; seek legal review.
-5. Decide on contact process. Current inquiry form opens a mail client via `mailto:support@cloudssky.com`; it does not submit on its own.
-6. Verify canonical URLs and link redirects for the old cloudssky.com content; preserve SEO equity.
-7. Do a real browser QA pass: desktop, narrow mobile, Safari, Chromium, keyboard controls, screen readers, visual spacing and reduced motion.
-8. Enable Pages → GitHub Actions, review the new site preview and confirm its actual URL.
-9. Confirm target hosting and custom domain. Change only website A/AAAA/CNAME records; preserve MX, SPF, DKIM, DMARC and other records.
-10. After domain cutover, enable HTTPS and validate www, old URLs, search metadata, links, forms and certificates.
+## Mandatory sign-offs — all currently pending
+1. **Legal:** Validate official company address, commercial register court and number, applicable VAT ID, legal representative and additional mandatory provider notices. Legal review required.
+2. **Privacy:** Confirm the actual live web host, access logging, retention, processor agreements, third-country transfers, controller details and internal handling of contact requests; finalize GDPR Art. 13 notice.
+3. **Branding:** Approve customer logo usage and replace preliminary Simple Icons SVGs with approved marks when needed. Customer name permission is not the same as trademark asset approval.
+4. **References:** Approve customer project narratives and contracting attributions, especially MAN / SYNAOS / Kubernauts and Volkswagen partner relationships. Validate Company roles and imagery.
+5. **Contact:** Confirm `support@cloudssky.com` is the intended intake. The present form opens a `mailto:` draft in the visitor's installed email program. If a real browser-submitted form is required, select a service/provider, configure secure server-side delivery/anti-spam and revise privacy text.
+6. **Browser QA:** Complete hands-on Safari and Chromium mobile/desktop checks, keyboard, reduced motion, screen readers, focus and cross-device layouts. CI verifies static routes, not rendered pixels.
+7. **Hosting and redirects:** Confirm Pages publication, preview URL, custom domain, legacy URL redirect plan, HTTPS, DNS records and rollback. Preserve email MX/SPF/DKIM/DMARC records.
+
+## Release guard
+Production deployment is **default-denied** by `LAUNCH_APPROVAL.json` (all fields false). Verify each category, set its flag to true with a review reference, and set `approved=true` only after completed sign-off. Keep this as a separate reviewed commit. Do not bypass the gate.
 
 ## Asset provenance
-The preliminary client marks under `public/clients/` were copied from the public Simple Icons open-source collection (https://github.com/simple-icons/simple-icons) on 2026-11-09. Their brand/trademark usage is governed by each trademark owner. They are review assets, not proof of approval.
+The preliminary third-party client marks under `public/clients/` and technology previews under `public/technology/` were retrieved from Simple Icons. Each trademark belongs to its owner and its permitted use must be verified.
 
-The actual live domain and production DNS are untouched. The PR is a draft; it has not been merged.
+## Unchanged
+- Public cloudssky.com and DNS records are untouched.
+- Draft PR has not been merged.
