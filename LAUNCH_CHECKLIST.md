@@ -4,6 +4,8 @@
 - Responsive DE/EN page structure, original repository CSG logo.
 - 28 localized pages including Volkswagen, Bayer and MAN / SYNAOS case studies plus two technical insights articles.
 - Client ticker, pause control and language dropdown.
+- Expandable Selected Work / Insights menu with active-page highlighting, including mobile navigation.
+- V2.4 narrow-mobile CSS adjustments: 320–420px navigation, readable Volkswagen timeline and customer-band attribution. Browser visual validation is still pending.
 - Volkswagen architecture evolution + technical case narrative; Bayer enterprise applications and MAN industrial messaging with explicit attribution.
 - Build-time static HTML pre-rendering, localized SEO metadata, CI link checks and downloadable review artifact.
 - Four PROVISIONAL monochrome SVG customer icons from Simple Icons: Volkswagen, MAN, SAP and Deutsche Telekom; the remaining names are text.
