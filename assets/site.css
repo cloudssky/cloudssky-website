@@ -193,16 +193,19 @@
 /* Cancel legacy mobile rotation for text labels; rotate arrows only when intended */
 @media(max-width:600px){.timeline .tech-placeholder,.timeline .tech-pair,.timeline .tech-pair .tech-mark{transform:none!important}.timeline>.timeline-arrow{transform:none!important}}
 
-/* Hero brand: WE DO. is the bold opening statement, paired with existing CSG logo */
-.hero-brand{display:block;font-size:clamp(5.1rem,12vw,10.3rem);font-weight:850;line-height:.94;letter-spacing:-.092em;color:#0e1a2b;margin:0 0 33px;white-space:nowrap}
-.hero-brand-dot{color:#188bc3;padding-left:.025em}
-.hero .hero-brand+.eyebrow{margin-bottom:15px}
-.hero h1{font-size:clamp(2.4rem,4.3vw,4.2rem);margin-bottom:18px}
+/* WE DO. hero brand — confident but spacious editorial typography */
+.hero-brand{display:block;font-size:clamp(4.6rem,9vw,8.4rem);font-weight:740;line-height:1;letter-spacing:-.025em;color:#0e1a2b;margin:0 0 39px;white-space:nowrap}
+.hero-brand-dot{color:#188bc3;padding-left:.055em}
+.hero .hero-brand+.eyebrow{margin-bottom:17px;letter-spacing:.16em}
+.hero h1{font-size:clamp(2.4rem,4.1vw,4.1rem);margin-bottom:17px;line-height:1.1}
+.hero .lead{margin-bottom:14px}
+.hero .actions{margin-top:30px}
 @media(max-width:600px){
-.hero-brand{font-size:clamp(3.65rem,15.2vw,6rem);letter-spacing:-.085em;margin-bottom:28px}
-.hero h1{font-size:clamp(2rem,8vw,3rem)}
+.hero-brand{font-size:clamp(3.35rem,13vw,5.2rem);font-weight:730;letter-spacing:-.02em;margin-bottom:29px}
+.hero h1{font-size:clamp(2rem,7.7vw,3rem)}
+.hero .actions{margin-top:26px}
 }
-@media(max-width:350px){.hero-brand{font-size:15vw}}
+@media(max-width:350px){.hero-brand{font-size:12.6vw}}
 
 /* Etappe B: legible legal material, and transparent inquiry state */
 .legal h3{font-size:1.2rem;letter-spacing:-.02em;margin:26px 0 12px}
