@@ -55,3 +55,6 @@
 
 /* Third-party brand icon previews, original proportions preserved */
 .client{min-height:52px}.client img{display:block;width:auto;height:38px;max-width:120px;object-fit:contain;opacity:.83}.client img:hover{opacity:1}@media(max-width:600px){.client img{height:33px}}
+
+/* Maintain readable client attribution on smaller devices */
+@media(max-width:600px){.client-end{flex-basis:166px}.client-end .client-note{font-size:.75rem;line-height:1.35}.client-end .rail-pause{flex-basis:30px;min-width:30px;min-height:32px}}
