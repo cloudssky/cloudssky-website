@@ -2,10 +2,10 @@
 
 ## Completed on website-relaunch-v1
 - Responsive DE/EN page structure, original repository CSG logo.
-- 20 localized pages including Volkswagen flagship case.
+- 28 localized pages including Volkswagen, Bayer and MAN / SYNAOS case studies plus two technical insights articles.
 - Client ticker, pause control and language dropdown.
-- Volkswagen architecture evolution + technical case narrative.
-- Build-time static HTML pre-rendering and CI link checks; first PR QA passed.
+- Volkswagen architecture evolution + technical case narrative; Bayer enterprise applications and MAN industrial messaging with explicit attribution.
+- Build-time static HTML pre-rendering, localized SEO metadata, CI link checks and downloadable review artifact.
 - Four PROVISIONAL monochrome SVG customer icons from Simple Icons: Volkswagen, MAN, SAP and Deutsche Telekom; the remaining names are text.
 - Vaillant Kafka/Azure is included in the client strip and work overview.
 - Kubernautic invitation on the homepage (currently links to kubernautic.com, not directly to an authenticated trial).
