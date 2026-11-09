@@ -108,3 +108,13 @@
 .article-list h2{font-size:clamp(1.55rem,2.4vw,2.1rem)}
 .insight-future{margin-top:68px}
 @media(max-width:700px){.method-steps,.article-list{grid-template-columns:1fr}.insight-article .article-lede{padding:22px}.insight-article h2{margin-top:34px}}
+
+/* Real work, clearly attributed; diagrams are conceptual */
+.case-features{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin:0 0 48px}
+.case-feature{border:1px solid var(--line);border-radius:14px;background:linear-gradient(145deg,#f7fbff,#eaf4fc);padding:28px}
+.case-feature h3{font-size:1.45rem;letter-spacing:-.035em}
+.case-feature p{color:#53677b}
+.case-flow{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:24px 0}
+.case-flow div{flex:1;min-width:0;border:1px solid #b4d3e9;background:#fff;padding:22px 14px;text-align:center;border-radius:12px;font-weight:700;font-size:.9rem}
+.case-flow span{color:#2e83b8;font-size:1.45rem;flex:none}
+@media(max-width:700px){.case-features{grid-template-columns:1fr}.case-flow{flex-wrap:wrap;justify-content:center}.case-flow div{flex:1 1 140px}.case-flow span{font-size:1rem}}
