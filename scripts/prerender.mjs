@@ -3,7 +3,7 @@ import path from 'node:path';
 import vm from 'node:vm';
 
 const source = fs.readFileSync('assets/site.js', 'utf8');
-const pages = ['home','enterprise','company','work','method','insights','contact','imprint','privacy'];
+const pages = ['home','enterprise','company','work','volkswagen','method','insights','contact','imprint','privacy'];
 let written = 0;
 for (const lang of ['de','en']) {
   for (const page of pages) {
