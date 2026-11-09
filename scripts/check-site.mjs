@@ -27,6 +27,13 @@ for(const lang of ['de','en']){
       if(!fs.existsSync(resolved) && !fs.existsSync(path.join(resolved,'index.html')))
         fail(file+': missing local asset/page '+target);
     }
+    if(page==='home' && !html.includes('class="hero-brand"'))fail(file+': WE DO. hero brand missing');
+    if(page==='contact' && !html.includes('data-email-form'))fail(file+': contact form missing');
+    if(page==='contact' && !html.includes('mailto:support@cloudssky.com'))fail(file+': email fallback missing');
+    if(page==='imprint' && !html.includes('legal-review'))fail(file+': unverified corporate disclosures not flagged');
+    if(page==='privacy' && !html.includes('privacy-content'))fail(file+': expanded privacy notice missing');
+    if(['enterprise','company','method','work','volkswagen','bayer','man-industrial-messaging','insights','architecture-decisions','event-driven-architecture'].includes(page) && !html.includes('aria-current="page"'))
+      fail(file+': active navigation missing');
     if(page==='home'){
       if(!html.includes('Vaillant'))fail(file+': Vaillant missing from customer rail');
       if(!html.includes('Kubernautic'))fail(file+': platform invitation missing');
