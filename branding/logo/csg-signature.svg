@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" role="img" aria-labelledby="title desc">
+<title id="title">CSG — Clouds Sky — WE DO.</title>
+<desc id="desc">Minimal CSG Signature logo with cyan G and softly tapered cyan accent lines around WE DO.</desc>
+<defs>
+  <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#68F8FC"/><stop offset=".5" stop-color="#00D8EA"/><stop offset="1" stop-color="#00A6ED"/></linearGradient>
+  <linearGradient id="lineL" x1="0" x2="1"><stop offset="0" stop-color="#00D8EA" stop-opacity="0"/><stop offset=".6" stop-color="#00D8EA" stop-opacity=".9"/><stop offset="1" stop-color="#52F3F6" stop-opacity="0"/></linearGradient>
+  <linearGradient id="lineR" x1="0" x2="1"><stop offset="0" stop-color="#52F3F6" stop-opacity="0"/><stop offset=".4" stop-color="#00D8EA" stop-opacity=".9"/><stop offset="1" stop-color="#00D8EA" stop-opacity="0"/></linearGradient>
+</defs>
+<!-- Transparent background: intended for dark surfaces. -->
+<g font-family="Arial, Helvetica, sans-serif" font-style="italic" font-weight="900" font-size="290" letter-spacing="-20">
+  <text x="118" y="335" fill="#FFFFFF">CS</text>
+  <text x="670" y="335" fill="url(#cyan)">G</text>
+</g>
+<text x="600" y="422" text-anchor="middle" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="53" font-weight="500" letter-spacing="24">CLOUDS SKY</text>
+<path d="M90 510 Q 220 501 395 509 Q 220 516 90 510 Z" fill="url(#lineL)"/>
+<path d="M805 509 Q 980 501 1110 510 Q 980 516 805 509 Z" fill="url(#lineR)"/>
+<text x="600" y="536" text-anchor="middle" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="72" font-style="italic" font-weight="800" letter-spacing="3">WE DO.</text>
+</svg>
