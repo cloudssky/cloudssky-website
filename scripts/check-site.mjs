@@ -16,6 +16,7 @@ for(const lang of ['de','en']){
     if(!html.includes('class="logo"'))fail(file+': primary logo missing');
     if(!html.includes('class="language-menu"'))fail(file+': language dropdown missing');
     if(!html.includes('class="nav-section"'))fail(file+': expandable sections missing');
+    if(!html.includes('class="mobile-contact"'))fail(file+': mobile contact entry missing');
     for(const link of ['volkswagen/','bayer/','man-industrial-messaging/','architecture-decisions/','event-driven-architecture/']){
       if(!html.includes(link))fail(file+': submenu link missing '+link);
     }
