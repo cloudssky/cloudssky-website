@@ -43,6 +43,11 @@ for(const lang of ['de','en']){
       if(!html.includes('Kubernautic'))fail(file+': platform invitation missing');
     }
     if(page==='volkswagen' && !html.includes('Pulumi'))fail(file+': flagship case content missing');
+    if(page==='company'){
+      for(const role of ['CEO · Cloud Architect','CEO · Enterprise Software Architect','SRE Solution Architect']){
+        if(!html.includes(role))fail(file+': expected team role missing: '+role);
+      }
+    }
     if(page==='bayer' && !html.includes('Document Management'))fail(file+': Bayer content missing');
     if(page==='man-industrial-messaging' && !html.includes('KubeMQ'))fail(file+': MAN content missing');
     passed++;
