@@ -1,20 +1,30 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" role="img" aria-labelledby="title desc">
-<title id="title">CSG Signature Light — Clouds Sky — WE DO.</title>
-<desc id="desc">CSG monogram, Clouds Sky wordmark and WE DO. slogan with subtle electric cyan tapered accents.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1774 887" role="img" aria-labelledby="title description">
+<title id="title">CSG Signature — Light</title>
+<desc id="description">Clouds Sky CSG monogram with WE DO. tagline. Clean hand-drawn bezier geometry and smooth cyan-to-blue gradient.</desc>
 <defs>
- <linearGradient id="cyan" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#3EF3F4"/><stop offset="55%" stop-color="#00D8EA"/><stop offset="100%" stop-color="#00A6ED"/></linearGradient>
- <linearGradient id="accentLeft" x1="0%" x2="100%"><stop offset="0%" stop-color="#00D8EA" stop-opacity="0"/><stop offset="55%" stop-color="#00D8EA"/><stop offset="100%" stop-color="#00D8EA" stop-opacity=".12"/></linearGradient>
- <linearGradient id="accentRight" x1="0%" x2="100%"><stop offset="0%" stop-color="#00D8EA" stop-opacity=".12"/><stop offset="45%" stop-color="#00D8EA"/><stop offset="100%" stop-color="#00D8EA" stop-opacity="0"/></linearGradient>
+<linearGradient id="gFill" x1="70%" y1="0%" x2="20%" y2="100%"><stop offset="0%" stop-color="#00F3E2"/><stop offset="46%" stop-color="#00E2EA"/><stop offset="76%" stop-color="#00CEED"/><stop offset="100%" stop-color="#138BF0"/></linearGradient>
+<linearGradient id="softC" x1="0%" y1="0%" x2="100%" y2="100%"><stop stop-color="#0B5C88" stop-opacity=".85"/><stop offset="60%" stop-color="#62E8F4" stop-opacity=".6"/><stop offset="100%" stop-color="#62E8F4" stop-opacity="0"/></linearGradient>
+<linearGradient id="softG" x1="0%" y1="0%" x2="100%" y2="100%"><stop stop-color="#1678E4" stop-opacity="0"/><stop offset="60%" stop-color="#1678E4" stop-opacity=".36"/><stop offset="100%" stop-color="#1678E4" stop-opacity="0"/></linearGradient>
+<linearGradient id="accent" x1="0" x2="1"><stop offset="0%" stop-color="#00DCEC" stop-opacity="0"/><stop offset="40%" stop-color="#00DCEC" stop-opacity=".95"/><stop offset="65%" stop-color="#00DCEC" stop-opacity=".8"/><stop offset="100%" stop-color="#00DCEC" stop-opacity="0"/></linearGradient>
 </defs>
-<rect width="1200" height="620" fill="#FFFFFF"/>
-<!-- Monogram paths intentionally independent of fonts. Generous spacing prevents collisions. -->
-<g fill="none" stroke="#101A2B" stroke-width="54" stroke-linecap="butt" stroke-linejoin="round">
- <path d="M382 160 H273 C210 160 170 210 170 273 C170 336 210 386 273 386 H382"/>
- <path d="M665 160 H518 C466 160 446 185 446 219 C446 253 468 272 514 272 H601 C654 272 674 297 674 327 C674 361 650 386 602 386 H442"/>
-</g>
-<path d="M1030 160 H879 C815 160 776 210 776 273 C776 336 815 386 879 386 H1030 V281 H902" fill="none" stroke="url(#cyan)" stroke-width="54" stroke-linejoin="round" stroke-linecap="butt"/>
-<text x="600" y="467" text-anchor="middle" fill="#101A2B" font-family="Arial,Helvetica,sans-serif" font-size="44" font-weight="600" letter-spacing="14">CLOUDS SKY</text>
-<path d="M120 535 Q260 529 420 535 Q260 541 120 535 Z" fill="url(#accentLeft)"/>
-<path d="M780 535 Q940 529 1080 535 Q940 541 780 535 Z" fill="url(#accentRight)"/>
-<text x="600" y="556" text-anchor="middle" fill="#101A2B" font-family="Arial,Helvetica,sans-serif" font-size="64" font-weight="800" font-style="italic" letter-spacing="2">WE DO.</text>
+<rect width="1774" height="887" fill="#FFFFFF"/>
+<path d="M 727 222 L 485 222 C 395 222 326 259 307 342 C 283 441 342 517 443 518 L 612 518 L 686 449 L 478 449 C 414 449 381 420 381 374 C 381 318 413 287 477 287 L 659 287 Z" fill="#101B2D"/>
+<path d="M 1058 222 L 823 222 C 751 222 703 260 687 307 C 674 352 698 395 758 399 L 945 399 C 964 399 978 409 978 424 C 978 441 964 449 940 449 L 736 449 L 664 518 L 950 518 C 1012 518 1061 480 1061 426 C 1061 376 1024 339 966 339 L 812 339 C 791 339 782 330 784 317 C 787 300 802 288 828 288 L 1002 288 C 1011 288 1017 286 1023 280 L 1058 246 Z" fill="#101B2D"/>
+<path d="M 1446 222 L 1180 222 C 1085 222 1029 282 1029 368 C 1029 457 1080 518 1174 518 L 1292 518 C 1343 518 1372 491 1398 445 L 1455 339 L 1247 339 L 1179 398 L 1346 398 L 1321 445 C 1319 449 1311 449 1305 449 L 1172 449 C 1115 449 1081 416 1081 366 C 1081 318 1114 287 1187 287 L 1378 287 Z" fill="url(#gFill)"/>
+<g fill="#101B2D"><path d="M1372 82Q1266 27 1151.0 -1.0Q1036 -29 911 -29Q538 -29 320.0 179.5Q102 388 102 745Q102 1103 320.0 1311.5Q538 1520 911 1520Q1036 1520 1151.0 1492.0Q1266 1464 1372 1409V1100Q1265 1173 1161.0 1207.0Q1057 1241 942 1241Q736 1241 618.0 1109.0Q500 977 500 745Q500 514 618.0 382.0Q736 250 942 250Q1057 250 1161.0 284.0Q1265 318 1372 391Z" transform="translate(575.200 593.000) scale(0.027832 -0.027832)"/>
+<path d="M188 1493H573V291H1249V0H188Z" transform="translate(641.031 593.000) scale(0.027832 -0.027832)"/>
+<path d="M870 1241Q694 1241 597.0 1111.0Q500 981 500 745Q500 510 597.0 380.0Q694 250 870 250Q1047 250 1144.0 380.0Q1241 510 1241 745Q1241 981 1144.0 1111.0Q1047 1241 870 1241ZM870 1520Q1230 1520 1434.0 1314.0Q1638 1108 1638 745Q1638 383 1434.0 177.0Q1230 -29 870 -29Q511 -29 306.5 177.0Q102 383 102 745Q102 1108 306.5 1314.0Q511 1520 870 1520Z" transform="translate(701.352 593.000) scale(0.027832 -0.027832)"/>
+<path d="M188 1493H573V598Q573 413 633.5 333.5Q694 254 831 254Q969 254 1029.5 333.5Q1090 413 1090 598V1493H1475V598Q1475 281 1316.0 126.0Q1157 -29 831 -29Q506 -29 347.0 126.0Q188 281 188 598Z" transform="translate(773.808 593.000) scale(0.027832 -0.027832)"/>
+<path d="M573 1202V291H711Q947 291 1071.5 408.0Q1196 525 1196 748Q1196 970 1072.0 1086.0Q948 1202 711 1202ZM188 1493H594Q934 1493 1100.5 1444.5Q1267 1396 1386 1280Q1491 1179 1542.0 1047.0Q1593 915 1593 748Q1593 579 1542.0 446.5Q1491 314 1386 213Q1266 97 1098.0 48.5Q930 0 594 0H188Z" transform="translate(844.093 593.000) scale(0.027832 -0.027832)"/>
+<path d="M1227 1446V1130Q1104 1185 987.0 1213.0Q870 1241 766 1241Q628 1241 562.0 1203.0Q496 1165 496 1085Q496 1025 540.5 991.5Q585 958 702 934L866 901Q1115 851 1220.0 749.0Q1325 647 1325 459Q1325 212 1178.5 91.5Q1032 -29 731 -29Q589 -29 446.0 -2.0Q303 25 160 78V403Q303 327 436.5 288.5Q570 250 694 250Q820 250 887.0 292.0Q954 334 954 412Q954 482 908.5 520.0Q863 558 727 588L578 621Q354 669 250.5 774.0Q147 879 147 1057Q147 1280 291.0 1400.0Q435 1520 705 1520Q828 1520 958.0 1501.5Q1088 1483 1227 1446Z" transform="translate(915.407 593.000) scale(0.027832 -0.027832)"/>
+<path d="M1227 1446V1130Q1104 1185 987.0 1213.0Q870 1241 766 1241Q628 1241 562.0 1203.0Q496 1165 496 1085Q496 1025 540.5 991.5Q585 958 702 934L866 901Q1115 851 1220.0 749.0Q1325 647 1325 459Q1325 212 1178.5 91.5Q1032 -29 731 -29Q589 -29 446.0 -2.0Q303 25 160 78V403Q303 327 436.5 288.5Q570 250 694 250Q820 250 887.0 292.0Q954 334 954 412Q954 482 908.5 520.0Q863 558 727 588L578 621Q354 669 250.5 774.0Q147 879 147 1057Q147 1280 291.0 1400.0Q435 1520 705 1520Q828 1520 958.0 1501.5Q1088 1483 1227 1446Z" transform="translate(1024.303 593.000) scale(0.027832 -0.027832)"/>
+<path d="M188 1493H573V948L1128 1493H1575L856 786L1649 0H1167L573 588V0H188Z" transform="translate(1089.356 593.000) scale(0.027832 -0.027832)"/>
+<path d="M-20 1493H401L741 961L1081 1493H1503L934 629V0H549V629Z" transform="translate(1157.525 593.000) scale(0.027832 -0.027832)"/></g>
+<path d="M 320 678 Q 452 671 651 678 Q 452 685 320 678 Z" fill="url(#accent)"/>
+<path d="M 1123 678 Q 1322 671 1454 678 Q 1322 685 1123 678 Z" fill="url(#accent)"/>
+<g fill="#101B2D"><path d="M219 1493H575L621 408L1090 1493H1456L1505 408L1958 1493H2341L1698 0H1262L1212 1135L729 0H283Z" transform="translate(723.907 701.000) scale(0.035645 -0.035645)"/>
+<path d="M334 1493H1372L1315 1202H662L608 924H1223L1165 633H551L485 291H1159L1104 0H43Z" transform="translate(808.428 701.000) scale(0.035645 -0.035645)"/>
+<path d="M664 1202 485 291H623Q892 291 1049.0 442.0Q1206 593 1206 850Q1206 1024 1103.5 1113.0Q1001 1202 799 1202ZM334 1493H739Q1029 1493 1174.0 1458.5Q1319 1424 1415 1343Q1512 1262 1561.0 1146.5Q1610 1031 1610 885Q1610 682 1526.5 502.5Q1443 323 1292 201Q1160 92 985.5 46.0Q811 0 449 0H43Z" transform="translate(891.709 701.000) scale(0.035645 -0.035645)"/>
+<path d="M1260 881Q1260 1057 1180.5 1149.0Q1101 1241 950 1241Q750 1241 614.5 1061.5Q479 882 479 612Q479 440 558.0 345.0Q637 250 778 250Q893 250 982.5 298.5Q1072 347 1135 442Q1195 533 1227.5 647.0Q1260 761 1260 881ZM1006 1520Q1304 1520 1485.5 1354.5Q1667 1189 1667 922Q1667 740 1611.5 578.0Q1556 416 1450 287Q1320 128 1142.5 49.5Q965 -29 733 -29Q436 -29 255.0 136.0Q74 301 74 569Q74 752 129.0 914.0Q184 1076 291 1206Q419 1364 596.5 1442.0Q774 1520 1006 1520Z" transform="translate(956.305 701.000) scale(0.035645 -0.035645)"/>
+<path d="M170 387H530L455 0H94Z" transform="translate(1022.362 701.000) scale(0.035645 -0.035645)"/></g>
 </svg>
