@@ -41,8 +41,9 @@ for(const lang of ['de','en']){
         fail(file+': missing local asset/page '+target);
     }
     if(page==='home' && !html.includes('class="hero-brand"'))fail(file+': WE DO. hero brand missing');
+    if(page==='home' && !html.includes('Even clouds are interactive.'))fail(file+': hero Easter egg caption missing');
     if(page==='home' && !html.includes('class="hero-clouds hero-cloud-playground"'))fail(file+': cloud playground missing');
-    if(page==='home' && (html.match(/data-cloud="/g)||[]).length!==3)fail(file+': expected three independently draggable clouds');
+    if(page==='home' && (html.match(/data-cloud="/g)||[]).length!==4)fail(file+': expected four independently draggable clouds');
     if(page==='home' && !html.includes('tabindex="0"'))fail(file+': cloud keyboard control missing');
     if(['home','volkswagen','enterprise'].includes(page) && !html.includes('public/technology/aws.svg'))fail(file+': AWS branded SVG missing');
     if(['home','volkswagen','enterprise'].includes(page) && !html.includes('public/technology/googlecloud.svg'))fail(file+': Google Cloud branded SVG missing');
