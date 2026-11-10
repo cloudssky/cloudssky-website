@@ -23,8 +23,7 @@ Cloudflare documentation: https://developers.cloudflare.com/turnstile/get-starte
 
 ## Calendly
 
-The booking link is prepared in `assets/site.js` as `bookingUrl` and intentionally left blank. After receiving a confirmed, desired scheduling URL:
-- Set `bookingUrl` to the exact verified `https://calendly.com/... ` event link.
+The user provided the official Clouds Sky scheduling link: **https://calendly.com/cloudssky**. It is now configured in `assets/site.js` as `bookingUrl`. The website opens it only after a visitor clicks the booking CTA:
 - The CTA appears on the contact page and opens Calendly in another tab only after a click.
 - Verify its branding, notifications, video-meeting provider, timezone defaults, privacy wording and Calendly agreement.
 - Consider an embedded Calendly widget only if there is a clear UX benefit; load it behind appropriate third-party-content consent and update the privacy notice accordingly.
@@ -37,4 +36,4 @@ Do not replace this with fake consent toggles. If optional cookie or third-party
 
 ## Go-live criteria
 
-Neither backend email delivery nor Calendly booking is active today. Set the contact release approval to true only after confirming that the intended live behavior is functional and the associated privacy terms are complete.
+Backend email delivery is not active today. The website links to the Calendly booking page, but its external availability and booking configuration must be verified before production. Set the contact release approval to true only after confirming that the intended live behavior is functional and the associated privacy terms are complete.
