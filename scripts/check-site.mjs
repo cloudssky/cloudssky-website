@@ -12,6 +12,8 @@ if(!fs.existsSync('assets/hero-clouds.svg'))fail('Homepage cloud SVG missing');
 const heroClouds=fs.readFileSync('assets/hero-clouds.svg','utf8');
 if(!heroClouds.includes('<svg')||!heroClouds.includes('cloudWhite')||!heroClouds.includes('cloudBlue'))fail('Homepage cloud SVG invalid');
 if(!css.includes('hero-clouds.svg')||!css.includes('csg-cloud-back')||!css.includes('prefers-reduced-motion:reduce'))fail('Cloud animation or motion accessibility missing');
+if(!css.includes('.hero .hero-cloud-playground{z-index:3;pointer-events:none}'))fail('Cloud SVG must be above the hero text wrapper for pointer hit-testing');
+if(!css.includes('.hero .hero-cloud-playground .cloud-grab{pointer-events:visiblePainted'))fail('Cloud shape pointer targeting must be enabled');
 const pages=['home','enterprise','company','work','volkswagen','bayer','man-industrial-messaging','method','insights','architecture-decisions','event-driven-architecture','contact','imprint','privacy'];
 let passed=0;
 const errors=[];
