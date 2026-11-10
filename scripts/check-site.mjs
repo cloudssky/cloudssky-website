@@ -52,9 +52,11 @@ for(const lang of ['de','en']){
     if(page==='home' && !html.includes('class="hero-clouds hero-cloud-playground"'))fail(file+': cloud playground missing');
     if(page==='home' && (html.match(/data-cloud="/g)||[]).length!==4)fail(file+': expected four independently draggable clouds');
     if(page==='home' && !html.includes('tabindex="0"'))fail(file+': cloud keyboard control missing');
-    if(['home','volkswagen','enterprise'].includes(page) && !html.includes('public/technology/aws.svg'))fail(file+': AWS branded SVG missing');
-    if(['home','volkswagen','enterprise'].includes(page) && !html.includes('public/technology/googlecloud.svg'))fail(file+': Google Cloud branded SVG missing');
-    if(['home','volkswagen','enterprise'].includes(page) && !html.includes('public/technology/kubernetes.svg'))fail(file+': Kubernetes branded SVG missing');
+    if(['home','volkswagen','enterprise'].includes(page) && !html.includes('class="tech-mark tech-text-mark"'))fail(file+': technology text identifiers missing');
+    if(['home','volkswagen','enterprise'].includes(page) && !html.includes('aria-label="Amazon Web Services"'))fail(file+': accessible AWS identifier missing');
+    if(['home','volkswagen','enterprise'].includes(page) && !html.includes('aria-label="Google Cloud"'))fail(file+': accessible Google Cloud identifier missing');
+    if(['home','volkswagen','enterprise'].includes(page) && !html.includes('public/technology/kubernetes.svg'))fail(file+': Kubernetes logo missing');
+    if(['home','volkswagen','enterprise'].includes(page) && /public\\/technology\\/(aws|googlecloud|vmware|terraform|pulumi|openstack|apachekafka)\\.svg/.test(html))fail(file+': unverified technology mark must not be displayed');
     if(page==='home' && !html.includes('Kops / AWS'))fail(file+': one-line Kops / AWS heading missing');
     if(page==='home' && !html.includes('public/technology/go.svg'))fail(file+': Go logo missing from Kops stage');
     if(!html.includes('data-privacy-notice'))fail(file+': privacy notice missing');
