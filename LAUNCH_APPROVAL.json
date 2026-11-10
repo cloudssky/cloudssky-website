@@ -1,12 +1,12 @@
 {
   "approved": false,
-  "reviewReference": "Pending review of official company records, legal text, brand usage, customer attribution and browser tests",
+  "reviewReference": "2026-11-10 owner publication authorization; CI proof and screenshot review; outstanding formal release checks documented in LAUNCH_CHECKLIST.md",
   "checks": {
     "legal": false,
     "privacy": false,
     "branding": false,
     "references": false,
-    "contact": false,
+    "contact": true,
     "browserQA": false,
     "hostingAndRedirects": false
   },
@@ -27,5 +27,39 @@
       "No extra preview address requested"
     ],
     "notes": "Owner explicitly authorized publication. Technical, legal, privacy, third-party brand/reference checks are still recorded separately; do not mark unverified checks as complete."
+  },
+  "verification": {
+    "date": "2026-11-10",
+    "contact": {
+      "status": "accepted",
+      "evidence": "Owner supplied calendly.com/cloudssky. Static contact page has direct mailto:support@cloudssky.com, telephone, calendly outbound link; no form. 28-page GitHub Actions QA checks contact links and no-form condition.",
+      "caveat": "External email delivery and Calendly booking completion not independently tested."
+    },
+    "legal": {
+      "status": "pending",
+      "reason": "Imprint still explicitly contains legal-review banner, old five-section liability boilerplate; current Handelsregister entry and editorial responsibility not independently verified."
+    },
+    "privacy": {
+      "status": "pending",
+      "reason": "DE and EN privacy pages still show REVIEW DRAFT and explicitly unspecified retention/processor/third-country details; planned hosting needs review."
+    },
+    "branding": {
+      "status": "pending",
+      "reason": "Customer and technology SVG marks were drawn from community collections; trademark use approvals not confirmed."
+    },
+    "references": {
+      "status": "pending",
+      "reason": "Project attributions and client case-study permissions not separately verified."
+    },
+    "browserQA": {
+      "status": "partial",
+      "evidence": "Owner supplied Chrome desktop screenshots and confirmed cloud dragging works; CI validates HTML/assets/links.",
+      "reason": "Safari, mobile, keyboard and screen-reader behavior not fully tested."
+    },
+    "hostingAndRedirects": {
+      "status": "partial",
+      "evidence": "Owner screenshot confirms GitHub Pages Source=GitHub Actions, Cloudflare currently A cloudssky.com/www -> 46.16.74.96 and Google Workspace MX records.",
+      "reason": "Custom domain, final Pages deployment, HTTPS, redirect and rollback checks cannot be completed until actual deployment; do not modify MX/TXT/mail records."
+    }
   }
 }
