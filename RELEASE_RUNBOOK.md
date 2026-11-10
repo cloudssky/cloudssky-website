@@ -3,7 +3,7 @@
 ## Release state
 - Owner authorized public launch of `cloudssky.com` via chat on 2026-11-10.
 - GitHub Pages **Source = GitHub Actions** was enabled by owner (screenshot).
-- PR #1 from `website-relaunch-v1` to `main` remains open; current CI is green.
+- PR #1 was squash-merged into `main` on 2026-11-10 as `ae09c757bfe356504f9abd0d068c0f4730e6a6c1`. Pre-merge PR CI passed; successful production deployment has **not** been verified.
 - `LAUNCH_APPROVAL.json` keeps a default-deny gate until each outstanding release check is verified.
 - User prefers **direct production cutover**; no separate preview address.
 - Legacy website is presently routed through Cloudflare A records to `46.16.74.96` (owner screenshot), and Google Workspace MX records must remain unchanged.
@@ -19,8 +19,8 @@
 ## GitHub Pages activation
 1. Settings > Pages > Source: **GitHub Actions** (already done).
 2. After all sign-offs, set `approved=true` and all seven `checks` to true in `LAUNCH_APPROVAL.json`, each with evidence, and review the separate release commit. Do not remove or bypass `scripts/launch-gate.mjs`.
-3. Mark PR #1 ready and merge to `main` (or review/merge if already ready).
-4. In GitHub Actions, inspect **Deploy Clouds Sky to GitHub Pages**: `Verify production release approval`, prerender, upload and deployment must all succeed.
+3. **Completed:** PR #1 was marked ready and merged into `main` on 2026-11-10; do not repeat this step.
+4. After the verified release gate is approved, in GitHub Actions inspect **Deploy Clouds Sky to GitHub Pages**: `Verify production release approval`, prerender, upload and deployment must all succeed.
 5. Set custom domain `cloudssky.com` under Settings > Pages. GitHub might take some time to issue TLS. **Do not enable Enforce HTTPS until a valid certificate is issued.**
 
 ## Cloudflare DNS cutover (once approved and Pages is deployable)
@@ -61,3 +61,10 @@ If the website fails, restore original apex and www web DNS record values and Cl
 - GitHub Pages docs: https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages
 - Public business directory cross-check (not official register): https://handelsregister.ai/de/organizations/koeln/datenverarbeitung-hosting-und-damit-verbundene-taetigkeiten-a-n-g/clouds-sky-gmbh-50f0e49044e578f29aa3751561cfb611
 - Current official commercial register document still required for formal confirmation.
+
+## Post-merge verification — 2026-11-10
+- Merge confirmed by GitHub: PR #1, squash commit `ae09c757bfe356504f9abd0d068c0f4730e6a6c1`.
+- The `main` branch contains `LAUNCH_APPROVAL.json` with `approved=false`; all checks except `contact` still false. **Do not bypass or falsely approve.**
+- Pages workflow present on `main`; it invokes `scripts/launch-gate.mjs` before pre-render and deployment. Connector workflow-run lookup only exposes PR-triggered runs, therefore absence of a result does **not** establish whether the push-triggered Pages run started or failed.
+- Remote HTTP/DNS verification inconclusive from the execution environment (DNS lookup unavailable); public search results show legacy site content but are not real-time evidence of routing.
+- Next steps: verify independent rights/legal/privacy and hands-on accessibility/browser testing, then evidence-backed release approval, deploy, validate certificate and DNS cutover while preserving mail records.
