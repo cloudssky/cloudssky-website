@@ -1,13 +1,13 @@
 {
   "approved": false,
-  "reviewReference": "2026-11-10: website owner explicitly approved all remaining content and editorial decisions, including named references and branding as displayed. External rights/legal compliance and functional deployment checks remain unverified; production gate unchanged.",
+  "reviewReference": "2026-11-10: owner attests supporting evidence reviewed for legal, privacy, references and browserQA; contact accepted. Branding external rights and hosting/HTTPS/redirect validation remain open. Gate stays closed.",
   "checks": {
-    "legal": false,
-    "privacy": false,
+    "legal": true,
+    "privacy": true,
     "branding": false,
-    "references": false,
+    "references": true,
     "contact": true,
-    "browserQA": false,
+    "browserQA": true,
     "hostingAndRedirects": false
   },
   "ownerContentApproval": {
@@ -39,24 +39,36 @@
       "caveat": "External email delivery and Calendly booking completion not independently tested."
     },
     "legal": {
-      "status": "pending",
+      "status": "owner_confirmed_evidence_reviewed",
       "reason": "The visible historical five-section blanket liability disclaimer and draft warning were removed from both imprint languages on 2026-11-10; company data remain owner-provided and require formal register/legal confirmation. Legal sign-off is still pending.",
-      "ownerSignoff": "Website owner approves content as displayed on 2026-11-10; no independent legal check reported."
+      "ownerSignoff": "Website owner approves content as displayed on 2026-11-10; no independent legal check reported.",
+      "ownerEvidenceAttestation": {
+        "date": "2026-11-10",
+        "source": "Website owner explicit confirmation in chat",
+        "statement": "Required supporting evidence is available and has been reviewed; underlying documents were not supplied for independent inspection in this chat.",
+        "scope": "legal"
+      }
     },
     "privacy": {
-      "status": "content_complete_pending_formal_signoff",
+      "status": "owner_confirmed_evidence_reviewed",
       "evidence": "DE/EN privacy notice rewritten on 2026-11-10 with eight sections covering GitHub Pages, Cloudflare DNS-only vs proxy, business email through Google Workspace, Calendly external link, localStorage privacy acknowledgement, purposes, legal bases, retention criteria, rights, international transfer disclosures and update date. No fabricated contractual terms or log retention figures.",
       "reason": "Owner must confirm actual Google Workspace/Calendly/Cloudflare/GitHub processing agreements or safeguards, any additional tools and actual lifecycle/retention processes. Independent legal review remains open; publication gate stays false.",
-      "ownerSignoff": "Website owner approves privacy text as displayed on 2026-11-10; provider arrangements and processing specifics not independently verified."
+      "ownerSignoff": "Website owner approves privacy text as displayed on 2026-11-10; provider arrangements and processing specifics not independently verified.",
+      "ownerEvidenceAttestation": {
+        "date": "2026-11-10",
+        "source": "Website owner explicit confirmation in chat",
+        "statement": "Required supporting evidence is available and has been reviewed; underlying documents were not supplied for independent inspection in this chat.",
+        "scope": "privacy"
+      }
     },
     "branding": {
-      "status": "partially_mitigated_pending_signoff",
+      "status": "owner_approved_external_rights_unverified",
       "evidence": "Replaced four customer SVG logos (Volkswagen, MAN, SAP and Deutsche Telekom) in the homepage ticker with neutral typographic customer-environment names; other customer names already text. This reduces reliance on third-party logo artwork but names and associated client relationships still require permission/attribution review. The Deutsche Post ticker entry is typographic text only; no Deutsche Post logo asset was added.",
-      "reason": "Manufacturer technology SVGs (AWS, Google Cloud, Kubernetes, Go) and named customer contexts remain displayed; their trademark/guideline checks and relationship clearances are still open.",
+      "reason": "Branding as displayed was approved by owner, but external trademark guideline and logo-use authorization was not explicitly attested in the four-category evidence confirmation.",
       "ownerSignoff": "Approved displayed visual choices by website owner via chat on 2026-11-10; third-party trademark guideline compliance independently unverified."
     },
     "references": {
-      "status": "pending_owner_signoff",
+      "status": "owner_confirmed_evidence_reviewed",
       "evidence": "Maintained three narrative case studies (Volkswagen, Bayer, MAN/SYNAOS) and qualifying text for variable contractual roles; homepage customer ticker note explicitly avoids general claim of direct client/partner status. An explicit 11-entity, URL-by-URL named-reference approval matrix was created in REFERENCE_APPROVAL_MATRIX.md. The legacy Volkswagen GKE article URL was replaced with the maintained internal Engineering Method page to avoid a cutover dead link. On 2026-11-10 the owner requested replacing Telekom with Deutsche Post in the public name-only ticker; Deutsche Post name-only ticker publication was explicitly approved by the owner on 2026-11-10; exact group entity and work scope remain undocumented.",
       "reason": "Confirm each project may be publicly named and details disclosed. Contractor and partner distinctions particularly important for MAN/SYNAOS/Kubernauts and VW.",
       "partialApprovals": {
@@ -65,15 +77,27 @@
           "approvedBy": "website owner via chat",
           "date": "2026-11-10",
           "scope": "Display the text Deutsche Post in the homepage project-experience ticker; no Deutsche Post brand logo, case study, or additional technical claims",
-          "note": "Other named references remain individually pending."
+          "note": "Owner now attests customer-reference evidence reviewed for the displayed scope; no new logo or additional claim authorized."
         }
       },
-      "ownerSignoff": "Approved all displayed named references by website owner via chat on 2026-11-10; customer confidentiality/publicity rights and case-study contractual attribution independently unverified."
+      "ownerSignoff": "Approved all displayed named references by website owner via chat on 2026-11-10; customer confidentiality/publicity rights and case-study contractual attribution independently unverified.",
+      "ownerEvidenceAttestation": {
+        "date": "2026-11-10",
+        "source": "Website owner explicit confirmation in chat",
+        "statement": "Required supporting evidence is available and has been reviewed; underlying documents were not supplied for independent inspection in this chat.",
+        "scope": "references"
+      }
     },
     "browserQA": {
-      "status": "partial",
+      "status": "owner_confirmed_evidence_reviewed",
       "evidence": "Owner supplied Chrome desktop screenshots and confirmed cloud dragging works; CI validates HTML/assets/links. CI adds a regression check preventing a known legacy cloudssky.com article link.",
-      "reason": "Safari, mobile, keyboard and screen-reader behavior not fully tested."
+      "reason": "Safari, mobile, keyboard and screen-reader behavior not fully tested.",
+      "ownerEvidenceAttestation": {
+        "date": "2026-11-10",
+        "source": "Website owner explicit confirmation in chat",
+        "statement": "Required supporting evidence is available and has been reviewed; underlying documents were not supplied for independent inspection in this chat.",
+        "scope": "browserQA"
+      }
     },
     "hostingAndRedirects": {
       "status": "partial",
