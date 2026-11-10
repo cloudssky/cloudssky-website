@@ -1,6 +1,6 @@
 {
   "approved": true,
-  "reviewReference": "2026-11-10: owner attested legal/privacy/references/browserQA; contact passed; technology marks mitigated with textual labels and referential unmodified Kubernetes logo; GitHub custom-domain DNS preflight passed. Authorized STAGED deployment; live HTTPS and redirects MUST be checked after deployment before hosting final signoff.",
+  "reviewReference": "2026-11-10: owner attests AWS and Google Cloud logo use permission; original logos restored, other technology logos remain risk-mitigated. Staged Pages deployment authorization remains valid. Post-deployment HTTPS, www and legacy redirect checks still required.",
   "checks": {
     "legal": true,
     "privacy": true,
@@ -62,12 +62,12 @@
       }
     },
     "branding": {
-      "status": "approved_for_current_display_only",
+      "status": "approved_for_current_display_owner_attested",
       "evidence": "Replaced four customer SVG logos (Volkswagen, MAN, SAP and Deutsche Telekom) in the homepage ticker with neutral typographic customer-environment names; other customer names already text. This reduces reliance on third-party logo artwork but names and associated client relationships still require permission/attribution review. The Deutsche Post ticker entry is typographic text only; no Deutsche Post logo asset was added.",
-      "reason": "Conditional owner design approval respected with safe substitutions for unverified marks; Kubernetes shown as an unmodified referential identifier, not in company logo or sponsorship presentation. Any new technology logos require fresh review.",
+      "reason": "Current display approved according to website owner's express rights confirmation; review again before new logo uses or implying vendor partnerships.",
       "ownerSignoff": "Approved displayed visual choices by website owner via chat on 2026-11-10; third-party trademark guideline compliance independently unverified.",
-      "ownerDecision": "Owner requests keeping technology logos only where permitted, 2026-11-10.",
-      "evidenceReview": "Public website now uses accessible styled text labels for AWS, Google Cloud, VMware, OpenStack, Terraform, Pulumi, Apache Kafka and Go; only Kubernetes SVG remains in editorial technology diagrams. Go logo removed because it would appear beside another mark. Kubernetes kept without recoloring and with explicit non-endorsement wording. Official references: https://go.dev/brand, https://github.com/kubernetes/kubernetes/blob/master/logo/usage_guidelines.md, https://www.linuxfoundation.org/legal/trademark-usage. This is a scope-limited release review, not a transferable trademark license."
+      "ownerDecision": "2026-11-10: website owner explicitly confirmed Clouds Sky can use the original AWS and Google Cloud logos on the current website.",
+      "evidenceReview": "AWS and Google Cloud original SVG logos restored on home, Volkswagen case and enterprise technology sections, without alteration and without partnership/endorsement claims. Owner attests authorization to use both logos; underlying rights documentation not independently examined. Kubernetes remains referential, Go/other unverified logo assets stay replaced with text. See TECHNOLOGY_BRAND_REVIEW.md."
     },
     "references": {
       "status": "owner_confirmed_evidence_reviewed",
