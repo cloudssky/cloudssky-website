@@ -227,3 +227,17 @@
 .privacy-notice .privacy-notice-dismiss{flex:none;border-color:#d6e8f3;color:#0e1a2b;background:#fff;padding:11px 17px}
 .privacy-notice .privacy-notice-dismiss:hover{background:#e1f4ff}
 @media(max-width:650px){.privacy-notice{bottom:10px;padding:18px;align-items:stretch;flex-direction:column;gap:13px}.privacy-notice .privacy-notice-dismiss{align-self:flex-end}}
+
+/* Branded AWS and Google Cloud originals: unfiltered color marks on white fields */
+.timeline .tech-logo-shell{display:flex;align-items:center;justify-content:center;min-height:49px;margin:11px auto 8px;transform:none!important}
+.timeline .tech-logo-shell .tech-mark,.timeline .tech-aws-pair .tech-mark,.timeline .tech-pair .tech-mark[src*="googlecloud.svg"]{filter:none;opacity:1;background:#fff;border-radius:7px;padding:5px;box-sizing:content-box;max-width:100%}
+.timeline .tech-logo-shell .tech-mark{width:60px;height:38px;margin:0;object-fit:contain}
+.timeline .tech-aws-pair{align-items:center;flex-wrap:wrap}
+.timeline .tech-aws-pair .tech-mark[src*="aws.svg"]{width:50px;height:37px;object-fit:contain}
+.timeline .tech-pair .tech-mark[src*="googlecloud.svg"]{width:36px;height:36px}
+.technology-logos{grid-template-columns:repeat(8,minmax(0,1fr))}
+.technology-logo .tech-mark[src*="aws.svg"],.technology-logo .tech-mark[src*="googlecloud.svg"]{filter:none;opacity:1;object-fit:contain}
+.technology-logo .tech-mark[src*="aws.svg"]{width:66px;height:44px}
+.technology-logo .tech-mark[src*="googlecloud.svg"]{width:43px;height:43px}
+@media(max-width:1050px){.technology-logos{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(max-width:600px){.technology-logos{grid-template-columns:repeat(2,minmax(0,1fr))}.timeline .tech-logo-shell,.timeline .tech-aws-pair,.timeline .tech-pair{transform:none!important}}
