@@ -706,3 +706,7 @@
     letter-spacing:-.018em;
   }
 }
+
+/* Release-safe customer rail: neutral typographic company references, no unapproved brand artwork. */
+.client-rail .client.client-name{display:flex;align-items:center;justify-content:center;min-width:130px;min-height:46px}
+.client-rail .client.client-name span{font-weight:750;font-size:clamp(.95rem,1.28vw,1.13rem);letter-spacing:-.035em;white-space:nowrap}
