@@ -783,6 +783,13 @@
  text-transform:none!important;
 }
 
+/* Volkswagen timeline: align AWS and Golang with the Terraform/Pulumi label row. */
+.timeline .tech-logo-stack img.tech-mark[src*="aws.svg"],
+.timeline .tech-logo-stack span.tech-language-name{
+  position:relative;
+  top:3px;
+}
+
 /* Home: bring the selected engineering work closer to the four disciplines. */
 .home-expertise{padding-bottom:30px}
 .home-expertise + .selected-project-section{padding-top:36px}
