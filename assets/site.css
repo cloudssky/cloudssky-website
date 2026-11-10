@@ -363,3 +363,7 @@
 .timeline .tech-pair .tech-mark[src*="kubernetes.svg"]{width:36px;height:36px}
 .technology-logo .tech-mark[src*="kubernetes.svg"]{filter:none;opacity:1;width:43px;height:43px;object-fit:contain}
 .timeline .timeline-heading{display:block;white-space:nowrap;line-height:1.35}
+
+/* VW architecture: compact single-line application stack label */
+.tech-stack span:first-child{white-space:nowrap}
+@media(max-width:600px){.tech-stack span:first-child{white-space:normal}}
