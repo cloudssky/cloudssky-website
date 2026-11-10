@@ -1,6 +1,6 @@
 {
   "approved": false,
-  "reviewReference": "2026-11-10 owner authorizes release, privacy copy completed and verified by CI; remaining formal provider/data-protection and branding/references/accessibility/hosting signoffs pending.",
+  "reviewReference": "2026-11-10: website owner explicitly approved all remaining content and editorial decisions, including named references and branding as displayed. External rights/legal compliance and functional deployment checks remain unverified; production gate unchanged.",
   "checks": {
     "legal": false,
     "privacy": false,
@@ -13,8 +13,11 @@
   "ownerContentApproval": {
     "imprintCorporateData": true,
     "privacyDraftReviewed": true,
-    "confirmedBy": "Website owner via chat, 2026-11-10",
-    "scope": "Owner approves corporate information and requests publication readiness; no assertion of independent legal compliance or processing arrangements. The release gate remains active."
+    "confirmedBy": "Website owner via chat, 2026-11-10 ('alles andere ist auch freigegeben')",
+    "scope": "Owner approves all remaining website editorial content and current public representations, including name-only Deutsche Post in place of Telekom. This does not establish third-party permission, legal verification, browser QA or hosting readiness.",
+    "allRemainingEditorialContent": true,
+    "namedReferencesAsDisplayed": true,
+    "brandingAsDisplayed": true
   },
   "ownerPublicationAuthorization": {
     "authorized": true,
@@ -37,17 +40,20 @@
     },
     "legal": {
       "status": "pending",
-      "reason": "The visible historical five-section blanket liability disclaimer and draft warning were removed from both imprint languages on 2026-11-10; company data remain owner-provided and require formal register/legal confirmation. Legal sign-off is still pending."
+      "reason": "The visible historical five-section blanket liability disclaimer and draft warning were removed from both imprint languages on 2026-11-10; company data remain owner-provided and require formal register/legal confirmation. Legal sign-off is still pending.",
+      "ownerSignoff": "Website owner approves content as displayed on 2026-11-10; no independent legal check reported."
     },
     "privacy": {
       "status": "content_complete_pending_formal_signoff",
       "evidence": "DE/EN privacy notice rewritten on 2026-11-10 with eight sections covering GitHub Pages, Cloudflare DNS-only vs proxy, business email through Google Workspace, Calendly external link, localStorage privacy acknowledgement, purposes, legal bases, retention criteria, rights, international transfer disclosures and update date. No fabricated contractual terms or log retention figures.",
-      "reason": "Owner must confirm actual Google Workspace/Calendly/Cloudflare/GitHub processing agreements or safeguards, any additional tools and actual lifecycle/retention processes. Independent legal review remains open; publication gate stays false."
+      "reason": "Owner must confirm actual Google Workspace/Calendly/Cloudflare/GitHub processing agreements or safeguards, any additional tools and actual lifecycle/retention processes. Independent legal review remains open; publication gate stays false.",
+      "ownerSignoff": "Website owner approves privacy text as displayed on 2026-11-10; provider arrangements and processing specifics not independently verified."
     },
     "branding": {
       "status": "partially_mitigated_pending_signoff",
       "evidence": "Replaced four customer SVG logos (Volkswagen, MAN, SAP and Deutsche Telekom) in the homepage ticker with neutral typographic customer-environment names; other customer names already text. This reduces reliance on third-party logo artwork but names and associated client relationships still require permission/attribution review. The Deutsche Post ticker entry is typographic text only; no Deutsche Post logo asset was added.",
-      "reason": "Manufacturer technology SVGs (AWS, Google Cloud, Kubernetes, Go) and named customer contexts remain displayed; their trademark/guideline checks and relationship clearances are still open."
+      "reason": "Manufacturer technology SVGs (AWS, Google Cloud, Kubernetes, Go) and named customer contexts remain displayed; their trademark/guideline checks and relationship clearances are still open.",
+      "ownerSignoff": "Approved displayed visual choices by website owner via chat on 2026-11-10; third-party trademark guideline compliance independently unverified."
     },
     "references": {
       "status": "pending_owner_signoff",
@@ -61,7 +67,8 @@
           "scope": "Display the text Deutsche Post in the homepage project-experience ticker; no Deutsche Post brand logo, case study, or additional technical claims",
           "note": "Other named references remain individually pending."
         }
-      }
+      },
+      "ownerSignoff": "Approved all displayed named references by website owner via chat on 2026-11-10; customer confidentiality/publicity rights and case-study contractual attribution independently unverified."
     },
     "browserQA": {
       "status": "partial",
