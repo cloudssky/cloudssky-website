@@ -15,7 +15,7 @@
 
 ## Mandatory sign-offs — contact verified; remaining checks pending
 1. **Legal:** The website owner approves the supplied corporate data for the imprint (2026-11-10); this does not replace independent legal verification of the historical disclaimer. The user supplied the old imprint with both managing directors (Stephan Hartmann and Arash Kaffamanesh), Amtsgericht Köln HRB 70999, VAT ID DE815247371, tax number 215/5808/2975 and Finance Office: Cologne Center. These details are now included, but current registry/tax data and the historical five-section disclaimer still require legal verification. The cited law was modernized from § 5 TMG to § 5 DDG. Confirm editorial responsibility and other mandatory notices.
-2. **Privacy:** Owner requests publication. GitHub Pages has been identified as planned host and its documented visitor IP logging is now disclosed in both language versions. Verify actual hosting, logs, retention, processor agreements, third-country transfers and contact data processing before GDPR Art. 13 sign-off.
+2. **Privacy (content drafted and ready for owner review):** Eight sections in DE/EN now describe GitHub Pages, Cloudflare DNS-only vs proxy, Google Workspace, Calendly external bookings, the localStorage preference and GDPR rights. The text contains no visible internal draft warning. Confirm actual hosting, processing terms, retention criteria, international transfer mechanisms and business procedures before formal GDPR Art. 13 sign-off.
 3. **Branding:** Approve customer logo usage and replace preliminary Simple Icons SVGs with approved marks when needed. Customer name permission is not the same as trademark asset approval.
 4. **References:** Approve customer project narratives and contracting attributions, especially MAN / SYNAOS / Kubernauts and Volkswagen partner relationships. Validate Company roles and imagery.
 5. **Contact (approved for current no-form scope, 2026-11-10):** `support@cloudssky.com` is the intended intake. See CONTACT_INTEGRATION.md for recommended server-side Turnstile verification, mail provider and optional external Calendly scheduling. The current website intentionally has **no form**; visitors can email directly or open the external Calendly page. If a form is later required, select a service/provider, configure secure server-side delivery/anti-spam and revise privacy text.
@@ -51,3 +51,9 @@ The preliminary third-party client marks under `public/clients/` and technology 
 - Retained owner-supplied legal identifiers without representing them as independently certified. The named managing directors, register and tax details, editorial responsibility and applicable legal requirements still require formal review.
 - Latest website QA passed after imprint cleanup.
 - The **privacy pages still contain REVIEW DRAFT** and MUST be completed before the public release gate is approved.
+
+## Privacy copy update — 2026-11-10
+- Replaced both visible privacy review drafts with readable DE/EN notices of eight sections, including purpose and legal basis by processing category, data recipients, data-subject rights, NRW regulator, and last-updated date.
+- Describes GitHub Pages security logging and Cloudflare DNS-only setup, Google Workspace for email, Calendly as external link, and localStorage privacy-notice acknowledgement.
+- Provider-specific storage periods and contractual transfer safeguards were not invented; retention criteria and the availability of transfer information are disclosed without claiming verified signed agreements.
+- **Formal privacy release status remains pending** until current provider setup, arrangements, and documented retention processes are checked. Do not set `checks.privacy=true` solely because the copy is finished.
