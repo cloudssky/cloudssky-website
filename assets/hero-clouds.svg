@@ -1,33 +1,33 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 620" fill="none" aria-hidden="true">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
 <defs>
-  <linearGradient id="cloudLight" x1="200" y1="80" x2="1500" y2="520" gradientUnits="userSpaceOnUse">
-    <stop stop-color="#fff" stop-opacity=".08"/>
-    <stop offset=".35" stop-color="#fff" stop-opacity=".7"/>
-    <stop offset=".75" stop-color="#f4fbff" stop-opacity=".82"/>
-    <stop offset="1" stop-color="#bedff5" stop-opacity=".22"/>
+  <linearGradient id="cloudWhite" x1="0" y1="0" x2="0.22" y2="1">
+    <stop stop-color="#FFFFFF" stop-opacity=".98"/>
+    <stop offset=".67" stop-color="#F6FBFF" stop-opacity=".93"/>
+    <stop offset="1" stop-color="#D9EEFC" stop-opacity=".80"/>
   </linearGradient>
-  <linearGradient id="cloudShade" x1="550" y1="230" x2="1220" y2="560" gradientUnits="userSpaceOnUse">
-    <stop stop-color="#e8f6ff" stop-opacity=".05"/>
-    <stop offset=".55" stop-color="#75b9e6" stop-opacity=".28"/>
-    <stop offset="1" stop-color="#6faed7" stop-opacity=".08"/>
+  <linearGradient id="cloudBlue" x1="0" y1="0" x2="0" y2="1">
+    <stop stop-color="#F6FCFF" stop-opacity=".90"/>
+    <stop offset="1" stop-color="#9AC9E8" stop-opacity=".75"/>
   </linearGradient>
-  <filter id="soft" x="-20%" y="-40%" width="140%" height="180%">
-    <feGaussianBlur stdDeviation="19"/>
+  <filter id="shadow" x="-40%" y="-70%" width="180%" height="230%">
+    <feGaussianBlur stdDeviation="15"/>
   </filter>
-  <filter id="halo" x="-20%" y="-40%" width="140%" height="180%">
-    <feGaussianBlur stdDeviation="43"/>
+  <filter id="soften" x="-20%" y="-30%" width="140%" height="160%">
+    <feGaussianBlur stdDeviation="3.5"/>
   </filter>
 </defs>
-<!-- A few diffuse, layered cloud silhouettes: transparent enough for the hero copy -->
-<g filter="url(#halo)" opacity=".72">
-  <path d="M550 330c65-75 157-93 231-75 54-80 164-102 236-48 94-89 218-49 242 33 124-35 233 26 262 115l-27 90H565Z" fill="#fff"/>
-  <path d="M773 525c72-70 167-75 238-54 62-69 154-83 217-41 90-66 175-20 211 51 80-9 141 43 167 90v49H780Z" fill="#97c9e8"/>
+<!-- Distinct cumulus profiles, placed on the open right side of the hero. -->
+<g opacity=".88">
+ <path d="M610 257c0-24 20-45 46-45 9-40 43-67 84-64 27-43 89-50 126-15 30-14 70-3 88 24 43-8 79 22 81 61 24 10 34 23 34 39 0 26-21 47-48 47H665c-34 0-55-17-55-47Z" fill="#397DB0" opacity=".20" filter="url(#shadow)" transform="translate(11 17)"/>
+ <path d="M610 257c0-24 20-45 46-45 9-40 43-67 84-64 27-43 89-50 126-15 30-14 70-3 88 24 43-8 79 22 81 61 24 10 34 23 34 39 0 26-21 47-48 47H665c-34 0-55-17-55-47Z" fill="url(#cloudWhite)" stroke="#A4D0EC" stroke-opacity=".60" stroke-width="2" filter="url(#soften)"/>
+ <path d="M670 265c37 6 78 3 114-12 35-16 82-18 121-9 32 9 68 9 100 4" stroke="#B5D9F2" stroke-width="3" opacity=".42"/>
 </g>
-<g filter="url(#soft)">
-  <path d="M505 375c46-58 126-74 194-52 40-69 123-101 208-72 56-68 164-90 235-32 89-38 182 15 202 81 122-6 189 60 188 127H500Z" fill="url(#cloudLight)"/>
-  <path d="M585 421c84-35 154-35 242-14 79-47 171-43 246-10 98-34 183-3 242 32 99-15 154 13 197 60v50H590Z" fill="url(#cloudShade)"/>
-  <path d="M874 548c52-47 131-56 189-29 46-62 135-73 195-31 63-40 151-13 195 43 68-6 123 30 145 70v34H850Z" fill="url(#cloudLight)"/>
+<g opacity=".74" transform="translate(52 80) scale(.68)">
+ <path d="M615 520c-4-31 24-54 54-54 13-32 47-47 80-38 29-42 88-41 115-4 42-10 83 8 92 42 32-5 68 15 68 47 0 23-17 40-42 40H663c-31 0-48-12-48-33Z" fill="#387EAF" opacity=".30" filter="url(#shadow)" transform="translate(8 17)"/>
+ <path d="M615 520c-4-31 24-54 54-54 13-32 47-47 80-38 29-42 88-41 115-4 42-10 83 8 92 42 32-5 68 15 68 47 0 23-17 40-42 40H663c-31 0-48-12-48-33Z" fill="url(#cloudBlue)" stroke="#A3CBE7" stroke-opacity=".55" stroke-width="2" filter="url(#soften)"/>
 </g>
-<path d="M600 429c230-52 420-10 602-3 128 5 230 24 349 13" stroke="#fff" stroke-opacity=".21" stroke-width="2"/>
-<path d="M818 525c181-42 385-23 573-11" stroke="#d8f0ff" stroke-opacity=".18" stroke-width="2"/>
+<g opacity=".65" transform="translate(220 -140) scale(.63)">
+ <path d="M680 284c0-24 18-42 43-42 12-45 57-68 98-51 29-40 94-34 118 12 42-4 78 24 78 61 21 8 30 21 30 34 0 20-18 37-40 37H715c-21 0-35-17-35-51Z" fill="#3E85B8" opacity=".25" filter="url(#shadow)" transform="translate(12 18)"/>
+ <path d="M680 284c0-24 18-42 43-42 12-45 57-68 98-51 29-40 94-34 118 12 42-4 78 24 78 61 21 8 30 21 30 34 0 20-18 37-40 37H715c-21 0-35-17-35-51Z" fill="url(#cloudWhite)" stroke="#95C4E2" stroke-opacity=".57" stroke-width="2" filter="url(#soften)"/>
+</g>
 </svg>
