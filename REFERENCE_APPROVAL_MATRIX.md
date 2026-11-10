@@ -14,7 +14,7 @@
 | Covestro | Selected Work, client ticker | Recruiting portal, SAP integration | Confirm public name and work scope | PENDING |
 | Vaillant | Selected Work, client ticker | Kafka on Microsoft Azure | Confirm public name and project scope | PENDING |
 | SAP | Client ticker | Name only, no technical detail in ticker | Confirm that referring to SAP as customer/project experience is accurate; distinguish technology provider from contractual customer | PENDING |
-| Deutsche Post | Client ticker | Name only | Confirm exact Deutsche Post/DHL entity, project scope, contractual role and permission for public name use | PENDING |
+| Deutsche Post | Client ticker | **Name only** (no logo or detailed project claim) | Owner explicitly approved the public name-only ticker reference on 2026-11-10; precise group entity, scope and contractual role are not yet documented | **APPROVED — TEXT ONLY** |
 | WWK | Client ticker | Name only | Confirm exact business entity, scope and permitted mention | PENDING |
 | Enovos | Client ticker | Name only | Confirm exact business entity, scope and permitted mention | PENDING |
 
@@ -47,3 +47,6 @@ For each named reference, append:
 - Approved public URL(s):
 
 Set `LAUNCH_APPROVAL.json.checks.references=true` only when every retained named reference is reviewed; set `checks.branding=true` only when every displayed mark is checked or substituted with an approved alternative.
+
+### Deutsche Post — explicit owner approval (2026-11-10)
+The owner replied **„Freigabe“** immediately after the Telekom → Deutsche Post homepage ticker substitution. This records permission to display **Deutsche Post as text in the customer-experience ticker only**. It does not authorize a Deutsche Post logo, an additional case study, or undisclosed project details. The current ticker notes that roles and contracting arrangements vary.
