@@ -23,3 +23,10 @@ The initial AWS/Google Cloud full-color assets came from a community logo collec
 - Do not claim this audit is legal permission or sign-off.
 - Resolution options: attach official written permissions/brand approvals for restricted marks, or replace *only* the unverified marks with styled technology text labels, while retaining marks with confirmed permitted use. Update layout/QA assertions accordingly.
 - Post-deployment hosting checks remain separate and may be completed only after successful deployment.
+
+## Implemented mitigation for staged release — 2026-11-10
+- `assets/site.js` now renders accessible compact typographic labels (not SVG artwork) for AWS, Google Cloud, VMware, Terraform, Pulumi, OpenStack, Apache Kafka and Go. Names remain factual technology references.
+- The Go SVG is not used in the public timeline because it would be adjacent to AWS, contrary to the Go brand rules without review. https://go.dev/brand
+- Kubernetes remains as a referential technology logo, with original colors preserved in `assets/site.css`. The page explicitly says technology mentions are not manufacturer partnerships. https://github.com/kubernetes/kubernetes/blob/master/logo/usage_guidelines.md and https://www.linuxfoundation.org/legal/trademark-usage
+- `scripts/check-site.mjs` now checks the text-label presentation and rejects use of the unverified logos in generated pages.
+- This confirms the branding release gate **for the current presentation only**. Do not reuse this sign-off for new logos or different commercial/logo placements. Asset files retained in repository are not automatically license-cleared for public display.
