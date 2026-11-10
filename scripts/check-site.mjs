@@ -48,6 +48,9 @@ for(const lang of ['de','en']){
       for(const role of ['CEO · Cloud Architect','CEO · Enterprise Software Architect','SRE Solution Architect']){
         if(!html.includes(role))fail(file+': expected team role missing: '+role);
       }
+      const order=['Anja Daniels','Stephan Hartmann','Arash Kaffamanesh','Daniel Santiago Gawenda','Christian Weihs','Tim Stellfeldt'];
+      if(!order.every((name,i)=>html.includes(name) && (i===0 || html.indexOf(order[i-1])<html.indexOf(name))))fail(file+': team order differs from requested three-column layout');
+      if(!html.includes('Office & Finance'))fail(file+': Anja role missing');
     }
     if(page==='bayer' && !html.includes('Document Management'))fail(file+': Bayer content missing');
     if(page==='man-industrial-messaging' && !html.includes('KubeMQ'))fail(file+': MAN content missing');
