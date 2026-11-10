@@ -722,7 +722,7 @@
 
 /* Timeline V3.3: compact text badges must not inherit old SVG sizing or white backgrounds. */
 .dark.project-grid .timeline>div{min-width:0;overflow:hidden}
-.timeline .tech-logo-stack{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:7px;min-height:100px;margin:8px auto 7px}
+.timeline .tech-logo-stack{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;min-height:62px;margin:8px auto 7px}
 .timeline .tech-logo-shell span.tech-text-mark,
 .timeline .tech-pair span.tech-text-mark,
 .timeline .tech-aws-pair span.tech-text-mark{
@@ -742,7 +742,7 @@
 .timeline .tech-pair{display:flex;align-items:center;justify-content:center;flex-wrap:nowrap;gap:7px;min-height:62px}
 .timeline .tech-pair img.tech-mark[src*="kubernetes.svg"]{flex:0 0 38px;box-sizing:border-box;width:38px;height:38px;padding:4px;margin:0;object-fit:contain;background:#fff}
 .technology-logo span.tech-text-mark{box-sizing:border-box;padding:0!important;min-width:42px;width:42px;height:42px;font-size:12px;white-space:nowrap}
-@media(max-width:600px){.timeline .tech-logo-stack{min-height:96px}.timeline .tech-pair{min-height:55px}}
+@media(max-width:600px){.timeline .tech-logo-stack{min-height:55px}.timeline .tech-pair{min-height:55px}}
 
 /* AWS and Google Cloud: authorized original artwork, full brand colors. */
 .timeline img.tech-mark[src*="aws.svg"],
@@ -752,8 +752,8 @@
  border-radius:8px;background:#fff;filter:none!important;opacity:1!important;
  object-fit:contain;margin:0;
 }
-.timeline .tech-logo-stack img.tech-mark[src*="aws.svg"]{width:64px;height:38px;padding:4px 6px}
-.timeline .tech-logo-stack{gap:7px}
+.timeline .tech-logo-stack img.tech-mark[src*="aws.svg"]{width:42px;height:38px;padding:5px}
+.timeline .tech-logo-stack{gap:6px}
 .timeline .tech-pair img.tech-mark[src*="aws.svg"],
 .timeline .tech-pair img.tech-mark[src*="googlecloud.svg"]{width:42px;height:38px}
 .technology-logo img.tech-mark[src*="aws.svg"],
