@@ -787,10 +787,10 @@
 .timeline .tech-logo-stack img.tech-mark[src*="aws.svg"],
 .timeline .tech-logo-stack span.tech-language-name{
   position:relative;
-  top:3px;
+  top:5px;
 }
 .timeline .tech-logo-stack span.tech-language-name{
-  top:5px;
+  top:10px;
 }
 
 /* Home: bring the selected engineering work closer to the four disciplines. */
