@@ -816,3 +816,16 @@
 @media(max-width:600px){
   .timeline>div{min-height:166px}
 }
+
+/* Team portraits and digital colleagues */
+.people{align-items:stretch}
+.person{overflow:hidden;border:1px solid #d7e3ed;border-top:2px solid #91bfda;border-radius:12px;background:#fff;padding:0}
+.person img{display:block;width:100%;aspect-ratio:3/4;object-fit:cover;object-position:center 30%;background:#18202a}
+.person-info{padding:16px 17px 20px}
+.person-info b{font-size:1.05rem;line-height:1.4}
+.person-info small{font-size:.85rem;line-height:1.5;margin-top:4px}
+.digital-team{margin-top:65px;padding-top:30px;border-top:1px solid var(--line)}
+.people-digital{grid-template-columns:repeat(2,minmax(0,1fr));max-width:800px}
+.person-digital{border-top-color:#c42a35}
+.team-disclosure{max-width:800px;margin:18px 0 0;color:#586b7b;font-size:.88rem;line-height:1.65}
+@media(max-width:600px){.people-digital{grid-template-columns:1fr}.digital-team{margin-top:44px}}
