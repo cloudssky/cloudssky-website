@@ -45,12 +45,14 @@
       "reason": "Owner must confirm actual Google Workspace/Calendly/Cloudflare/GitHub processing agreements or safeguards, any additional tools and actual lifecycle/retention processes. Independent legal review remains open; publication gate stays false."
     },
     "branding": {
-      "status": "pending",
-      "reason": "Customer and technology SVG marks were drawn from community collections; trademark use approvals not confirmed."
+      "status": "partially_mitigated_pending_signoff",
+      "evidence": "Replaced four customer SVG logos (Volkswagen, MAN, SAP and Deutsche Telekom) in the homepage ticker with neutral typographic customer-environment names; other customer names already text. This reduces reliance on third-party logo artwork but names and associated client relationships still require permission/attribution review.",
+      "reason": "Manufacturer technology SVGs (AWS, Google Cloud, Kubernetes, Go) and named customer contexts remain displayed; their trademark/guideline checks and relationship clearances are still open."
     },
     "references": {
-      "status": "pending",
-      "reason": "Project attributions and client case-study permissions not separately verified."
+      "status": "pending_owner_signoff",
+      "evidence": "Maintained three narrative case studies (Volkswagen, Bayer, MAN/SYNAOS) and qualifying text for variable contractual roles; homepage customer ticker note explicitly avoids general claim of direct client/partner status.",
+      "reason": "Confirm each project may be publicly named and details disclosed. Contractor and partner distinctions particularly important for MAN/SYNAOS/Kubernauts and VW."
     },
     "browserQA": {
       "status": "partial",
