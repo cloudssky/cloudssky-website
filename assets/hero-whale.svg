@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 400" fill="none" aria-hidden="true">
+<defs>
+ <linearGradient id="body" x1="270" y1="90" x2="410" y2="312" gradientUnits="userSpaceOnUse">
+  <stop stop-color="#6DCEEC" stop-opacity=".78"/>
+  <stop offset=".21" stop-color="#2E95BF" stop-opacity=".88"/>
+  <stop offset=".56" stop-color="#07547F" stop-opacity=".94"/>
+  <stop offset=".88" stop-color="#073A62" stop-opacity=".94"/>
+  <stop offset="1" stop-color="#0B567D" stop-opacity=".85"/>
+ </linearGradient>
+ <linearGradient id="belly" x1="300" y1="200" x2="400" y2="320" gradientUnits="userSpaceOnUse">
+  <stop stop-color="#A0E3E9" stop-opacity=".69"/>
+  <stop offset=".6" stop-color="#4AB9CC" stop-opacity=".6"/>
+  <stop offset="1" stop-color="#156D97" stop-opacity=".2"/>
+ </linearGradient>
+ <linearGradient id="fin" x1="425" y1="212" x2="485" y2="350" gradientUnits="userSpaceOnUse">
+  <stop stop-color="#4FBDE2" stop-opacity=".77"/>
+  <stop offset="1" stop-color="#09466E" stop-opacity=".8"/>
+ </linearGradient>
+ <radialGradient id="rim"><stop stop-color="#67DEFA" stop-opacity=".36"/><stop offset="1" stop-color="#67DEFA" stop-opacity="0"/></radialGradient>
+ <filter id="glimmer" x="-30%" y="-40%" width="160%" height="180%">
+   <feGaussianBlur stdDeviation="8"/>
+ </filter>
+ <filter id="texture" x="0" y="0" width="100%" height="100%">
+   <feTurbulence type="fractalNoise" baseFrequency=".024 .095" numOctaves="3" seed="7" result="noise"/>
+   <feColorMatrix in="noise" type="saturate" values="0" result="gray"/>
+   <feComponentTransfer in="gray" result="soft"><feFuncA type="linear" slope=".12"/></feComponentTransfer>
+   <feBlend in="SourceGraphic" in2="soft" mode="screen"/>
+ </filter>
+</defs>
+<!-- A humpback whale swimming left at a slight angle below the sea surface. -->
+<ellipse cx="543" cy="214" rx="395" ry="150" fill="url(#rim)" filter="url(#glimmer)"/>
+<g opacity=".82">
+ <path d="M675 167 C778 117 825 122 865 146 C909 134 968 118 1007 111 C975 133 961 153 947 175 C981 187 1004 209 1023 234 C972 210 926 208 889 196 C841 201 773 225 702 231Z" fill="#0A5B87" stroke="#4AC5E4" stroke-opacity=".38" stroke-width="3"/>
+ <path d="M672 172 C810 171 894 150 979 125" stroke="#82DDF2" stroke-opacity=".28" stroke-width="3"/>
+ <path d="M402 126 C481 106 570 120 637 157 C672 181 696 199 737 201 C719 215 686 218 660 210 C590 204 487 175 402 126Z" fill="#1F83AC" opacity=".83"/>
+ <path d="M629 156 C678 149 727 164 768 202 C756 192 716 188 687 191Z" fill="#8EDAF0" opacity=".46"/>
+ <path d="M152 194 C159 169 188 161 216 157 C245 132 295 106 358 101 C419 96 494 100 544 120 C609 135 657 157 717 167 C751 173 770 179 798 182 C785 195 769 205 738 214 C695 233 631 241 561 252 C508 266 462 278 415 278 C357 274 312 258 273 247 C235 249 197 247 169 236 C151 227 143 212 152 194Z" fill="url(#body)" stroke="#7BDAF4" stroke-opacity=".4" stroke-width="3" filter="url(#texture)"/>
+ <path d="M151 213 C211 245 300 233 374 248 C442 259 513 260 586 240 C532 290 430 298 337 276 C267 259 206 254 178 236Z" fill="url(#belly)" opacity=".72"/>
+ <path d="M356 246 C399 250 446 248 495 247 C464 277 478 324 535 364 C486 356 436 320 412 297 C379 272 366 260 356 246Z" fill="url(#fin)" stroke="#77DAF4" stroke-opacity=".4" stroke-width="3"/>
+ <path d="M420 278 C439 312 471 338 523 357" stroke="#9BE5EB" stroke-opacity=".47" stroke-width="3"/>
+ <path d="M152 201 C179 185 204 182 230 185" stroke="#8BDEF3" stroke-opacity=".56" stroke-width="3" stroke-linecap="round"/>
+ <path d="M199 235 C259 242 303 241 367 250" stroke="#B2E5EB" stroke-opacity=".3" stroke-width="2"/>
+ <path d="M217 242 C268 255 301 256 347 259" stroke="#D4F3F0" stroke-opacity=".27" stroke-width="2"/>
+ <path d="M235 252 C272 264 313 270 346 268" stroke="#D4F3F0" stroke-opacity=".21" stroke-width="2"/>
+ <path d="M257 259 C296 277 337 278 364 275" stroke="#D4F3F0" stroke-opacity=".18" stroke-width="2"/>
+ <ellipse cx="255" cy="194" rx="5.5" ry="4" fill="#052C4F"/>
+ <ellipse cx="253" cy="193" rx="1.4" ry="1.3" fill="#D4FAFF"/>
+ <path d="M289 168 Q405 126 542 143 Q613 159 651 178" stroke="#B3F2FF" stroke-opacity=".32" stroke-width="4" stroke-linecap="round"/>
+ <path d="M333 173 Q450 147 552 168" stroke="#81E1FA" stroke-opacity=".17" stroke-width="12" stroke-linecap="round"/>
+ <path d="M464 196 C533 188 615 196 695 207" stroke="#A1EAFF" stroke-opacity=".18" stroke-width="7"/>
+ <path d="M166 222 Q185 220 208 223" stroke="#A7DBE7" stroke-opacity=".58" stroke-width="2" stroke-linecap="round"/>
+</g>
+<!-- Sun flecks and tiny bubbles supply depth without a distracting cartoon effect. -->
+<g fill="#BCF6FC" opacity=".43">
+<circle cx="283" cy="96" r="2.7"/><circle cx="298" cy="75" r="2"/><circle cx="310" cy="53" r="3.5"/>
+<circle cx="602" cy="92" r="2.3"/><circle cx="624" cy="80" r="1.5"/><circle cx="804" cy="137" r="1.8"/>
+<circle cx="706" cy="273" r="2.7"/><circle cx="734" cy="298" r="1.9"/><circle cx="816" cy="294" r="1.6"/>
+</g>
+</svg>
