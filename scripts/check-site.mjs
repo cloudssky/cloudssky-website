@@ -37,6 +37,8 @@ for(const lang of ['de','en']){
     if(page==='home' && !html.includes('class="hero-brand"'))fail(file+': WE DO. hero brand missing');
     if(['home','volkswagen','enterprise'].includes(page) && !html.includes('public/technology/aws.svg'))fail(file+': AWS branded SVG missing');
     if(['home','volkswagen','enterprise'].includes(page) && !html.includes('public/technology/googlecloud.svg'))fail(file+': Google Cloud branded SVG missing');
+    if(['home','volkswagen','enterprise'].includes(page) && !html.includes('public/technology/kubernetes.svg'))fail(file+': Kubernetes branded SVG missing');
+    if(page==='home' && !html.includes('Kops / AWS'))fail(file+': one-line Kops / AWS heading missing');
     if(!html.includes('data-privacy-notice'))fail(file+': privacy notice missing');
     if(!html.includes('data-dismiss-privacy'))fail(file+': privacy notice dismiss missing');
     if(page==='contact' && html.includes('data-email-form'))fail(file+': contact form must be removed');
