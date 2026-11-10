@@ -68,3 +68,12 @@ If the website fails, restore original apex and www web DNS record values and Cl
 - Pages workflow present on `main`; it invokes `scripts/launch-gate.mjs` before pre-render and deployment. Connector workflow-run lookup only exposes PR-triggered runs, therefore absence of a result does **not** establish whether the push-triggered Pages run started or failed.
 - Remote HTTP/DNS verification inconclusive from the execution environment (DNS lookup unavailable); public search results show legacy site content but are not real-time evidence of routing.
 - Next steps: verify independent rights/legal/privacy and hands-on accessibility/browser testing, then evidence-backed release approval, deploy, validate certificate and DNS cutover while preserving mail records.
+
+## Two-stage controlled hosting gate — 2026-11-10
+- A first Pages deployment is necessary to test a production TLS certificate and live routing; these cannot truthfully be marked passed before publication.
+- The deployment gate now checks six pre-deployment sign-offs (legal, privacy, branding, references, contact, browserQA), explicit owner release authorization (`approved=true`), and an evidenced hosting preflight (`verification.hostingAndRedirects.predeployment.approved=true`), **or** the final hosting sign-off.
+- The hosting preflight has been documented from owner GitHub/Cloudflare screenshots: `cloudssky.com` is configured in Pages; GitHub DNS check reported success; web DNS points to GitHub Pages with DNS-only, and rollback instructions are recorded here. This **does not** certify successful deployment, HTTPS or redirects. `checks.hostingAndRedirects=false` until post-deployment verification.
+- **The deployment remains blocked**: `checks.branding=false`, because separate third-party technology SVG marks are not yet verified for public usage; `approved=false` remains.
+- Once branding is cleared (or unverified third-party logos are replaced with neutral text labels), record evidence, then explicitly set `approved=true` and run `Deploy Clouds Sky to GitHub Pages` via workflow_dispatch. Do not set unverified statuses merely to unblock CI.
+- Immediately after first deploy: check https://cloudssky.com/de/, /en/, /de/privacy/, /de/imprint/, https://www.cloudssky.com/, certificate validity and legacy URLs; record each outcome. Only then set `checks.hostingAndRedirects=true`.
+- If deployment fails or Pages returns 404, restore the previous website A records for apex and www from the saved DNS snapshot as appropriate. Never touch MX, SPF, DKIM or DMARC.
