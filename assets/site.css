@@ -654,3 +654,18 @@
 @media(prefers-reduced-motion:reduce){
  .hero-ocean-sunbeams{animation:none!important;transform:none!important}
 }
+
+/* The interactive-cloud caption shares exactly the visual width of WE DO. */
+.hero-brand-lockup{display:inline-flex;flex-direction:column;align-items:stretch;max-width:100%;margin-bottom:0}
+.hero .hero-brand-lockup .hero-brand{display:block;width:max-content;max-width:100%;margin:0 0 8px}
+.hero .hero-brand-lockup .hero-brand-note{
+ display:flex;justify-content:space-between;align-items:baseline;
+ gap:.65rem;width:100%;box-sizing:border-box;
+ margin:0 0 32px;color:#52748c;
+ font-size:clamp(.92rem,1.42vw,1.1rem);
+ font-weight:450;letter-spacing:.005em;line-height:1.45;
+ white-space:nowrap;
+}
+@media(max-width:600px){
+ .hero .hero-brand-lockup .hero-brand-note{font-size:clamp(.70rem,2.9vw,.88rem);gap:.3rem;margin-bottom:27px}
+}
