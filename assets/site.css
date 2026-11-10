@@ -669,3 +669,20 @@
 @media(max-width:600px){
  .hero .hero-brand-lockup .hero-brand-note{font-size:clamp(.70rem,2.9vw,.88rem);gap:.3rem;margin-bottom:27px}
 }
+
+/* Brand caption V2: distribute whole words to exactly span WE DO.
+   Keep both emoji attached directly to the final word, never at a separate right edge. */
+.hero .hero-brand-lockup .hero-brand-note{
+  display:flex;
+  justify-content:space-between;
+  align-items:baseline;
+  gap:0;
+  width:100%;
+  font-size:clamp(.96rem,1.46vw,1.12rem);
+  letter-spacing:0;
+  white-space:nowrap;
+}
+.hero .hero-brand-lockup .hero-brand-note>span{display:inline;white-space:nowrap}
+@media(max-width:600px){
+  .hero .hero-brand-lockup .hero-brand-note{font-size:clamp(.67rem,2.85vw,.9rem)}
+}
