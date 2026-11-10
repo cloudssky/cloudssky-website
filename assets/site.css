@@ -716,3 +716,6 @@
 .timeline .tech-text-mark{color:#f3fbff;background:#235a86;border-color:#6ba5cf;opacity:1;filter:none!important}
 .timeline .tech-logo-stack .tech-text-mark,.timeline .tech-pair .tech-text-mark{margin:10px 0 7px}
 .technology-logo .tech-text-mark{font-size:.75rem;width:38px;height:38px}
+
+/* Preserve the Kubernetes artwork in its original colors; no logo recoloring. */
+.timeline img.tech-mark{filter:none;opacity:1;background:#f6fbff;border-radius:8px;padding:4px;box-sizing:border-box}
