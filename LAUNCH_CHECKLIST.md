@@ -7,7 +7,7 @@
 - Customer experience ticker, preliminary visual assets, technology landscape and selected work diagrams.
 - Static HTML pre-rendering, localized SEO metadata and GitHub Actions link/route QA.
 - Expanded two-language imprint and privacy **review drafts**; explicitly identify missing legal and operational facts.
-- Contact form remains a transparent mailto **draft creation** experience; no claim that the web page sends requests.
+- Contact form is intentionally removed until a secure backend is commissioned. Contact is currently through direct email or an external Calendly booking link.
 - Protected production Pages workflow: `scripts/launch-gate.mjs` requires `LAUNCH_APPROVAL.json` with all seven verified sign-offs before deployment.
 - Downloadable static preview artifact from the PR quality workflow.
 
@@ -16,7 +16,7 @@
 2. **Privacy:** Confirm the actual live web host, access logging, retention, processor agreements, third-country transfers, controller details and internal handling of contact requests; finalize GDPR Art. 13 notice.
 3. **Branding:** Approve customer logo usage and replace preliminary Simple Icons SVGs with approved marks when needed. Customer name permission is not the same as trademark asset approval.
 4. **References:** Approve customer project narratives and contracting attributions, especially MAN / SYNAOS / Kubernauts and Volkswagen partner relationships. Validate Company roles and imagery.
-5. **Contact:** Confirm `support@cloudssky.com` is the intended intake. See CONTACT_INTEGRATION.md for recommended server-side Turnstile verification, mail provider and optional external Calendly scheduling. The present form opens a `mailto:` draft in the visitor's installed email program. If a real browser-submitted form is required, select a service/provider, configure secure server-side delivery/anti-spam and revise privacy text.
+5. **Contact:** Confirm `support@cloudssky.com` is the intended intake. See CONTACT_INTEGRATION.md for recommended server-side Turnstile verification, mail provider and optional external Calendly scheduling. The current website intentionally has **no form**; visitors can email directly or open the external Calendly page. If a form is later required, select a service/provider, configure secure server-side delivery/anti-spam and revise privacy text.
 6. **Browser QA:** Complete hands-on Safari and Chromium mobile/desktop checks, keyboard, reduced motion, screen readers, focus and cross-device layouts. CI verifies static routes, not rendered pixels.
 7. **Hosting and redirects:** Confirm Pages publication, preview URL, custom domain, legacy URL redirect plan, HTTPS, DNS records and rollback. Preserve email MX/SPF/DKIM/DMARC records.
 
