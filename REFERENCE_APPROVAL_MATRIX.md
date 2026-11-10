@@ -14,7 +14,7 @@
 | Covestro | Selected Work, client ticker | Recruiting portal, SAP integration | Confirm public name and work scope | PENDING |
 | Vaillant | Selected Work, client ticker | Kafka on Microsoft Azure | Confirm public name and project scope | PENDING |
 | SAP | Client ticker | Name only, no technical detail in ticker | Confirm that referring to SAP as customer/project experience is accurate; distinguish technology provider from contractual customer | PENDING |
-| Telekom | Client ticker | Name only | Confirm full entity and role, and whether public name is permitted | PENDING |
+| Deutsche Post | Client ticker | Name only | Confirm exact Deutsche Post/DHL entity, project scope, contractual role and permission for public name use | PENDING |
 | WWK | Client ticker | Name only | Confirm exact business entity, scope and permitted mention | PENDING |
 | Enovos | Client ticker | Name only | Confirm exact business entity, scope and permitted mention | PENDING |
 
