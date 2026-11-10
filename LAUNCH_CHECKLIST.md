@@ -5,6 +5,7 @@
 - Large WE DO. brand statement leads the homepage hero.
 - Responsive header and hierarchical Selected Work / Insights menu with active-page states.
 - Customer experience ticker, preliminary visual assets, technology landscape and selected work diagrams.
+- AWS navy/orange and Google Cloud four-color brand SVGs added to the Volkswagen timeline and Enterprise Technology Landscape. Assets are sourced from gilbarbara/logos and remain subject to AWS/Google trademark guidelines; provenance is not official brand approval.
 - Static HTML pre-rendering, localized SEO metadata and GitHub Actions link/route QA.
 - Expanded two-language imprint and privacy **review drafts**; explicitly identify missing legal and operational facts.
 - Contact form is intentionally removed until a secure backend is commissioned. Contact is currently through direct email or an external Calendly booking link.
@@ -29,3 +30,8 @@ The preliminary third-party client marks under `public/clients/` and technology 
 ## Unchanged
 - Public cloudssky.com and DNS records are untouched.
 - Draft PR has not been merged.
+
+## Cloud logo provenance
+- `public/technology/aws.svg`: `gilbarbara/logos/logos/aws.svg`, SVG shapes in AWS navy `#252F3E` and orange `#FF9900`.
+- `public/technology/googlecloud.svg`: `gilbarbara/logos/logos/google-cloud.svg`, original four-color Google Cloud motif.
+- Both are community-hosted copies of branded artwork. Verify permitted use and approved asset versions before public deployment.
