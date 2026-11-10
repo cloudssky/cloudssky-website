@@ -467,3 +467,45 @@
 @media(prefers-reduced-motion:reduce){
   .hero-cloud-back,.hero-cloud-front{animation:none!important;transform:none!important}
 }
+
+/* V3.4: Cloud-first hero. Remove competing architectural ribbons completely. */
+.hero{
+  background:
+    radial-gradient(ellipse 68% 90% at 91% 49%,#8abfe4 0%,#c4e2f5 46%,transparent 88%),
+    linear-gradient(107deg,#fff 0%,#f6fbff 41%,#b9dcf4 100%);
+}
+.hero::before,.hero::after{display:none!important}
+.hero-clouds{z-index:1;mask-image:linear-gradient(to right,transparent 0%,#000 39%,#000 100%);-webkit-mask-image:linear-gradient(to right,transparent 0%,#000 39%,#000 100%)}
+.hero-cloud-back{
+  inset:-3% -5% 2% 1%;
+  opacity:.82;
+  filter:blur(1px);
+  animation:csg-cloud-drift-back 24s linear infinite alternate;
+}
+.hero-cloud-front{
+  inset:8% -11% -7% 8%;
+  opacity:.43;
+  filter:blur(2px);
+  animation:csg-cloud-drift-front 16s linear infinite alternate;
+}
+@keyframes csg-cloud-drift-back{
+  from{transform:translate3d(-11%,0,0)}
+  to{transform:translate3d(13%,-1%,0)}
+}
+@keyframes csg-cloud-drift-front{
+  from{transform:translate3d(14%,1%,0)}
+  to{transform:translate3d(-13%,-1%,0)}
+}
+@media(max-width:900px){
+ .hero-clouds{mask-image:linear-gradient(to right,transparent 0%,#000 31%,#000 100%);-webkit-mask-image:linear-gradient(to right,transparent 0%,#000 31%,#000 100%)}
+ .hero-cloud-back{inset:0 -20% 0 -1%;opacity:.72}
+ .hero-cloud-front{inset:8% -24% -7% 4%;opacity:.35}
+}
+@media(max-width:600px){
+ .hero-clouds{mask-image:linear-gradient(to right,transparent 0%,#000 59%,#000 100%);-webkit-mask-image:linear-gradient(to right,transparent 0%,#000 59%,#000 100%)}
+ .hero-cloud-back{inset:0 -58% 0 -12%;opacity:.46}
+ .hero-cloud-front{inset:12% -60% -8% -8%;opacity:.24}
+}
+@media(prefers-reduced-motion:reduce){
+ .hero-cloud-back,.hero-cloud-front{animation:none!important;transform:none!important;will-change:auto}
+}
