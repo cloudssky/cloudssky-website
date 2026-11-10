@@ -686,3 +686,23 @@
 @media(max-width:600px){
   .hero .hero-brand-lockup .hero-brand-note{font-size:clamp(.67rem,2.85vw,.9rem)}
 }
+
+/* Caption V3: larger natural typography, no exaggerated spacing between words. */
+.hero .hero-brand-lockup .hero-brand-note{
+  display:block;
+  width:100%;
+  justify-content:initial;
+  gap:normal;
+  white-space:nowrap;
+  text-align:left;
+  font-size:clamp(.94rem,1.52vw,1.15rem);
+  font-weight:470;
+  letter-spacing:-.012em;
+  line-height:1.4;
+}
+@media(max-width:600px){
+  .hero .hero-brand-lockup .hero-brand-note{
+    font-size:clamp(.72rem,2.72vw,.9rem);
+    letter-spacing:-.018em;
+  }
+}
