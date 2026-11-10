@@ -48,7 +48,7 @@ for(const lang of ['de','en']){
     if(page==='home' && !html.includes('class="hero-ocean"'))fail(file+': ocean behind clouds missing');
     if(page==='home' && html.includes('class="hero-whale"'))fail(file+': whale should no longer appear');
     if(page==='home' && !html.includes('Enjoy! ☁️🚀</span>'))fail(file+': cloud emojis must stay adjacent to caption');
-    if(page==='home' && !html.includes('Even clouds are interactive. Enjoy! ☁️🚀'))fail(file+': hero Easter egg caption missing');
+    if(page==='home' && !html.includes('Even clouds are interactive. Enjoy IT! ☁️🚀'))fail(file+': hero Easter egg caption missing');
     if(page==='home' && !html.includes('class="hero-clouds hero-cloud-playground"'))fail(file+': cloud playground missing');
     if(page==='home' && (html.match(/data-cloud="/g)||[]).length!==4)fail(file+': expected four independently draggable clouds');
     if(page==='home' && !html.includes('tabindex="0"'))fail(file+': cloud keyboard control missing');
