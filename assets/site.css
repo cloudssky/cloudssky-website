@@ -761,3 +761,11 @@
  display:block;filter:none!important;opacity:1!important;object-fit:contain;
  width:62px;height:43px;padding:0;background:transparent;border:0
 }
+
+/* Golang badge: allow full word without altering the compact AWS/Kubernetes stages. */
+.timeline .tech-logo-stack span.tech-text-mark[aria-label^="Go language"]{
+ flex:0 0 70px!important;width:70px!important;min-width:70px!important;max-width:70px!important;
+ height:38px!important;min-height:38px!important;max-height:38px!important;
+ padding:0 6px!important;box-sizing:border-box!important;
+ font-size:12px!important;letter-spacing:0!important;
+}
