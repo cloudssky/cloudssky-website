@@ -790,3 +790,19 @@
  .home-expertise{padding-bottom:24px}
  .home-expertise + .selected-project-section{padding-top:26px}
 }
+
+/* Volkswagen architecture timeline: equal-height cards and centered phase arrows.
+   Scope only the three direct stage cards; nested logo wrappers remain untouched. */
+.timeline{align-items:stretch}
+.timeline>div{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  min-height:176px;
+  min-width:0;
+}
+.timeline>.timeline-arrow{align-self:center}
+@media(max-width:600px){
+  .timeline>div{min-height:166px}
+}
