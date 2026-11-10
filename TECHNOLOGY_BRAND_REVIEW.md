@@ -30,3 +30,14 @@ The initial AWS/Google Cloud full-color assets came from a community logo collec
 - Kubernetes remains as a referential technology logo, with original colors preserved in `assets/site.css`. The page explicitly says technology mentions are not manufacturer partnerships. https://github.com/kubernetes/kubernetes/blob/master/logo/usage_guidelines.md and https://www.linuxfoundation.org/legal/trademark-usage
 - `scripts/check-site.mjs` now checks the text-label presentation and rejects use of the unverified logos in generated pages.
 - This confirms the branding release gate **for the current presentation only**. Do not reuse this sign-off for new logos or different commercial/logo placements. Asset files retained in repository are not automatically license-cleared for public display.
+
+## Owner permission confirmation and restoration — 2026-11-10
+The website owner explicitly confirmed that Clouds Sky **may use AWS and Google Cloud logos** in the current website. This is recorded as an owner attestation of rights; the underlying agreements were **not independently inspected** in this conversation.
+
+Implementation:
+- Restored original `public/technology/aws.svg` and `public/technology/googlecloud.svg` in `assets/site.js`, including the Kops/AWS → AWS/EKS → GCP/GKE visualization and enterprise technology landscape.
+- Retained the vendor's original SVG colors. No partnership, endorsement, or certification is asserted.
+- Kept the compact textual identifiers for other logos without rights confirmation, including Go beside AWS. Kubernetes's original referential logo remains.
+- Updated `scripts/check-site.mjs` and `assets/site.css` to enforce the scoped choice and correct the layout.
+
+The earlier risk analysis remains as historical context, not the final implemented presentation.
