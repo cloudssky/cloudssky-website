@@ -515,7 +515,7 @@
 .hero-cloud-stage{display:block;width:100%;height:100%;overflow:visible;pointer-events:none}
 .hero-cloud-stage .cloud-grab{
   pointer-events:visiblePainted;
-  cursor:grab;touch-action:pan-y;
+  cursor:grab;touch-action:none;
   transform-box:view-box;
 }
 .hero-cloud-stage .cloud-grab.is-dragging{cursor:grabbing}
@@ -530,3 +530,5 @@
 @media(prefers-reduced-motion:reduce){
   .hero-cloud-stage .cloud-float{animation:none!important}
 }
+
+/* Cloud gestures are captured only while touching the painted cloud shapes; the rest of the hero scrolls normally. */
