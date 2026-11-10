@@ -3,6 +3,7 @@
 ## Completed in website-relaunch-v1
 - 28 localized static pages (DE and EN), 3 case studies, 2 engineering insights.
 - Large WE DO. brand statement leads the homepage hero.
+- V3 visual design: multi-layer CSS light/shadow architectural arcs in the hero, an original generated vector mesh-wave behind the Volkswagen project panel, and harmonized blue editorial Insights cards. No remote image fetches or third-party assets are needed for these backgrounds.
 - Responsive header and hierarchical Selected Work / Insights menu with active-page states.
 - Customer experience ticker, preliminary visual assets, technology landscape and selected work diagrams.
 - AWS navy/orange and Google Cloud four-color brand SVGs added to the Volkswagen timeline and Enterprise Technology Landscape. Assets are sourced from gilbarbara/logos and remain subject to AWS/Google trademark guidelines; provenance is not official brand approval.
