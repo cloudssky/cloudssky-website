@@ -26,8 +26,8 @@
  <path d="M615 520c-4-31 24-54 54-54 13-32 47-47 80-38 29-42 88-41 115-4 42-10 83 8 92 42 32-5 68 15 68 47 0 23-17 40-42 40H663c-31 0-48-12-48-33Z" fill="#387EAF" opacity=".30" filter="url(#shadow)" transform="translate(8 17)"/>
  <path d="M615 520c-4-31 24-54 54-54 13-32 47-47 80-38 29-42 88-41 115-4 42-10 83 8 92 42 32-5 68 15 68 47 0 23-17 40-42 40H663c-31 0-48-12-48-33Z" fill="url(#cloudBlue)" stroke="#A3CBE7" stroke-opacity=".55" stroke-width="2" filter="url(#soften)"/>
 </g>
-<g opacity=".65" transform="translate(220 -140) scale(.63)">
- <path d="M680 284c0-24 18-42 43-42 12-45 57-68 98-51 29-40 94-34 118 12 42-4 78 24 78 61 21 8 30 21 30 34 0 20-18 37-40 37H715c-21 0-35-17-35-51Z" fill="#3E85B8" opacity=".25" filter="url(#shadow)" transform="translate(12 18)"/>
- <path d="M680 284c0-24 18-42 43-42 12-45 57-68 98-51 29-40 94-34 118 12 42-4 78 24 78 61 21 8 30 21 30 34 0 20-18 37-40 37H715c-21 0-35-17-35-51Z" fill="url(#cloudWhite)" stroke="#95C4E2" stroke-opacity=".57" stroke-width="2" filter="url(#soften)"/>
+<g opacity=".72" transform="translate(212 -57) scale(.70)">
+ <path d="M680 284c0-24 18-42 43-42 12-45 57-68 98-51 29-40 94-34 118 12 42-4 78 24 78 61 21 8 30 21 30 34 0 20-18 37-40 37-22 3-43 2-64-4-24 18-57 22-83 10-29 14-63 11-88-2-19 11-43 10-62 0-18 4-34-7-30-55Z" fill="#3E85B8" opacity=".25" filter="url(#shadow)" transform="translate(12 18)"/>
+ <path d="M680 284c0-24 18-42 43-42 12-45 57-68 98-51 29-40 94-34 118 12 42-4 78 24 78 61 21 8 30 21 30 34 0 20-18 37-40 37-22 3-43 2-64-4-24 18-57 22-83 10-29 14-63 11-88-2-19 11-43 10-62 0-18 4-34-7-30-55Z" fill="url(#cloudWhite)" stroke="#95C4E2" stroke-opacity=".57" stroke-width="2" filter="url(#soften)"/>
 </g>
 </svg>
