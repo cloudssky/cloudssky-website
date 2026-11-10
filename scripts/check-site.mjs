@@ -77,6 +77,7 @@ for(const lang of ['de','en']){
       if(!html.includes('Kubernautic'))fail(file+': platform invitation missing');
     }
     if(page==='volkswagen' && !html.includes('Pulumi'))fail(file+': flagship case content missing');
+    if(html.includes('cloudssky.com/en/insights/cloud-native-shared-platform-gke/'))fail(file+': legacy GKE article link not migrated');
     if(page==='company'){
       for(const role of ['CEO · Cloud Architect','CEO · Enterprise Software Architect','SRE Solution Architect']){
         if(!html.includes(role))fail(file+': expected team role missing: '+role);
