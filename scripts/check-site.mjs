@@ -73,6 +73,8 @@ for(const lang of ['de','en']){
     if(['enterprise','company','method','work','volkswagen','bayer','man-industrial-messaging','insights','architecture-decisions','event-driven-architecture'].includes(page) && !html.includes('aria-current="page"'))
       fail(file+': active navigation missing');
     if(page==='home'){
+      if(!html.includes('Deutsche Post'))fail(file+': Deutsche Post missing from customer ticker');
+      if(html.includes('>Telekom</span>'))fail(file+': old Telekom ticker name remains');
       if(!html.includes('Vaillant'))fail(file+': Vaillant missing from customer rail');
       if(!html.includes('Kubernautic'))fail(file+': platform invitation missing');
     }
