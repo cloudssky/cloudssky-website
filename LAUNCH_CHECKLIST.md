@@ -75,3 +75,8 @@ The preliminary third-party client marks under `public/clients/` and technology 
 - This approval was recorded in `LAUNCH_APPROVAL.json` and `REFERENCE_APPROVAL_MATRIX.md` without asserting independent customer trademark/publicity rights or legal/GDPR compliance.
 - The seven-category production gate remains closed until evidence-backed legal/privacy and third-party rights validation, hands-on browser/accessibility QA, and hosting/HTTPS/redirect checks are completed. Owner authorization is not equivalent to passing these tests.
 - Protect Google Workspace MX/SPF/DKIM/DMARC and other mail-related DNS records during any cutover.
+
+## Owner evidence attestation — 2026-11-10 (after merge)
+The website owner explicitly confirmed that supporting evidence **exists and has been reviewed** for **Impressum (legal), Datenschutz (privacy), Kundenreferenzen (references), and Browser & Accessibility (browserQA)**. These four sign-offs are recorded as owner attestations, **not as independent inspection of the underlying records**; those records were not supplied to this chat. Contact was already accepted.
+
+**Still open:** (1) `branding` — separate verification of rights/guidelines for displayed third-party **technology marks** and logo assets; customer references alone do not cover this. (2) `hostingAndRedirects` — successful GitHub Pages deployment, live HTTPS/certificate, `www` redirect, legacy URL behavior and rollback checks. Domain DNS passed GitHub validation in an owner screenshot, but a browser check found a GitHub Pages 404 before a successful deployment. Accordingly `approved=false` remains mandatory until both remaining checks are verified. Preserve email DNS records throughout.
