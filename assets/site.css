@@ -348,3 +348,18 @@
 @media(prefers-reduced-transparency:reduce){
  .dark.project-grid .timeline>div{backdrop-filter:none;background:#103757}
 }
+
+/* Volkswagen timeline V3.1 — full-color Kubernetes helm SVG, consistent icon stages. */
+.timeline .tech-pair .tech-mark[src*="kubernetes.svg"],
+.timeline .tech-logo-shell .tech-mark[src*="kubernetes.svg"]{
+  filter:none;
+  opacity:1;
+  background:#fff;
+  border-radius:7px;
+  padding:5px;
+  box-sizing:content-box;
+  object-fit:contain;
+}
+.timeline .tech-pair .tech-mark[src*="kubernetes.svg"]{width:36px;height:36px}
+.technology-logo .tech-mark[src*="kubernetes.svg"]{filter:none;opacity:1;width:43px;height:43px;object-fit:contain}
+.timeline .timeline-heading{display:block;white-space:nowrap;line-height:1.35}
