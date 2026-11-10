@@ -20,10 +20,14 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/configure-pages@v5
-      - name: Verify production release approval
-        run: node scripts/launch-gate.mjs
+      - name: Verify client script syntax
+        run: node --check assets/site.js
       - name: Pre-render localized pages
         run: node scripts/prerender.mjs
+      - name: Verify localized routes, assets and links
+        run: node scripts/check-site.mjs
+      - name: Verify production release approval
+        run: node scripts/launch-gate.mjs
       - uses: actions/upload-pages-artifact@v3
         with:
           path: .
