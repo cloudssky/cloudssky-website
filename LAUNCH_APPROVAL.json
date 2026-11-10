@@ -9,5 +9,11 @@
     "contact": false,
     "browserQA": false,
     "hostingAndRedirects": false
+  },
+  "ownerContentApproval": {
+    "imprintCorporateData": true,
+    "privacyDraftReviewed": true,
+    "confirmedBy": "Website owner via chat, 2026-11-10",
+    "scope": "Owner approves corporate information and requests publication readiness; no assertion of independent legal compliance or processing arrangements. The release gate remains active."
   }
 }
