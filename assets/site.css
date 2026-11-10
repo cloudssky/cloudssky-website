@@ -241,3 +241,110 @@
 .technology-logo .tech-mark[src*="googlecloud.svg"]{width:43px;height:43px}
 @media(max-width:1050px){.technology-logos{grid-template-columns:repeat(4,minmax(0,1fr))}}
 @media(max-width:600px){.technology-logos{grid-template-columns:repeat(2,minmax(0,1fr))}.timeline .tech-logo-shell,.timeline .tech-aws-pair,.timeline .tech-pair{transform:none!important}}
+
+/* Visual system V3 — luminous architectural layers and original digital wave */
+/* Hero: layered CSS light fields and elliptical architectural contours; no image download. */
+.hero{
+  position:relative;
+  isolation:isolate;
+  overflow:hidden;
+  background:
+    radial-gradient(ellipse 51% 63% at 91% 83%,#78b8e46e 0%,#c7e7fb6b 55%,transparent 83%),
+    radial-gradient(ellipse 65% 80% at 100% 9%,#a4d1f09e 0%,#d5ecfbb7 54%,transparent 85%),
+    radial-gradient(ellipse 56% 58% at 56% 37%,#fff 12%,#edf8ff 67%,transparent 100%),
+    linear-gradient(112deg,#fff 0%,#f9fcff 37%,#cce6fa 100%);
+}
+.hero:before{
+  content:"";position:absolute;z-index:0;pointer-events:none;
+  width:94%;height:108%;top:-44%;right:-36%;
+  border-radius:48% 0 47% 55%;
+  transform:rotate(-23deg);
+  background:
+    linear-gradient(135deg,#ffffffdf 10%,#ffffff45 30%,#acd5f0ac 53%,#6da9d6b8 78%,#e9f7ff48 100%);
+  border:23px solid #ffffffa8;
+  box-shadow:-47px 38px 0 -12px #e9f6ffcc,-104px 83px 0 -37px #c0e0f7bd,-172px 142px 0 -71px #a7d1ef8c,0 55px 110px -65px #387ab34d;
+  opacity:.8;
+}
+.hero:after{
+  content:"";position:absolute;z-index:0;pointer-events:none;
+  width:96%;height:80%;right:-36%;bottom:-63%;
+  border-radius:70% 37% 0 0;
+  transform:rotate(-14deg);
+  background:linear-gradient(120deg,#eaf8ff88 4%,#91c3e5a8 60%,#3989c7b8 100%);
+  border-top:12px solid #ffffffb0;
+  box-shadow:0 -49px 0 -27px #b9dcf4a3,0 -116px 0 -79px #ffffffd2;
+  opacity:.75;
+}
+.hero .wrap{position:relative;z-index:1}
+.hero .wrap > :not(.hero-brand){position:relative}
+.hero h1,.hero-brand,.hero .eyebrow,.hero .lead,.hero p,.hero .actions{max-width:740px}
+
+/* Selected Work / VW: low-contrast original vector data wave beneath readable panels. */
+.dark.project-grid{
+  position:relative;isolation:isolate;overflow:hidden;
+  background:
+    radial-gradient(ellipse 63% 92% at 74% 50%,#165e9b85 0%,transparent 77%),
+    radial-gradient(ellipse 85% 90% at 10% 110%,#075f94a6 0%,transparent 74%),
+    linear-gradient(119deg,#081b32 0%,#0c3358 48%,#082540 100%);
+  box-shadow:0 22px 48px -34px #06395e72;
+}
+.dark.project-grid:before{
+  content:"";position:absolute;z-index:-1;pointer-events:none;inset:0;
+  background:url("../assets/volkswagen-digital-wave.svg") center bottom / 120% auto no-repeat;
+  opacity:.84;
+}
+.dark.project-grid:after{
+  content:"";position:absolute;pointer-events:none;z-index:-1;inset:0;
+  background:linear-gradient(180deg,#061a3200 24%,#062b4c1a 60%,#05284455 100%);
+}
+.dark.project-grid>.timeline,.dark.project-grid>div:first-child{position:relative;z-index:1}
+.dark.project-grid .timeline>div{
+  background:linear-gradient(135deg,#113656d9,#184a72b9);
+  border:1px solid #b5dcf6a0;
+  box-shadow:inset 0 1px 0 #ffffff24,0 7px 22px #00172d30;
+  backdrop-filter:blur(3px);
+}
+.dark.project-grid .timeline-arrow{color:#e6f6ff}
+.dark.project-grid h2{color:#fff;text-shadow:0 2px 18px #04192a36}
+
+/* Insights: harmonized blue hues, deeper layered cards and editorial whitespace. */
+.cards .card{
+  overflow:hidden;
+  background:linear-gradient(180deg,#fff 0%,#f6faff 100%);
+  border:1px solid #d5e5f0;
+  border-radius:14px;
+  box-shadow:0 9px 23px -20px #0e436b88,0 3px 10px #153b5f0a;
+}
+.cards .card-visual{height:155px;isolation:isolate}
+.cards .card-visual.visual-1{
+  background:radial-gradient(ellipse at 70% 45%,#e8f7ff 3%,transparent 52%),linear-gradient(140deg,#f4fbff,#88bddf);
+}
+.cards .card-visual.visual-1:before{
+  opacity:.87;border-color:#ffffffd6;box-shadow:0 0 0 27px #aed5edaf,0 0 0 57px #d4eafa94,0 18px 70px #2f81b421;
+}
+.cards .card-visual.visual-2{
+  background:radial-gradient(ellipse at 43% 32%,#7bc9f08c,transparent 65%),linear-gradient(140deg,#12456c,#5c9fcc);
+}
+.cards .card-visual.visual-3{
+  background:radial-gradient(ellipse at 67% 90%,#218bd782,transparent 56%),linear-gradient(143deg,#071c35,#12588c);
+}
+.cards .card article{padding:25px 27px 27px}
+.cards .card h3{letter-spacing:-.033em}
+.cards .card p{line-height:1.6}
+@media(max-width:900px){
+ .hero:before{right:-53%;width:111%;opacity:.58}
+ .hero:after{right:-49%;opacity:.54}
+ .dark.project-grid:before{background-size:165% auto;background-position:center bottom}
+}
+@media(max-width:600px){
+ .hero:before{right:-96%;top:-23%;height:74%;width:165%;opacity:.32;border-width:13px}
+ .hero:after{right:-75%;bottom:-48%;width:135%;height:60%;opacity:.4}
+ .hero .wrap{padding-bottom:85px}
+ .dark.project-grid:before{background-size:auto 60%;background-position:56% bottom;opacity:.65}
+ .dark.project-grid{background:linear-gradient(150deg,#071b34,#104a78)}
+ .cards .card-visual{height:150px}
+ .cards .card article{padding:22px}
+}
+@media(prefers-reduced-transparency:reduce){
+ .dark.project-grid .timeline>div{backdrop-filter:none;background:#103757}
+}
