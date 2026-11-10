@@ -8,6 +8,10 @@ const css=fs.readFileSync('assets/site.css','utf8');
 for(const expected of ['volkswagen-digital-wave.svg','.hero:before','.cards .card-visual.visual-1']){
   if(!css.includes(expected))fail('Missing visual system component '+expected);
 }
+if(!fs.existsSync('assets/hero-clouds.svg'))fail('Homepage cloud SVG missing');
+const heroClouds=fs.readFileSync('assets/hero-clouds.svg','utf8');
+if(!heroClouds.includes('<svg')||!heroClouds.includes('cloudLight'))fail('Homepage cloud SVG invalid');
+if(!css.includes('hero-clouds.svg')||!css.includes('csg-cloud-back')||!css.includes('prefers-reduced-motion:reduce'))fail('Cloud animation or motion accessibility missing');
 const pages=['home','enterprise','company','work','volkswagen','bayer','man-industrial-messaging','method','insights','architecture-decisions','event-driven-architecture','contact','imprint','privacy'];
 let passed=0;
 const errors=[];
@@ -35,6 +39,7 @@ for(const lang of ['de','en']){
         fail(file+': missing local asset/page '+target);
     }
     if(page==='home' && !html.includes('class="hero-brand"'))fail(file+': WE DO. hero brand missing');
+    if(page==='home' && !html.includes('class="hero-clouds"'))fail(file+': animated decorative clouds missing');
     if(['home','volkswagen','enterprise'].includes(page) && !html.includes('public/technology/aws.svg'))fail(file+': AWS branded SVG missing');
     if(['home','volkswagen','enterprise'].includes(page) && !html.includes('public/technology/googlecloud.svg'))fail(file+': Google Cloud branded SVG missing');
     if(['home','volkswagen','enterprise'].includes(page) && !html.includes('public/technology/kubernetes.svg'))fail(file+': Kubernetes branded SVG missing');
