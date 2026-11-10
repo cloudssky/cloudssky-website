@@ -829,3 +829,13 @@
 .person-digital{border-top-color:#c42a35}
 .team-disclosure{max-width:800px;margin:18px 0 0;color:#586b7b;font-size:.88rem;line-height:1.65}
 @media(max-width:600px){.people-digital{grid-template-columns:1fr}.digital-team{margin-top:44px}}
+
+/* Compact editorial team cards: six people in 4+2 grid, consistent grayscale. */
+.people{grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;max-width:1080px}
+.person img{aspect-ratio:4/5;height:auto;object-fit:cover;object-position:center 25%}
+.person img[src$="/anja.webp"]{filter:grayscale(1)}
+.people-digital{grid-template-columns:repeat(2,minmax(0,260px));max-width:540px}
+.person-info{padding:12px 14px 16px}
+@media(max-width:900px){.people{grid-template-columns:repeat(3,minmax(0,1fr))}.people-digital{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:650px){.people{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.people-digital{grid-template-columns:repeat(2,minmax(0,1fr))}.person-info{padding:10px 12px 14px}}
+@media(max-width:420px){.people,.people-digital{grid-template-columns:1fr;max-width:300px}}
