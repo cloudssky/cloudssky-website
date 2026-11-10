@@ -1,22 +1,22 @@
 # Clouds Sky — Named customer references: release approval matrix
 
-**Status (2026-11-10): PENDING.** The owner authorized the website launch, but publication permission and wording sign-off for each named third-party relationship has not been separately documented. This is a review aid, not a license or legal opinion.
+**Status (2026-11-10): OWNER CONTENT APPROVAL RECORDED.** The website owner explicitly approved all remaining displayed references and content via chat. Independent customer/partner publication rights, confidentiality obligations, and precise contractual attribution have not been verified. This is a review aid, not a license or legal opinion.
 
 ## Public claims requiring explicit owner review
 
 | Name / context | Public locations | Proposed wording scope | Confirmation required | Status |
 |---|---|---|---|---|
-| Volkswagen | Homepage VW architecture, Selected Work, VW case, client ticker, submenu | Kops/AWS -> EKS -> GKE, Terraform/Pulumi, Go extensions, shared platform engineering | Confirm public identification is permitted, actual attribution and stages; confirm technical detail does not disclose non-public architecture; partner contributions correctly credited | PENDING |
-| Bayer | Selected Work, detailed Bayer case, client ticker, submenu | Enterprise document management, HR portals, intranet, ~20 organizational units | Confirm customer name and scope may be public, exact relationship and quantitative organizational scope | PENDING |
-| MAN / SYNAOS | Selected Work, industrial messaging case, client ticker, submenu | IBM MQ/KubeMQ/VerneMQ and RKE2; disclaimer that Kubernauts participated as contracting partner/subcontractor | Confirm neither entity's name or confidential technical detail is improperly disclosed; review MAN, SYNAOS, Volkswagen and Kubernauts relationship statements | PENDING |
-| DKV Mobility | Selected Work, client ticker | OpenShift, Azure, Rancher, Strimzi, Confluent Kafka | Confirm public name, exact technical involvement and contract role | PENDING |
-| ZEISS | Selected Work, client ticker | IoT messaging, Kubernetes, HiveMQ, VerneMQ | Confirm public name and technical involvement | PENDING |
-| Covestro | Selected Work, client ticker | Recruiting portal, SAP integration | Confirm public name and work scope | PENDING |
-| Vaillant | Selected Work, client ticker | Kafka on Microsoft Azure | Confirm public name and project scope | PENDING |
-| SAP | Client ticker | Name only, no technical detail in ticker | Confirm that referring to SAP as customer/project experience is accurate; distinguish technology provider from contractual customer | PENDING |
+| Volkswagen | Homepage VW architecture, Selected Work, VW case, client ticker, submenu | Kops/AWS -> EKS -> GKE, Terraform/Pulumi, Go extensions, shared platform engineering | Confirm public identification is permitted, actual attribution and stages; confirm technical detail does not disclose non-public architecture; partner contributions correctly credited | OWNER APPROVED; EXTERNAL RIGHTS UNVERIFIED |
+| Bayer | Selected Work, detailed Bayer case, client ticker, submenu | Enterprise document management, HR portals, intranet, ~20 organizational units | Confirm customer name and scope may be public, exact relationship and quantitative organizational scope | OWNER APPROVED; EXTERNAL RIGHTS UNVERIFIED |
+| MAN / SYNAOS | Selected Work, industrial messaging case, client ticker, submenu | IBM MQ/KubeMQ/VerneMQ and RKE2; disclaimer that Kubernauts participated as contracting partner/subcontractor | Confirm neither entity's name or confidential technical detail is improperly disclosed; review MAN, SYNAOS, Volkswagen and Kubernauts relationship statements | OWNER APPROVED; EXTERNAL RIGHTS UNVERIFIED |
+| DKV Mobility | Selected Work, client ticker | OpenShift, Azure, Rancher, Strimzi, Confluent Kafka | Confirm public name, exact technical involvement and contract role | OWNER APPROVED; EXTERNAL RIGHTS UNVERIFIED |
+| ZEISS | Selected Work, client ticker | IoT messaging, Kubernetes, HiveMQ, VerneMQ | Confirm public name and technical involvement | OWNER APPROVED; EXTERNAL RIGHTS UNVERIFIED |
+| Covestro | Selected Work, client ticker | Recruiting portal, SAP integration | Confirm public name and work scope | OWNER APPROVED; EXTERNAL RIGHTS UNVERIFIED |
+| Vaillant | Selected Work, client ticker | Kafka on Microsoft Azure | Confirm public name and project scope | OWNER APPROVED; EXTERNAL RIGHTS UNVERIFIED |
+| SAP | Client ticker | Name only, no technical detail in ticker | Confirm that referring to SAP as customer/project experience is accurate; distinguish technology provider from contractual customer | OWNER APPROVED; EXTERNAL RIGHTS UNVERIFIED |
 | Deutsche Post | Client ticker | **Name only** (no logo or detailed project claim) | Owner explicitly approved the public name-only ticker reference on 2026-11-10; precise group entity, scope and contractual role are not yet documented | **APPROVED — TEXT ONLY** |
-| WWK | Client ticker | Name only | Confirm exact business entity, scope and permitted mention | PENDING |
-| Enovos | Client ticker | Name only | Confirm exact business entity, scope and permitted mention | PENDING |
+| WWK | Client ticker | Name only | Confirm exact business entity, scope and permitted mention | OWNER APPROVED; EXTERNAL RIGHTS UNVERIFIED |
+| Enovos | Client ticker | Name only | Confirm exact business entity, scope and permitted mention | OWNER APPROVED; EXTERNAL RIGHTS UNVERIFIED |
 
 ## Technology marks (not client-relationship endorsement)
 
@@ -47,6 +47,9 @@ For each named reference, append:
 - Approved public URL(s):
 
 Set `LAUNCH_APPROVAL.json.checks.references=true` only when every retained named reference is reviewed; set `checks.branding=true` only when every displayed mark is checked or substituted with an approved alternative.
+
+### All remaining references — owner approval (2026-11-10)
+The website owner stated **„alles andere ist auch freigegeben“** following approval of the Telekom → Deutsche Post replacement. This records the owner's editorial/publication approval for the named references and depictions *as currently displayed*. It does not independently verify permission granted by each named third party, compliance with trademark guidelines, or confidentiality and contracting limitations.
 
 ### Deutsche Post — explicit owner approval (2026-11-10)
 The owner replied **„Freigabe“** immediately after the Telekom → Deutsche Post homepage ticker substitution. This records permission to display **Deutsche Post as text in the customer-experience ticker only**. It does not authorize a Deutsche Post logo, an additional case study, or undisclosed project details. The current ticker notes that roles and contracting arrangements vary.
