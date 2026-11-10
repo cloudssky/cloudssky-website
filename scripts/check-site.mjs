@@ -52,11 +52,11 @@ for(const lang of ['de','en']){
     if(page==='home' && !html.includes('class="hero-clouds hero-cloud-playground"'))fail(file+': cloud playground missing');
     if(page==='home' && (html.match(/data-cloud="/g)||[]).length!==4)fail(file+': expected four independently draggable clouds');
     if(page==='home' && !html.includes('tabindex="0"'))fail(file+': cloud keyboard control missing');
-    if(page==='enterprise' && !html.includes('class="tech-mark tech-text-mark"'))fail(file+': technology text identifiers missing');
+    if(page==='enterprise' && ['terraform','pulumi','openstack','apachekafka','vmware'].some(mark=>!html.includes('public/technology/'+mark+'.svg')))fail(file+': technology landscape logo missing');
     if(['home','volkswagen','enterprise'].includes(page) && !html.includes('public/technology/aws.svg'))fail(file+': authorized AWS logo missing');
     if(['home','volkswagen','enterprise'].includes(page) && !html.includes('public/technology/googlecloud.svg'))fail(file+': authorized Google Cloud logo missing');
     if(['home','volkswagen','enterprise'].includes(page) && !html.includes('public/technology/kubernetes.svg'))fail(file+': Kubernetes logo missing');
-    if(['home','volkswagen','enterprise'].includes(page) && ['vmware','terraform','pulumi','openstack','apachekafka','go'].some(mark=>html.includes('public/technology/'+mark+'.svg')))fail(file+': unverified technology mark must not be displayed');
+    if(['home','volkswagen'].includes(page) && ['terraform','pulumi','openstack','apachekafka','vmware','go'].some(mark=>html.includes('public/technology/'+mark+'.svg')))fail(file+': unexpected logo outside technology landscape');
     if(page==='home' && !html.includes('Kops / AWS'))fail(file+': one-line Kops / AWS heading missing');
     if(page==='home' && !html.includes('aria-label="Go language — custom Kops extensions"'))fail(file+': Go text identifier missing from Kops stage');
     if(!html.includes('data-privacy-notice'))fail(file+': privacy notice missing');
