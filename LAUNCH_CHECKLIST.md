@@ -69,3 +69,9 @@ The preliminary third-party client marks under `public/clients/` and technology 
 - Preserved explanatory case studies but did not mark customer permission as verified. Customer/partner confidentiality and usage rights require owner review.
 - Replaced the legacy `https://cloudssky.com/en/insights/cloud-native-shared-platform-gke/` link from the Volkswagen article with the new local Engineering Method page; add a migrated permalink later if desired. QA now rejects that obsolete link.
 - No public DNS, production branch or Pages deployment changed.
+
+## Owner blanket approval — 2026-11-10
+- The website owner explicitly confirmed **"alles andere ist auch freigegeben"** after approving the Telekom → Deutsche Post replacement, thereby authorizing the currently presented editorial content, reference names and visual choices.
+- This approval was recorded in `LAUNCH_APPROVAL.json` and `REFERENCE_APPROVAL_MATRIX.md` without asserting independent customer trademark/publicity rights or legal/GDPR compliance.
+- The seven-category production gate remains closed until evidence-backed legal/privacy and third-party rights validation, hands-on browser/accessibility QA, and hosting/HTTPS/redirect checks are completed. Owner authorization is not equivalent to passing these tests.
+- Protect Google Workspace MX/SPF/DKIM/DMARC and other mail-related DNS records during any cutover.
