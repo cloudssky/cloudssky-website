@@ -710,3 +710,19 @@
 /* Release-safe customer rail: neutral typographic company references, no unapproved brand artwork. */
 .client-rail .client.client-name{display:flex;align-items:center;justify-content:center;min-width:130px;min-height:46px}
 .client-rail .client.client-name span{font-weight:750;font-size:clamp(.95rem,1.28vw,1.13rem);letter-spacing:-.035em;white-space:nowrap}
+
+/* Volkswagen architecture timeline: equal-height cards and centered phase arrows.
+   Scope only the three direct stage cards; nested logo wrappers remain untouched. */
+.timeline{align-items:stretch}
+.timeline>div{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  min-height:176px;
+  min-width:0;
+}
+.timeline>.timeline-arrow{align-self:center}
+@media(max-width:600px){
+  .timeline>div{min-height:166px}
+}
