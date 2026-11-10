@@ -8,7 +8,7 @@
 - Customer experience ticker, preliminary visual assets, technology landscape and selected work diagrams.
 - AWS navy/orange and Google Cloud four-color brand SVGs added to the Volkswagen timeline and Enterprise Technology Landscape. Assets are sourced from gilbarbara/logos and remain subject to AWS/Google trademark guidelines; provenance is not official brand approval.
 - Static HTML pre-rendering, localized SEO metadata and GitHub Actions link/route QA.
-- Revised concise DE/EN factual imprint without obsolete five-part blanket disclaimer; owner-supplied company details still need formal verification. DE/EN privacy notice remains a **review draft** until processing details are confirmed.
+- Revised concise DE/EN factual imprint without obsolete five-part blanket disclaimer; owner-supplied company details still need formal verification. DE/EN public-facing privacy text is complete, while formal service/processing verification remains open.
 - Contact form is intentionally removed until a secure backend is commissioned. Contact is currently through direct email or an external Calendly booking link.
 - Protected production Pages workflow: `scripts/launch-gate.mjs` requires `LAUNCH_APPROVAL.json` with all seven verified sign-offs before deployment.
 - Downloadable static preview artifact from the PR quality workflow.
@@ -63,3 +63,9 @@ The preliminary third-party client marks under `public/clients/` and technology 
 - Ticker qualification expressly distinguishes experience in varied delivery and contractual roles from a claim of universal direct customer status.
 - Named case studies and technology brand marks still need approval/attribution review; this change is **not** a blanket trademark or case-study sign-off.
 - Required reference review: Volkswagen (platform, Kops/EKS/GKE, Go extensions); Bayer (document/HR/intranet); MAN/SYNAOS (industrial messaging via Kubernauts); remaining named environments in the ticker and Selected Work.
+
+## Named-reference and legacy-link review — 2026-11-10
+- `REFERENCE_APPROVAL_MATRIX.md` catalogs 11 publicly named companies/environments, role/attribution caveats, logo versus text permissions, and evidence fields for release approval.
+- Preserved explanatory case studies but did not mark customer permission as verified. Customer/partner confidentiality and usage rights require owner review.
+- Replaced the legacy `https://cloudssky.com/en/insights/cloud-native-shared-platform-gke/` link from the Volkswagen article with the new local Engineering Method page; add a migrated permalink later if desired. QA now rejects that obsolete link.
+- No public DNS, production branch or Pages deployment changed.
