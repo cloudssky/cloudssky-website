@@ -509,3 +509,24 @@
 @media(prefers-reduced-motion:reduce){
  .hero-cloud-back,.hero-cloud-front{animation:none!important;transform:none!important;will-change:auto}
 }
+
+/* V3.5: cloud playground; each of the three shapes is independently draggable. */
+.hero-cloud-playground{pointer-events:none;user-select:none}
+.hero-cloud-stage{display:block;width:100%;height:100%;overflow:visible;pointer-events:none}
+.hero-cloud-stage .cloud-grab{
+  pointer-events:visiblePainted;
+  cursor:grab;touch-action:pan-y;
+  transform-box:view-box;
+}
+.hero-cloud-stage .cloud-grab.is-dragging{cursor:grabbing}
+.hero-cloud-stage .cloud-grab:focus-visible{outline:3px solid #0a75b3;outline-offset:7px}
+.hero-cloud-stage .cloud-float{transform-box:view-box;transform-origin:center}
+.hero-cloud-stage .cloud-float-1{animation:csg-float-one 11s ease-in-out infinite alternate}
+.hero-cloud-stage .cloud-float-2{animation:csg-float-two 8s ease-in-out infinite alternate}
+.hero-cloud-stage .cloud-float-3{animation:csg-float-three 13s ease-in-out infinite alternate}
+@keyframes csg-float-one{from{transform:translate(-10px,2px)}to{transform:translate(22px,-9px)}}
+@keyframes csg-float-two{from{transform:translate(18px,4px)}to{transform:translate(-19px,-8px)}}
+@keyframes csg-float-three{from{transform:translate(-12px,-3px)}to{transform:translate(17px,5px)}}
+@media(prefers-reduced-motion:reduce){
+  .hero-cloud-stage .cloud-float{animation:none!important}
+}
