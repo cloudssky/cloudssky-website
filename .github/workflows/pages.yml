@@ -1,0 +1,31 @@
+name: Deploy Clouds Sky to GitHub Pages
+on:
+  push:
+    branches: [main]
+    paths: ['de/**', 'en/**', 'assets/**', 'index.html', '404.html', '.github/workflows/pages.yml', 'branding/logo/**', 'scripts/prerender.mjs']
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: true
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - name: Verify production release approval
+        run: node scripts/launch-gate.mjs
+      - name: Pre-render localized pages
+        run: node scripts/prerender.mjs
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - id: deployment
+        uses: actions/deploy-pages@v4
