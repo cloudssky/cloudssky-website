@@ -15,5 +15,17 @@
     "privacyDraftReviewed": true,
     "confirmedBy": "Website owner via chat, 2026-11-10",
     "scope": "Owner approves corporate information and requests publication readiness; no assertion of independent legal compliance or processing arrangements. The release gate remains active."
+  },
+  "ownerPublicationAuthorization": {
+    "authorized": true,
+    "by": "Clouds Sky website owner via this chat",
+    "date": "2026-11-10",
+    "destination": "cloudssky.com",
+    "routing": "GitHub Pages (GitHub Actions) via Cloudflare DNS",
+    "requirements": [
+      "Preserve Google Workspace MX and all mail-related DNS records",
+      "No extra preview address requested"
+    ],
+    "notes": "Owner explicitly authorized publication. Technical, legal, privacy, third-party brand/reference checks are still recorded separately; do not mark unverified checks as complete."
   }
 }
