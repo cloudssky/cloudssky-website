@@ -1,6 +1,6 @@
 {
   "approved": false,
-  "reviewReference": "2026-11-10: owner attests supporting evidence reviewed for legal, privacy, references and browserQA; contact accepted. Branding external rights and hosting/HTTPS/redirect validation remain open. Gate stays closed.",
+  "reviewReference": "2026-11-10: 5/7 owner-verified. Hosting DNS/domain preflight approved solely to enable a later controlled first deployment. Branding usage rights and post-deployment hosting/HTTPS tests are pending; approved=false.",
   "checks": {
     "legal": true,
     "privacy": true,
@@ -62,9 +62,9 @@
       }
     },
     "branding": {
-      "status": "owner_approved_external_rights_unverified",
+      "status": "pending_logo_use_rights",
       "evidence": "Replaced four customer SVG logos (Volkswagen, MAN, SAP and Deutsche Telekom) in the homepage ticker with neutral typographic customer-environment names; other customer names already text. This reduces reliance on third-party logo artwork but names and associated client relationships still require permission/attribution review. The Deutsche Post ticker entry is typographic text only; no Deutsche Post logo asset was added.",
-      "reason": "Branding as displayed was approved by owner, but external trademark guideline and logo-use authorization was not explicitly attested in the four-category evidence confirmation.",
+      "reason": "Public customer names were owner-confirmed, but technology SVG marks (AWS, Google Cloud, Kubernetes, Go and others) are still included. Their individual public use permissions/guideline compliance have not been evidenced; branding remains false.",
       "ownerSignoff": "Approved displayed visual choices by website owner via chat on 2026-11-10; third-party trademark guideline compliance independently unverified."
     },
     "references": {
@@ -100,9 +100,17 @@
       }
     },
     "hostingAndRedirects": {
-      "status": "partial",
-      "evidence": "Owner screenshot confirms GitHub Pages Source=GitHub Actions, Cloudflare currently A cloudssky.com/www -> 46.16.74.96 and Google Workspace MX records.",
-      "reason": "Custom domain, final Pages deployment, HTTPS, redirect and rollback checks cannot be completed until actual deployment; do not modify MX/TXT/mail records."
+      "status": "dns_and_predeployment_preflight_verified_postdeployment_pending",
+      "evidence": "Owner screenshots 2026-11-10: GitHub Pages source=GitHub Actions, cloudssky.com custom domain, GitHub DNS check successful; Cloudflare apex set to four GitHub Pages A records (DNS only), www CNAME to cloudssky.github.io (DNS only), Google Workspace MX records left untouched. Browser returned GitHub Pages 404 prior to first successful deployment.",
+      "reason": "Live deployment, valid HTTPS certificate, www behavior and legacy redirects remain unverified; must be checked immediately after first deployment. Do not change email DNS.",
+      "predeployment": {
+        "approved": true,
+        "customDomain": "cloudssky.com",
+        "dnsCheck": "successful",
+        "rollbackDocumented": true,
+        "evidence": "GitHub Pages and Cloudflare screenshots from owner, 2026-11-10; RELEASE_RUNBOOK.md records former web IP and rollback instructions.",
+        "limits": "Predeployment approval does not establish live HTTPS, www/legacy redirects, or successful deployment."
+      }
     }
   }
 }
