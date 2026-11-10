@@ -14,6 +14,9 @@ if(!heroClouds.includes('<svg')||!heroClouds.includes('cloudWhite')||!heroClouds
 if(!css.includes('hero-clouds.svg')||!css.includes('csg-cloud-back')||!css.includes('prefers-reduced-motion:reduce'))fail('Cloud animation or motion accessibility missing');
 if(!css.includes('.hero .hero-cloud-playground{z-index:3;pointer-events:none}'))fail('Cloud SVG must be above the hero text wrapper for pointer hit-testing');
 if(!css.includes('.hero .hero-cloud-playground .cloud-grab{pointer-events:visiblePainted'))fail('Cloud shape pointer targeting must be enabled');
+if(!fs.existsSync('assets/hero-whale.svg'))fail('Animated whale asset missing');
+const whale=fs.readFileSync('assets/hero-whale.svg','utf8');
+if(!whale.includes('<svg')||!whale.includes('id="body"'))fail('Whale vector asset malformed');
 if(!fs.existsSync('assets/hero-ocean.svg'))fail('Hero ocean SVG missing');
 const ocean=fs.readFileSync('assets/hero-ocean.svg','utf8');
 if(!ocean.includes('<svg')||!ocean.includes('id="sea"'))fail('Hero ocean SVG invalid');
@@ -46,6 +49,7 @@ for(const lang of ['de','en']){
     }
     if(page==='home' && !html.includes('class="hero-brand"'))fail(file+': WE DO. hero brand missing');
     if(page==='home' && !html.includes('class="hero-ocean"'))fail(file+': ocean behind clouds missing');
+    if(page==='home' && !html.includes('class="hero-whale"'))fail(file+': whale missing beneath ocean surface');
     if(page==='home' && !html.includes('Even clouds are interactive.'))fail(file+': hero Easter egg caption missing');
     if(page==='home' && !html.includes('class="hero-clouds hero-cloud-playground"'))fail(file+': cloud playground missing');
     if(page==='home' && (html.match(/data-cloud="/g)||[]).length!==4)fail(file+': expected four independently draggable clouds');
