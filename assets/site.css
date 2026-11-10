@@ -367,3 +367,16 @@
 /* VW architecture: compact single-line application stack label */
 .tech-stack span:first-child{white-space:nowrap}
 @media(max-width:600px){.tech-stack span:first-child{white-space:normal}}
+
+/* VW Kops stage: AWS provider above Go language used for custom Kops extensions. */
+.timeline .tech-logo-stack{
+ display:flex;flex-direction:column;align-items:center;justify-content:center;
+ gap:4px;min-height:83px;margin:7px auto 3px;transform:none!important;
+}
+.timeline .tech-logo-stack .tech-mark[src*="aws.svg"]{width:59px;height:32px;padding:3px 5px}
+.timeline .tech-logo-stack .tech-mark[src*="go.svg"]{
+ display:block;filter:none;opacity:1;box-sizing:content-box;
+ width:62px;height:22px;object-fit:contain;margin:0;
+ background:#fff;border-radius:6px;padding:3px 5px;
+}
+@media(max-width:600px){.timeline .tech-logo-stack{min-height:75px;gap:4px}}
