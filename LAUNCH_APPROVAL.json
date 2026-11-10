@@ -51,8 +51,17 @@
     },
     "references": {
       "status": "pending_owner_signoff",
-      "evidence": "Maintained three narrative case studies (Volkswagen, Bayer, MAN/SYNAOS) and qualifying text for variable contractual roles; homepage customer ticker note explicitly avoids general claim of direct client/partner status. An explicit 11-entity, URL-by-URL named-reference approval matrix was created in REFERENCE_APPROVAL_MATRIX.md. The legacy Volkswagen GKE article URL was replaced with the maintained internal Engineering Method page to avoid a cutover dead link. On 2026-11-10 the owner requested replacing Telekom with Deutsche Post in the public name-only ticker; Deutsche Post approval and entity details remain pending.",
-      "reason": "Confirm each project may be publicly named and details disclosed. Contractor and partner distinctions particularly important for MAN/SYNAOS/Kubernauts and VW."
+      "evidence": "Maintained three narrative case studies (Volkswagen, Bayer, MAN/SYNAOS) and qualifying text for variable contractual roles; homepage customer ticker note explicitly avoids general claim of direct client/partner status. An explicit 11-entity, URL-by-URL named-reference approval matrix was created in REFERENCE_APPROVAL_MATRIX.md. The legacy Volkswagen GKE article URL was replaced with the maintained internal Engineering Method page to avoid a cutover dead link. On 2026-11-10 the owner requested replacing Telekom with Deutsche Post in the public name-only ticker; Deutsche Post name-only ticker publication was explicitly approved by the owner on 2026-11-10; exact group entity and work scope remain undocumented.",
+      "reason": "Confirm each project may be publicly named and details disclosed. Contractor and partner distinctions particularly important for MAN/SYNAOS/Kubernauts and VW.",
+      "partialApprovals": {
+        "deutschePost": {
+          "status": "approved_text_only",
+          "approvedBy": "website owner via chat",
+          "date": "2026-11-10",
+          "scope": "Display the text Deutsche Post in the homepage project-experience ticker; no Deutsche Post brand logo, case study, or additional technical claims",
+          "note": "Other named references remain individually pending."
+        }
+      }
     },
     "browserQA": {
       "status": "partial",
