@@ -380,3 +380,54 @@
  background:#fff;border-radius:6px;padding:3px 5px;
 }
 @media(max-width:600px){.timeline .tech-logo-stack{min-height:75px;gap:4px}}
+
+/* V3.2 — slow atmospheric clouds: original SVG + CSS-only parallax */
+.hero-clouds{
+  position:absolute;
+  inset:0;
+  z-index:0;
+  overflow:hidden;
+  pointer-events:none;
+}
+.hero-cloud{
+  position:absolute;
+  inset:-3% -10% -5% 29%;
+  background-image:url("../assets/hero-clouds.svg");
+  background-repeat:no-repeat;
+  background-position:55% 52%;
+  background-size:cover;
+  will-change:transform;
+  transform:translate3d(0,0,0);
+}
+.hero-cloud-back{
+  opacity:.6;
+  filter:blur(2px);
+  animation:csg-cloud-back 78s ease-in-out infinite alternate;
+}
+.hero-cloud-front{
+  inset:8% -14% -10% 37%;
+  opacity:.48;
+  background-size:110% auto;
+  background-position:center bottom;
+  animation:csg-cloud-front 55s ease-in-out infinite alternate;
+}
+@keyframes csg-cloud-back{
+  from{transform:translate3d(-4%,0,0) scale(1.04)}
+  to{transform:translate3d(5%,-1.7%,0) scale(1.1)}
+}
+@keyframes csg-cloud-front{
+  from{transform:translate3d(5%,1%,0) scale(1.02)}
+  to{transform:translate3d(-6%,-1.3%,0) scale(1.08)}
+}
+.hero .wrap{z-index:2}
+@media(max-width:900px){
+  .hero-cloud{inset:-6% -32% 0 24%;opacity:.46}
+  .hero-cloud-front{inset:8% -36% -6% 29%;opacity:.35}
+}
+@media(max-width:600px){
+  .hero-cloud{inset:2% -66% 0 14%;opacity:.25}
+  .hero-cloud-front{inset:22% -58% 0 25%;opacity:.17}
+}
+@media(prefers-reduced-motion:reduce){
+  .hero-cloud{animation:none!important;will-change:auto;transform:none!important}
+}
