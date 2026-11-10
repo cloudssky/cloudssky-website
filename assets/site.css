@@ -782,3 +782,11 @@
  line-height:1.3!important;letter-spacing:.01em!important;white-space:nowrap!important;
  text-transform:none!important;
 }
+
+/* Home: bring the selected engineering work closer to the four disciplines. */
+.home-expertise{padding-bottom:30px}
+.home-expertise + .selected-project-section{padding-top:36px}
+@media(max-width:600px){
+ .home-expertise{padding-bottom:24px}
+ .home-expertise + .selected-project-section{padding-top:26px}
+}
