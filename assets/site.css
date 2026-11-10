@@ -431,3 +431,39 @@
 @media(prefers-reduced-motion:reduce){
   .hero-cloud{animation:none!important;will-change:auto;transform:none!important}
 }
+
+/* V3.3 — visible cumulus silhouettes above architectural arcs, never above copy */
+.hero-clouds{z-index:1;isolation:isolate}
+.hero-cloud{
+  inset:0;
+  background-size:100% 100%;
+  background-position:center center;
+  opacity:1;
+  filter:none;
+}
+.hero-cloud-back{
+  inset:-3% -4% 2% 0;
+  opacity:.95;
+  filter:none;
+  animation:csg-cloud-back 62s ease-in-out infinite alternate;
+}
+.hero-cloud-front{
+  inset:6% -2% -5% 0;
+  opacity:.58;
+  background-size:100% 100%;
+  background-position:center;
+  filter:blur(1.5px);
+  animation:csg-cloud-front 43s ease-in-out infinite alternate;
+}
+.hero .wrap{z-index:2}
+@media(max-width:900px){
+  .hero-cloud-back{inset:0 -15% 0 -3%;opacity:.83}
+  .hero-cloud-front{inset:7% -15% -5% 0;opacity:.45}
+}
+@media(max-width:600px){
+  .hero-cloud-back{inset:0 -36% 0 -18%;opacity:.57}
+  .hero-cloud-front{inset:9% -39% -5% -17%;opacity:.34}
+}
+@media(prefers-reduced-motion:reduce){
+  .hero-cloud-back,.hero-cloud-front{animation:none!important;transform:none!important}
+}
