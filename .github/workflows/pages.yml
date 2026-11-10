@@ -2,7 +2,7 @@ name: Deploy Clouds Sky to GitHub Pages
 on:
   push:
     branches: [main]
-    paths: ['de/**', 'en/**', 'assets/**', 'index.html', '404.html', '.github/workflows/pages.yml', 'branding/logo/**', 'scripts/prerender.mjs', 'LAUNCH_APPROVAL.json', 'scripts/launch-gate.mjs']
+    paths: ['de/**', 'en/**', 'assets/**', 'index.html', '404.html', '.github/workflows/pages.yml', 'branding/logo/**', 'scripts/prerender.mjs', 'scripts/check-site.mjs', 'LAUNCH_APPROVAL.json', 'scripts/launch-gate.mjs']
   workflow_dispatch:
 permissions:
   contents: read
