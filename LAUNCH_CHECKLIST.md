@@ -57,3 +57,9 @@ The preliminary third-party client marks under `public/clients/` and technology 
 - Describes GitHub Pages security logging and Cloudflare DNS-only setup, Google Workspace for email, Calendly as external link, and localStorage privacy-notice acknowledgement.
 - Provider-specific storage periods and contractual transfer safeguards were not invented; retention criteria and the availability of transfer information are disclosed without claiming verified signed agreements.
 - **Formal privacy release status remains pending** until current provider setup, arrangements, and documented retention processes are checked. Do not set `checks.privacy=true` solely because the copy is finished.
+
+## Client-brand and reference mitigation — 2026-11-10
+- Customer ticker now uses typographic company names instead of four unapproved client logo SVG reproductions (Volkswagen, MAN, SAP, Deutsche Telekom). Existing neutral textual client marks remain.
+- Ticker qualification expressly distinguishes experience in varied delivery and contractual roles from a claim of universal direct customer status.
+- Named case studies and technology brand marks still need approval/attribution review; this change is **not** a blanket trademark or case-study sign-off.
+- Required reference review: Volkswagen (platform, Kops/EKS/GKE, Go extensions); Bayer (document/HR/intranet); MAN/SYNAOS (industrial messaging via Kubernauts); remaining named environments in the ticker and Selected Work.
