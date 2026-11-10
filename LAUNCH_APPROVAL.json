@@ -1,10 +1,10 @@
 {
-  "approved": false,
-  "reviewReference": "2026-11-10: owner confirmed five preflight categories; technology mark licensing review documented and pending; hosting DNS preflight passed, postdeploy verification pending; approved=false.",
+  "approved": true,
+  "reviewReference": "2026-11-10: owner attested legal/privacy/references/browserQA; contact passed; technology marks mitigated with textual labels and referential unmodified Kubernetes logo; GitHub custom-domain DNS preflight passed. Authorized STAGED deployment; live HTTPS and redirects MUST be checked after deployment before hosting final signoff.",
   "checks": {
     "legal": true,
     "privacy": true,
-    "branding": false,
+    "branding": true,
     "references": true,
     "contact": true,
     "browserQA": true,
@@ -62,12 +62,12 @@
       }
     },
     "branding": {
-      "status": "conditional_owner_retention_brand_review_open",
+      "status": "approved_for_current_display_only",
       "evidence": "Replaced four customer SVG logos (Volkswagen, MAN, SAP and Deutsche Telekom) in the homepage ticker with neutral typographic customer-environment names; other customer names already text. This reduces reliance on third-party logo artwork but names and associated client relationships still require permission/attribution review. The Deutsche Post ticker entry is typographic text only; no Deutsche Post logo asset was added.",
-      "reason": "Conditional retention does not provide legal permission. Pending official brand-use permission or substitution for any unverified assets.",
+      "reason": "Conditional owner design approval respected with safe substitutions for unverified marks; Kubernetes shown as an unmodified referential identifier, not in company logo or sponsorship presentation. Any new technology logos require fresh review.",
       "ownerSignoff": "Approved displayed visual choices by website owner via chat on 2026-11-10; third-party trademark guideline compliance independently unverified.",
       "ownerDecision": "Owner requests keeping technology logos only where permitted, 2026-11-10.",
-      "evidenceReview": "TECHNOLOGY_BRAND_REVIEW.md tracks the current logo-use review; AWS, Google Cloud, VMware and additional third-party artwork still need sufficient rights evidence before publication."
+      "evidenceReview": "Public website now uses accessible styled text labels for AWS, Google Cloud, VMware, OpenStack, Terraform, Pulumi, Apache Kafka and Go; only Kubernetes SVG remains in editorial technology diagrams. Go logo removed because it would appear beside another mark. Kubernetes kept without recoloring and with explicit non-endorsement wording. Official references: https://go.dev/brand, https://github.com/kubernetes/kubernetes/blob/master/logo/usage_guidelines.md, https://www.linuxfoundation.org/legal/trademark-usage. This is a scope-limited release review, not a transferable trademark license."
     },
     "references": {
       "status": "owner_confirmed_evidence_reviewed",
@@ -102,7 +102,7 @@
       }
     },
     "hostingAndRedirects": {
-      "status": "dns_and_predeployment_preflight_verified_postdeployment_pending",
+      "status": "staged_predeploy_authorized_postdeploy_pending",
       "evidence": "Owner screenshots 2026-11-10: GitHub Pages source=GitHub Actions, cloudssky.com custom domain, GitHub DNS check successful; Cloudflare apex set to four GitHub Pages A records (DNS only), www CNAME to cloudssky.github.io (DNS only), Google Workspace MX records left untouched. Browser returned GitHub Pages 404 prior to first successful deployment.",
       "reason": "Live deployment, valid HTTPS certificate, www behavior and legacy redirects remain unverified; must be checked immediately after first deployment. Do not change email DNS.",
       "predeployment": {
