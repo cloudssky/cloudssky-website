@@ -1,6 +1,6 @@
 {
   "approved": false,
-  "reviewReference": "2026-11-10: 5/7 owner-verified. Hosting DNS/domain preflight approved solely to enable a later controlled first deployment. Branding usage rights and post-deployment hosting/HTTPS tests are pending; approved=false.",
+  "reviewReference": "2026-11-10: owner confirmed five preflight categories; technology mark licensing review documented and pending; hosting DNS preflight passed, postdeploy verification pending; approved=false.",
   "checks": {
     "legal": true,
     "privacy": true,
@@ -62,10 +62,12 @@
       }
     },
     "branding": {
-      "status": "pending_logo_use_rights",
+      "status": "conditional_owner_retention_brand_review_open",
       "evidence": "Replaced four customer SVG logos (Volkswagen, MAN, SAP and Deutsche Telekom) in the homepage ticker with neutral typographic customer-environment names; other customer names already text. This reduces reliance on third-party logo artwork but names and associated client relationships still require permission/attribution review. The Deutsche Post ticker entry is typographic text only; no Deutsche Post logo asset was added.",
-      "reason": "Public customer names were owner-confirmed, but technology SVG marks (AWS, Google Cloud, Kubernetes, Go and others) are still included. Their individual public use permissions/guideline compliance have not been evidenced; branding remains false.",
-      "ownerSignoff": "Approved displayed visual choices by website owner via chat on 2026-11-10; third-party trademark guideline compliance independently unverified."
+      "reason": "Conditional retention does not provide legal permission. Pending official brand-use permission or substitution for any unverified assets.",
+      "ownerSignoff": "Approved displayed visual choices by website owner via chat on 2026-11-10; third-party trademark guideline compliance independently unverified.",
+      "ownerDecision": "Owner requests keeping technology logos only where permitted, 2026-11-10.",
+      "evidenceReview": "TECHNOLOGY_BRAND_REVIEW.md tracks the current logo-use review; AWS, Google Cloud, VMware and additional third-party artwork still need sufficient rights evidence before publication."
     },
     "references": {
       "status": "owner_confirmed_evidence_reviewed",
