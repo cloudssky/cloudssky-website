@@ -559,3 +559,51 @@
 }
 @media(max-width:600px){.hero-brand-note{font-size:.75rem;margin-bottom:27px}}
 @media(prefers-reduced-motion:reduce){.hero-cloud-stage .cloud-float-4{animation:none!important}}
+
+/* V3.8: atmospheric ocean horizon below our independently draggable clouds.
+   SVG is original, local, and behind both text and grab targets. */
+.hero .hero-ocean{
+ position:absolute;
+ z-index:1;
+ inset:0;
+ pointer-events:none;
+ overflow:hidden;
+ -webkit-mask-image:linear-gradient(to right,transparent 0%,transparent 43%,#0009 60%,#000 77%);
+ mask-image:linear-gradient(to right,transparent 0%,transparent 43%,#0009 60%,#000 77%);
+}
+.hero-ocean-surface{
+ position:absolute;
+ left:31%;right:-13%;top:43%;bottom:-10%;
+ background:url("../assets/hero-ocean.svg") center center/100% 100% no-repeat;
+ opacity:.76;
+ animation:csg-ocean-swell 17s ease-in-out infinite alternate;
+ transform-origin:center 48%;
+}
+.hero-ocean-shimmer{
+ position:absolute;
+ left:43%;right:-14%;top:71%;bottom:0;
+ background:repeating-linear-gradient(172deg,transparent 0px,transparent 24px,#d3f8ff38 26px,transparent 29px);
+ opacity:.36;
+ animation:csg-ocean-shimmer 12s ease-in-out infinite alternate;
+}
+@keyframes csg-ocean-swell{
+ from{transform:translate3d(-1.2%,0,0) scale(1.01)}
+ to{transform:translate3d(1.2%,1.6%,0) scale(1.035)}
+}
+@keyframes csg-ocean-shimmer{
+ from{transform:translate3d(-2%,0,0);opacity:.2}
+ to{transform:translate3d(2%,0,0);opacity:.46}
+}
+@media(max-width:900px){
+ .hero .hero-ocean{-webkit-mask-image:linear-gradient(to right,transparent 0%,transparent 47%,#000 79%);mask-image:linear-gradient(to right,transparent 0%,transparent 47%,#000 79%)}
+ .hero-ocean-surface{left:22%;right:-38%;top:48%;opacity:.63}
+ .hero-ocean-shimmer{left:49%;right:-38%;opacity:.25}
+}
+@media(max-width:600px){
+ .hero .hero-ocean{-webkit-mask-image:linear-gradient(to right,transparent 0%,transparent 56%,#000 89%);mask-image:linear-gradient(to right,transparent 0%,transparent 56%,#000 89%)}
+ .hero-ocean-surface{left:21%;right:-88%;top:56%;opacity:.38}
+ .hero-ocean-shimmer{left:59%;right:-85%;top:80%;opacity:.18}
+}
+@media(prefers-reduced-motion:reduce){
+ .hero-ocean-surface,.hero-ocean-shimmer{animation:none!important;transform:none!important}
+}
