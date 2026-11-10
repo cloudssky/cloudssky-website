@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 620" fill="none" aria-hidden="true">
+<defs>
+  <linearGradient id="cloudLight" x1="200" y1="80" x2="1500" y2="520" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#fff" stop-opacity=".08"/>
+    <stop offset=".35" stop-color="#fff" stop-opacity=".7"/>
+    <stop offset=".75" stop-color="#f4fbff" stop-opacity=".82"/>
+    <stop offset="1" stop-color="#bedff5" stop-opacity=".22"/>
+  </linearGradient>
+  <linearGradient id="cloudShade" x1="550" y1="230" x2="1220" y2="560" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#e8f6ff" stop-opacity=".05"/>
+    <stop offset=".55" stop-color="#75b9e6" stop-opacity=".28"/>
+    <stop offset="1" stop-color="#6faed7" stop-opacity=".08"/>
+  </linearGradient>
+  <filter id="soft" x="-20%" y="-40%" width="140%" height="180%">
+    <feGaussianBlur stdDeviation="19"/>
+  </filter>
+  <filter id="halo" x="-20%" y="-40%" width="140%" height="180%">
+    <feGaussianBlur stdDeviation="43"/>
+  </filter>
+</defs>
+<!-- A few diffuse, layered cloud silhouettes: transparent enough for the hero copy -->
+<g filter="url(#halo)" opacity=".72">
+  <path d="M550 330c65-75 157-93 231-75 54-80 164-102 236-48 94-89 218-49 242 33 124-35 233 26 262 115l-27 90H565Z" fill="#fff"/>
+  <path d="M773 525c72-70 167-75 238-54 62-69 154-83 217-41 90-66 175-20 211 51 80-9 141 43 167 90v49H780Z" fill="#97c9e8"/>
+</g>
+<g filter="url(#soft)">
+  <path d="M505 375c46-58 126-74 194-52 40-69 123-101 208-72 56-68 164-90 235-32 89-38 182 15 202 81 122-6 189 60 188 127H500Z" fill="url(#cloudLight)"/>
+  <path d="M585 421c84-35 154-35 242-14 79-47 171-43 246-10 98-34 183-3 242 32 99-15 154 13 197 60v50H590Z" fill="url(#cloudShade)"/>
+  <path d="M874 548c52-47 131-56 189-29 46-62 135-73 195-31 63-40 151-13 195 43 68-6 123 30 145 70v34H850Z" fill="url(#cloudLight)"/>
+</g>
+<path d="M600 429c230-52 420-10 602-3 128 5 230 24 349 13" stroke="#fff" stroke-opacity=".21" stroke-width="2"/>
+<path d="M818 525c181-42 385-23 573-11" stroke="#d8f0ff" stroke-opacity=".18" stroke-width="2"/>
+</svg>
