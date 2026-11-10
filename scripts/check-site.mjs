@@ -1,6 +1,13 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+if(!fs.existsSync('assets/volkswagen-digital-wave.svg'))fail('Missing Volkswagen procedural vector wave asset');
+const wave=fs.readFileSync('assets/volkswagen-digital-wave.svg','utf8');
+if(!wave.includes('<svg')||!wave.includes('id="wave"'))fail('Volkswagen wave SVG invalid');
+const css=fs.readFileSync('assets/site.css','utf8');
+for(const expected of ['volkswagen-digital-wave.svg','.hero:before','.cards .card-visual.visual-1']){
+  if(!css.includes(expected))fail('Missing visual system component '+expected);
+}
 const pages=['home','enterprise','company','work','volkswagen','bayer','man-industrial-messaging','method','insights','architecture-decisions','event-driven-architecture','contact','imprint','privacy'];
 let passed=0;
 const errors=[];
