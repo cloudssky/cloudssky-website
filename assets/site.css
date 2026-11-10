@@ -532,3 +532,14 @@
 }
 
 /* Cloud gestures are captured only while touching the painted cloud shapes; the rest of the hero scrolls normally. */
+
+/* V3.6 fix: the full-width hero text wrapper previously covered the clouds,
+   intercepting all pointer events. Put SVG above it, but hit-test painted
+   shapes only; the full overlay and SVG canvas remain transparent to clicks. */
+.hero .hero-cloud-playground{z-index:3;pointer-events:none}
+.hero .hero-cloud-playground .hero-cloud-stage{pointer-events:none}
+.hero .hero-cloud-playground .cloud-grab{pointer-events:visiblePainted;cursor:grab;touch-action:none}
+.hero .hero-cloud-playground .cloud-grab:hover{filter:drop-shadow(0 0 10px #b9e7ff)}
+.hero .hero-cloud-playground .cloud-grab.is-dragging{cursor:grabbing;filter:drop-shadow(0 0 12px #9bdcff)}
+.hero .wrap{z-index:2}
+@media(prefers-reduced-motion:reduce){.hero .hero-cloud-playground .cloud-float{animation:none!important}}
