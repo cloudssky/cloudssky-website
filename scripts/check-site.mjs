@@ -67,6 +67,9 @@ for(const lang of ['de','en']){
     if(page==='imprint' && !['HRB 70999','DE815247371','215/5808/2975','Stephan Hartmann','Arash Kaffamanesh'].every(token=>html.includes(token)))fail(file+': restored imprint details missing');
     if(page==='imprint' && !html.includes('DDG'))fail(file+': updated German legal reference missing');
     if(page==='privacy' && !html.includes('privacy-content'))fail(file+': expanded privacy notice missing');
+    if(page==='privacy' && /STATUS: PRÜFENTWURF|STATUS: REVIEW DRAFT|legal-review/.test(html))fail(file+': internal draft warning remains in public privacy notice');
+    if(page==='privacy' && !['GitHub Pages','Cloudflare','Google Workspace','Calendly','csg-privacy-notice-v1','10. November 2026'].some(s=>html.includes(s)))fail(file+': privacy provider details missing');
+    if(page==='privacy' && !['GitHub Pages','Cloudflare','Google Workspace','Calendly','csg-privacy-notice-v1'].every(s=>html.includes(s)))fail(file+': privacy provider section incomplete');
     if(['enterprise','company','method','work','volkswagen','bayer','man-industrial-messaging','insights','architecture-decisions','event-driven-architecture'].includes(page) && !html.includes('aria-current="page"'))
       fail(file+': active navigation missing');
     if(page==='home'){
