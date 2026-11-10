@@ -2,13 +2,13 @@
 
 ## Chosen user experience
 
-Keep two distinct visitor choices:
-1. **Project inquiry** — a genuine server-side form submission, once a vetted mail provider and secret management have been configured.
+Current launch scope: keep two visitor choices without a form:
+1. **Project inquiry** — a direct `mailto:support@cloudssky.com` link for now. An optional backend-driven form can be added in a later release.
 2. **Book a conversation** — an external Calendly booking link (not an iframe) with explicit user click. This does not load Calendly scripts when someone merely visits the Clouds Sky website.
 
-The current site deliberately retains a transparent `mailto:` fallback until a production API can actually send mail. **No successful delivery is claimed.**
+The current website deliberately contains **no contact form**. The direct mailto link opens the visitor's email application and does not claim that the website sends mail.
 
-## Recommended server-side contact flow
+## Future release only: recommended server-side contact flow
 
 1. Browser validates mandatory fields and sensible length limits.
 2. The form requests a Cloudflare Turnstile token using a public *site key*. Turnstile may involve additional privacy disclosures, depending on the final configuration.
@@ -36,4 +36,4 @@ Do not replace this with fake consent toggles. If optional cookie or third-party
 
 ## Go-live criteria
 
-Backend email delivery is not active today. The website links to the Calendly booking page, but its external availability and booking configuration must be verified before production. Set the contact release approval to true only after confirming that the intended live behavior is functional and the associated privacy terms are complete.
+Backend email delivery and contact-form functionality are intentionally out of scope for this release. The website links to the Calendly booking page; its external availability and booking configuration must be verified before production. Set the contact release approval to true only after confirming that the intended live behavior is functional and the associated privacy terms are complete.
