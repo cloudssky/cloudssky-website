@@ -8,7 +8,7 @@
 - Customer experience ticker, preliminary visual assets, technology landscape and selected work diagrams.
 - AWS navy/orange and Google Cloud four-color brand SVGs added to the Volkswagen timeline and Enterprise Technology Landscape. Assets are sourced from gilbarbara/logos and remain subject to AWS/Google trademark guidelines; provenance is not official brand approval.
 - Static HTML pre-rendering, localized SEO metadata and GitHub Actions link/route QA.
-- Expanded two-language imprint and privacy **review drafts**; explicitly identify missing legal and operational facts.
+- Revised concise DE/EN factual imprint without obsolete five-part blanket disclaimer; owner-supplied company details still need formal verification. DE/EN privacy notice remains a **review draft** until processing details are confirmed.
 - Contact form is intentionally removed until a secure backend is commissioned. Contact is currently through direct email or an external Calendly booking link.
 - Protected production Pages workflow: `scripts/launch-gate.mjs` requires `LAUNCH_APPROVAL.json` with all seven verified sign-offs before deployment.
 - Downloadable static preview artifact from the PR quality workflow.
@@ -45,3 +45,9 @@ The preliminary third-party client marks under `public/clients/` and technology 
 - **Legal/privacy = pending:** Visible preview/legal warnings and data processing uncertainties must be resolved before approving a production release; the historical boilerplate should not be presumed enforceable.
 - **Branding/references = pending:** Customer and provider marks and project attributions require sign-off; otherwise remove unapproved elements before launch.
 - `LAUNCH_APPROVAL.json` retains `approved=false` and the deployment gate must not be bypassed.
+
+## Imprint cleanup — 2026-11-10
+- Removed old five-part blanket liability disclaimer and visible pre-publication warning from both imprint languages. Replaced with concise operator, register, tax, copyright, external-link and privacy cross-reference sections.
+- Retained owner-supplied legal identifiers without representing them as independently certified. The named managing directors, register and tax details, editorial responsibility and applicable legal requirements still require formal review.
+- Latest website QA passed after imprint cleanup.
+- The **privacy pages still contain REVIEW DRAFT** and MUST be completed before the public release gate is approved.
