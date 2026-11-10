@@ -10,7 +10,7 @@ for(const expected of ['volkswagen-digital-wave.svg','.hero:before','.cards .car
 }
 if(!fs.existsSync('assets/hero-clouds.svg'))fail('Homepage cloud SVG missing');
 const heroClouds=fs.readFileSync('assets/hero-clouds.svg','utf8');
-if(!heroClouds.includes('<svg')||!heroClouds.includes('cloudLight'))fail('Homepage cloud SVG invalid');
+if(!heroClouds.includes('<svg')||!heroClouds.includes('cloudWhite')||!heroClouds.includes('cloudBlue'))fail('Homepage cloud SVG invalid');
 if(!css.includes('hero-clouds.svg')||!css.includes('csg-cloud-back')||!css.includes('prefers-reduced-motion:reduce'))fail('Cloud animation or motion accessibility missing');
 const pages=['home','enterprise','company','work','volkswagen','bayer','man-industrial-messaging','method','insights','architecture-decisions','event-driven-architecture','contact','imprint','privacy'];
 let passed=0;
