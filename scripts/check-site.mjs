@@ -56,9 +56,9 @@ for(const lang of ['de','en']){
     if(['home','volkswagen','enterprise'].includes(page) && !html.includes('aria-label="Amazon Web Services"'))fail(file+': accessible AWS identifier missing');
     if(['home','volkswagen','enterprise'].includes(page) && !html.includes('aria-label="Google Cloud"'))fail(file+': accessible Google Cloud identifier missing');
     if(['home','volkswagen','enterprise'].includes(page) && !html.includes('public/technology/kubernetes.svg'))fail(file+': Kubernetes logo missing');
-    if(['home','volkswagen','enterprise'].includes(page) && /public\\/technology\\/(aws|googlecloud|vmware|terraform|pulumi|openstack|apachekafka)\\.svg/.test(html))fail(file+': unverified technology mark must not be displayed');
+    if(['home','volkswagen','enterprise'].includes(page) && /public\\/technology\\/(aws|googlecloud|vmware|terraform|pulumi|openstack|apachekafka|go)\\.svg/.test(html))fail(file+': unverified technology mark must not be displayed');
     if(page==='home' && !html.includes('Kops / AWS'))fail(file+': one-line Kops / AWS heading missing');
-    if(page==='home' && !html.includes('public/technology/go.svg'))fail(file+': Go logo missing from Kops stage');
+    if(page==='home' && !html.includes('aria-label="Go language — custom Kops extensions"'))fail(file+': Go text identifier missing from Kops stage');
     if(!html.includes('data-privacy-notice'))fail(file+': privacy notice missing');
     if(!html.includes('data-dismiss-privacy'))fail(file+': privacy notice dismiss missing');
     if(page==='contact' && html.includes('data-email-form'))fail(file+': contact form must be removed');
