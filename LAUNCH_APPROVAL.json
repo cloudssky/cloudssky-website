@@ -1,6 +1,6 @@
 {
   "approved": false,
-  "reviewReference": "2026-11-10 owner publication authorization; CI proof and screenshot review; outstanding formal release checks documented in LAUNCH_CHECKLIST.md",
+  "reviewReference": "2026-11-10 owner authorizes release, privacy copy completed and verified by CI; remaining formal provider/data-protection and branding/references/accessibility/hosting signoffs pending.",
   "checks": {
     "legal": false,
     "privacy": false,
@@ -40,8 +40,9 @@
       "reason": "The visible historical five-section blanket liability disclaimer and draft warning were removed from both imprint languages on 2026-11-10; company data remain owner-provided and require formal register/legal confirmation. Legal sign-off is still pending."
     },
     "privacy": {
-      "status": "pending",
-      "reason": "DE and EN privacy pages still show REVIEW DRAFT and explicitly unspecified retention/processor/third-country details; planned hosting needs review."
+      "status": "content_complete_pending_formal_signoff",
+      "evidence": "DE/EN privacy notice rewritten on 2026-11-10 with eight sections covering GitHub Pages, Cloudflare DNS-only vs proxy, business email through Google Workspace, Calendly external link, localStorage privacy acknowledgement, purposes, legal bases, retention criteria, rights, international transfer disclosures and update date. No fabricated contractual terms or log retention figures.",
+      "reason": "Owner must confirm actual Google Workspace/Calendly/Cloudflare/GitHub processing agreements or safeguards, any additional tools and actual lifecycle/retention processes. Independent legal review remains open; publication gate stays false."
     },
     "branding": {
       "status": "pending",
