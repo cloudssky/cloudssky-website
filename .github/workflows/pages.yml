@@ -1,4 +1,5 @@
 name: Deploy Clouds Sky to GitHub Pages
+# Publish only after QA; team section must remain absent from both languages.
 on:
   push:
     branches: [main]
