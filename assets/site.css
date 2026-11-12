@@ -849,3 +849,19 @@
 @media(max-width:900px){.people-digital{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:650px){.people-digital{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:420px){.people-digital{grid-template-columns:1fr;max-width:300px}}
+
+
+/* Company: experience-led People narrative, no personal portraits. */
+.company-people-section{background:#f6f8fb}
+.company-people-intro{max-width:900px}
+.company-people-intro h2{max-width:950px;margin:10px 0 6px}
+.company-people-subtitle{font-size:clamp(1.25rem,2.5vw,1.8rem);font-weight:500;line-height:1.35;color:#49627d;margin-bottom:28px}
+.company-people-copy{max-width:760px}
+.company-people-copy p{font-size:1.04rem;line-height:1.75;color:#263c51;margin-bottom:18px}
+.company-people-capabilities{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 38px;margin-top:32px;max-width:1000px;border-top:1px solid #d7e3ed}
+.company-people-capability{padding:19px 0 21px;border-bottom:1px solid #d7e3ed}
+.company-people-capability strong,.company-people-capability small{display:block}
+.company-people-capability strong{font-size:1.05rem;font-weight:700;color:#0e1a2b}
+.company-people-capability small{font-size:.88rem;color:#65798d;margin-top:5px;line-height:1.5}
+.company-people-signature{margin-top:32px;font-size:.9rem;font-weight:800;letter-spacing:.08em;color:#0e1a2b}
+@media(max-width:650px){.company-people-capabilities{grid-template-columns:1fr}.company-people-subtitle{margin-bottom:22px}.company-people-copy p{font-size:1rem}}
