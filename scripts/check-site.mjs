@@ -83,13 +83,8 @@ for(const lang of ['de','en']){
     if(page==='volkswagen' && !html.includes('Pulumi'))fail(file+': flagship case content missing');
     if(html.includes('cloudssky.com/en/insights/cloud-native-shared-platform-gke/'))fail(file+': legacy GKE article link not migrated');
     if(page==='company'){
-      for(const role of ['CEO · Cloud Architect','CEO · Enterprise Software Architect','SRE Solution Architect']){
-        if(!html.includes(role))fail(file+': expected team role missing: '+role);
-      }
-      const order=['Anja Daniels','Stephan Hartmann','Arash Kaffamanesh','Daniel Santiago Gawenda','Christian Weihs'];
-      if(!order.every((name,i)=>html.includes(name) && (i===0 || html.indexOf(order[i-1])<html.indexOf(name))))fail(file+': team order differs from requested three-column layout');
-      if(html.includes('Tim Stellfeldt')||html.includes('tim.webp'))fail(file+': removed team portrait must not be published');
-      if(!html.includes('Office & Finance'))fail(file+': Anja role missing');
+      if(html.includes('class="people"') || html.includes('class="digital-team"') || html.includes('class="person person-digital"') || html.includes('team-disclosure'))fail(file+': team section must not be published');
+      if(html.includes('assets/team/'))fail(file+': team portrait reference must not be published');
     }
     if(page==='bayer' && !html.includes('Document Management'))fail(file+': Bayer content missing');
     if(page==='man-industrial-messaging' && !html.includes('KubeMQ'))fail(file+': MAN content missing');
