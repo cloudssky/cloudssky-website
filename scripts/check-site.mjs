@@ -85,6 +85,10 @@ for(const lang of ['de','en']){
     if(page==='company'){
       if(html.includes('class="people"') || html.includes('class="digital-team"') || html.includes('class="person person-digital"') || html.includes('team-disclosure'))fail(file+': team section must not be published');
       if(html.includes('assets/team/'))fail(file+': team portrait reference must not be published');
+      for(const required of ['company-people-section','company-people-capabilities','company-people-signature']){
+        if(!html.includes(required))fail(file+': experience-led People section missing '+required);
+      }
+      if(!html.includes('Experience is human.') && !html.includes('Erfahrung ist menschlich.'))fail(file+': People headline missing');
     }
     if(page==='bayer' && !html.includes('Document Management'))fail(file+': Bayer content missing');
     if(page==='man-industrial-messaging' && !html.includes('KubeMQ'))fail(file+': MAN content missing');
