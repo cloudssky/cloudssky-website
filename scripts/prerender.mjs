@@ -5,6 +5,7 @@ import vm from 'node:vm';
 const meta = {
   de:{
     home:['Clouds Sky | Software & Systems Engineering','Softwarearchitektur, Systems Integration und souveräne Cloud-Architekturen für geschäftskritische Systeme.'],
+    products:['Products & Platforms | Clouds Sky','OpenKubes Open-Source-Kubernetes-Framework und Kubernautic Agentic AI Operations. Engineering-Beiträge von Clouds Sky.'],
     enterprise:['Enterprise Engineering | Clouds Sky','Software Engineering, Event-Driven Integration, Cloud Engineering und Data & AI. Von vSphere und OpenStack bis AWS und GCP.'],
     company:['Company & Engineering DNA | Clouds Sky','Clouds Sky GmbH: unabhängig im Engineering seit 2010. Unsere Menschen, Architekturprinzipien und langfristige Verantwortung.'],
     work:['Selected Work | Clouds Sky','Ausgewählte Engineering-Projekte bei Volkswagen, Bayer, MAN, DKV Mobility, Vaillant und weiteren Unternehmen.'],
@@ -21,6 +22,7 @@ const meta = {
   },
   en:{
     home:['Clouds Sky | Software & Systems Engineering','Independent architecture, software engineering, systems integration and cloud expertise for business-critical systems.'],
+    products:['Products & Platforms | Clouds Sky','Explore OpenKubes, the open-source Kubernetes framework, and Kubernautic agentic Kubernetes operations, supported by engineering expertise.'],
     enterprise:['Enterprise Engineering | Clouds Sky','Software engineering, event-driven integration, cloud engineering, and data and AI from OpenStack to public cloud.'],
     company:['Company & Engineering DNA | Clouds Sky','Meet the people and engineering principles behind Clouds Sky, an independent software and systems engineering company.'],
     work:['Selected Work | Clouds Sky','Engineering experience with Volkswagen, Bayer, MAN, DKV Mobility, Vaillant and other enterprise clients.'],
@@ -39,7 +41,7 @@ const meta = {
 const escapeHtml = value => value.replaceAll('&','&amp;').replaceAll('"','&quot;').replaceAll('<','&lt;');
 
 const source = fs.readFileSync('assets/site.js', 'utf8');
-const pages = ['home','enterprise','company','work','volkswagen','bayer','man-industrial-messaging','method','insights','architecture-decisions','event-driven-architecture','contact','imprint','privacy'];
+const pages = ['home','enterprise','products','company','work','volkswagen','bayer','man-industrial-messaging','method','insights','architecture-decisions','event-driven-architecture','contact','imprint','privacy'];
 let written = 0;
 for (const lang of ['de','en']) {
   for (const page of pages) {
