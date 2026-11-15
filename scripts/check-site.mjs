@@ -18,7 +18,7 @@ if(!fs.existsSync('assets/hero-ocean.svg'))fail('Hero ocean SVG missing');
 const ocean=fs.readFileSync('assets/hero-ocean.svg','utf8');
 if(!ocean.includes('<svg')||!ocean.includes('id="sea"'))fail('Hero ocean SVG invalid');
 if(!css.includes('csg-ocean-swell')||!css.includes('hero-ocean.svg'))fail('Hero ocean visual missing');
-const pages=['home','enterprise','company','work','volkswagen','bayer','man-industrial-messaging','method','insights','architecture-decisions','event-driven-architecture','contact','imprint','privacy'];
+const pages=['home','enterprise','products','company','work','volkswagen','bayer','man-industrial-messaging','method','insights','architecture-decisions','event-driven-architecture','contact','imprint','privacy'];
 let passed=0;
 const errors=[];
 function fail(s){errors.push(s)}
@@ -34,6 +34,9 @@ for(const lang of ['de','en']){
     if(!html.includes('class="language-menu"'))fail(file+': language dropdown missing');
     if(!html.includes('class="nav-section"'))fail(file+': expandable sections missing');
     if(!html.includes('class="mobile-contact"'))fail(file+': mobile contact entry missing');
+    if(!html.includes('/products/') && !html.includes('products/'))fail(file+': products navigation missing');
+    if(page==='products' && (!html.includes('https://openkubes.org/') || !html.includes('https://kubernautic.com/')))fail(file+': product destination links missing');
+    if(page==='home' && !html.includes('class="product-grid"'))fail(file+': homepage product cards missing');
     for(const link of ['volkswagen/','bayer/','man-industrial-messaging/','architecture-decisions/','event-driven-architecture/']){
       if(!html.includes(link))fail(file+': submenu link missing '+link);
     }

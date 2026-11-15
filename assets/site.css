@@ -865,3 +865,44 @@
 .company-people-capability small{font-size:.88rem;color:#65798d;margin-top:5px;line-height:1.5}
 .company-people-signature{margin-top:32px;font-size:.9rem;font-weight:800;letter-spacing:.08em;color:#0e1a2b}
 @media(max-width:650px){.company-people-capabilities{grid-template-columns:1fr}.company-people-subtitle{margin-bottom:22px}.company-people-copy p{font-size:1rem}}
+
+
+/* Products & Platforms — CSG identity, distinct open-source and agentic initiatives. */
+.products-section{background:#0a1728;color:#f4fbff;padding:78px 0}
+.products-intro{max-width:850px;margin-bottom:32px}
+.products-intro .eyebrow{color:#70d5e7}
+.products-intro h2{font-size:clamp(2rem,4.2vw,3.8rem);max-width:18ch}
+.products-intro p{color:#b5cbdc;font-size:1.08rem;max-width:65ch}
+.product-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.product-card{min-width:0;background:linear-gradient(145deg,#122b43,#102338);border:1px solid #37617e;border-radius:17px;padding:33px;display:flex;flex-direction:column;align-items:flex-start;gap:17px;min-height:375px}
+.product-card:hover{border-color:#64cdda}
+.product-card-top{display:flex;align-items:center;gap:13px}
+.product-signet{width:47px;height:47px;display:grid;place-items:center;border:1px solid #67cddb;border-radius:50%;color:#67d5df;font-size:1.7rem;line-height:1}
+.product-kubernautic .product-signet{border-color:#faad76;color:#ffb17a}
+.product-name{font-size:1.4rem;font-weight:800;letter-spacing:-.04em}
+.product-type{color:#72d6de;font-size:.76rem;font-weight:800;letter-spacing:.13em}
+.product-kubernautic .product-type{color:#ffbd86}
+.product-card h3{color:#fff;font-size:clamp(1.6rem,2.8vw,2.5rem);max-width:18ch;margin:0}
+.product-card p{color:#c4d4df;line-height:1.65;margin:0}
+.product-external{margin-top:auto;color:#b2edf3;font-weight:750;text-decoration:none;display:inline-flex;gap:8px;align-items:center}
+.product-external:hover{text-decoration:underline}
+.products-more{margin-top:24px}
+.products-more a{color:#9fe5ee}
+.products-context{max-width:900px}
+.products-context p{font-size:1.1rem;line-height:1.8}
+.nav-product-links{display:flex;flex-direction:column;gap:7px;padding:9px 0 13px;border-bottom:1px solid #d7e3ed;margin-bottom:10px}
+.nav-product-links a{text-decoration:none}
+.nav-product-links a:hover{text-decoration:underline}
+@media(max-width:720px){.product-grid{grid-template-columns:1fr}.product-card{min-height:0;padding:25px}.products-section{padding:54px 0}}
+
+
+/* Desktop Products disclosure, accessible from keyboard and touch. */
+.products-nav{position:relative;flex:none}
+.products-nav>summary{list-style:none;cursor:pointer;font-weight:650;white-space:nowrap}
+.products-nav>summary::-webkit-details-marker{display:none}
+.products-nav>summary[aria-current="page"]{color:#126a9b;text-decoration:underline;text-underline-offset:8px}
+.products-dropdown{position:absolute;left:-18px;top:calc(100% + 21px);min-width:245px;background:#fff;padding:10px;border:1px solid #d7e3ed;box-shadow:0 12px 32px #0b26332a;border-radius:12px;z-index:32}
+.products-dropdown a{display:block;border-radius:7px;padding:11px 13px;text-decoration:none;white-space:nowrap}
+.products-dropdown a:hover,.products-dropdown a:focus-visible{background:#edf6fc}
+.products-nav>summary:focus-visible{outline:3px solid #157cac;outline-offset:4px}
+@media(max-width:900px){.navigation>.products-nav{display:none}}
