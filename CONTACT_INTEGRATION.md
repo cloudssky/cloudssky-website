@@ -23,7 +23,7 @@ Cloudflare documentation: https://developers.cloudflare.com/turnstile/get-starte
 
 ## Calendly
 
-The user provided the official Clouds Sky scheduling link: **https://calendly.com/cloudssky**. It is now configured in `assets/site.js` as `bookingUrl`. The website opens it only after a visitor clicks the booking CTA:
+The user provided the official Clouds Sky scheduling link: **https://calendly.com/cloudssky/30min**. It is now configured in `assets/site.js` as `bookingUrl`. The website opens it only after a visitor clicks the booking CTA:
 - The CTA appears on the contact page and opens Calendly in another tab only after a click.
 - Verify its branding, notifications, video-meeting provider, timezone defaults, privacy wording and Calendly agreement.
 - Consider an embedded Calendly widget only if there is a clear UX benefit; load it behind appropriate third-party-content consent and update the privacy notice accordingly.
