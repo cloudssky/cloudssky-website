@@ -16,7 +16,7 @@ const meta = {
     insights:['Insights & Research | Clouds Sky','Fachliche Perspektiven auf Event-Driven Architecture, Softwarearchitektur, AI Engineering und Quantum Research.'],
     'architecture-decisions':['Architecture Decisions in Practice | Clouds Sky','ADRs, Architecture Contracts und überprüfbare Engineering-Ergebnisse für langlebige Systeme.'],
     'event-driven-architecture':['Event-Driven Architecture | Clouds Sky','Event Contracts, Delivery Semantics, Idempotenz und resilienter Betrieb von Messaging-Systemen.'],
-    contact:['Projekt anfragen | Clouds Sky','Sprechen Sie mit Clouds Sky über Software Engineering, Systems Integration, Cloud und Data Engineering.'],
+    contact:['Projekt besprechen | Clouds Sky','Sprechen Sie mit Clouds Sky über Software Engineering, Systems Integration, Cloud und Data Engineering.'],
     imprint:['Impressum | Clouds Sky','Anbieterinformationen und Kontaktdaten der Clouds Sky GmbH.'],
     privacy:['Datenschutz | Clouds Sky','Informationen zum Datenschutz auf der Website der Clouds Sky GmbH.']
   },
