@@ -290,7 +290,7 @@
 }
 .dark.project-grid:before{
   content:"";position:absolute;z-index:-1;pointer-events:none;inset:0;
-  background:url("../assets/volkswagen-digital-wave.svg") center bottom / 120% auto no-repeat;
+  background:url("../assets/engineering-digital-wave.svg") center bottom / 120% auto no-repeat;
   opacity:.84;
 }
 .dark.project-grid:after{
@@ -917,3 +917,9 @@
 .product-wordmark-openkubes{background:linear-gradient(100deg,#52c2ff 0%,#2dd6c9 32%,#7ee9ba 49%,#f3b049 78%,#ff8c55 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
 .product-wordmark-kubernautic{background:linear-gradient(100deg,#49baff 0%,#5fe4d2 34%,#37cfd9 56%,#efb74f 83%,#ff9e6e 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
 @media(max-width:380px){.product-card-top{gap:11px}.product-signet{flex-basis:46px;width:46px;height:46px}.product-wordmark{font-size:1.42rem}}
+
+
+/* Industry-oriented project illustration, no customer-specific stage or case topology. */
+.project-capabilities{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:stretch;gap:12px}
+.project-capabilities span{display:grid;place-items:center;text-align:center;min-height:78px;padding:16px 13px;border:1px solid #668fab80;border-radius:12px;background:#ffffff0b;color:#e0f6ff;font-weight:700;font-size:clamp(.8rem,1.3vw,.95rem);letter-spacing:-.02em}
+@media(max-width:600px){.project-capabilities{grid-template-columns:1fr 1fr;gap:9px}.project-capabilities span{min-height:68px;padding:12px 9px}}
