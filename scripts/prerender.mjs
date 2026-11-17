@@ -8,10 +8,8 @@ const meta = {
     products:['Products & Platforms | Clouds Sky','OpenKubes Open-Source-Kubernetes-Framework und Kubernautic Agentic AI Operations. Engineering-Beiträge von Clouds Sky.'],
     enterprise:['Enterprise Engineering | Clouds Sky','Software Engineering, Event-Driven Integration, Cloud Engineering und Data & AI. Von vSphere und OpenStack bis AWS und GCP.'],
     company:['Company & Engineering DNA | Clouds Sky','Clouds Sky GmbH: unabhängig im Engineering seit 2010. Unsere Menschen, Architekturprinzipien und langfristige Verantwortung.'],
-    work:['Selected Work | Clouds Sky','Ausgewählte Engineering-Projekte bei Volkswagen, Bayer, MAN, DKV Mobility, Vaillant und weiteren Unternehmen.'],
-    volkswagen:['Volkswagen Shared Platform | Clouds Sky','Engineering einer Shared Platform für Volkswagen Business Units: Kops, EKS, GKE, Terraform, Pulumi, Java und Node.js.'],
-    bayer:['Bayer Enterprise Engineering | Clouds Sky','Enterprise Document Management, HR-Portal und Intranet Engineering für komplexe Unternehmensorganisationen.'],
-    'man-industrial-messaging':['MAN / SYNAOS Industrial Messaging | Clouds Sky','IBM MQ, KubeMQ, VerneMQ und Kubernetes in industriellen Integrationsumgebungen – mit klarer Projektzuordnung.'],
+    work:['Selected Work | Clouds Sky','Branchenübergreifende Erfahrung in Software Engineering, Kubernetes-Plattformen, Systemintegration und Cloud-Modernisierung.'],
+
     method:['Engineering Method | Clouds Sky','Von Requirements zu Contracts, ADRs und Engineering Evidence: nachvollziehbare Architekturentscheidungen in der Praxis.'],
     insights:['Insights & Research | Clouds Sky','Fachliche Perspektiven auf Event-Driven Architecture, Softwarearchitektur, AI Engineering und Quantum Research.'],
     'architecture-decisions':['Architecture Decisions in Practice | Clouds Sky','ADRs, Architecture Contracts und überprüfbare Engineering-Ergebnisse für langlebige Systeme.'],
@@ -25,10 +23,8 @@ const meta = {
     products:['Products & Platforms | Clouds Sky','Explore OpenKubes, the open-source Kubernetes framework, and Kubernautic agentic Kubernetes operations, supported by engineering expertise.'],
     enterprise:['Enterprise Engineering | Clouds Sky','Software engineering, event-driven integration, cloud engineering, and data and AI from OpenStack to public cloud.'],
     company:['Company & Engineering DNA | Clouds Sky','Meet the people and engineering principles behind Clouds Sky, an independent software and systems engineering company.'],
-    work:['Selected Work | Clouds Sky','Engineering experience with Volkswagen, Bayer, MAN, DKV Mobility, Vaillant and other enterprise clients.'],
-    volkswagen:['Volkswagen Shared Platform | Clouds Sky','Long-term Volkswagen platform engineering across Kops, EKS, GKE, Terraform, Pulumi, Java and Node.js.'],
-    bayer:['Bayer Enterprise Engineering | Clouds Sky','Enterprise document management, HR portal and intranet engineering for complex organizations.'],
-    'man-industrial-messaging':['MAN / SYNAOS Industrial Messaging | Clouds Sky','IBM MQ, KubeMQ, VerneMQ and Kubernetes integration for industrial operations, with transparent attribution.'],
+    work:['Selected Work | Clouds Sky','Cross-industry experience in software engineering, cloud platforms, Kubernetes and enterprise systems integration.'],
+
     method:['Engineering Method | Clouds Sky','Engineering from requirements and contracts to architecture decisions, implementation and evidence.'],
     insights:['Insights & Research | Clouds Sky','Engineering perspectives on event-driven architecture, software design, AI engineering and quantum research.'],
     'architecture-decisions':['Architecture Decisions in Practice | Clouds Sky','Architecture Decision Records, explicit contracts and engineering evidence for durable software systems.'],
@@ -41,7 +37,7 @@ const meta = {
 const escapeHtml = value => value.replaceAll('&','&amp;').replaceAll('"','&quot;').replaceAll('<','&lt;');
 
 const source = fs.readFileSync('assets/site.js', 'utf8');
-const pages = ['home','enterprise','products','company','work','volkswagen','bayer','man-industrial-messaging','method','insights','architecture-decisions','event-driven-architecture','contact','imprint','privacy'];
+const pages = ['home','enterprise','products','company','work','method','insights','architecture-decisions','event-driven-architecture','contact','imprint','privacy'];
 let written = 0;
 for (const lang of ['de','en']) {
   for (const page of pages) {
