@@ -64,7 +64,7 @@ for(const lang of ['de','en']){
     if(!html.includes('data-dismiss-privacy'))fail(file+': privacy notice dismiss missing');
     if(page==='contact' && html.includes('data-email-form'))fail(file+': contact form must be removed');
     if(page==='contact' && !html.includes('mailto:support@cloudssky.com'))fail(file+': direct email link missing');
-    if(page==='contact' && !html.includes('href="https://calendly.com/cloudssky"'))fail(file+': Calendly booking link missing');
+    if(page==='contact' && !html.includes('href="https://calendly.com/cloudssky/30min"'))fail(file+': Calendly booking link missing');
     if(page==='imprint' && (html.includes('Prüfhinweis vor Veröffentlichung')||html.includes('historical disclaimer')))fail(file+': outdated legal draft text still present');
     if(page==='imprint' && !html.includes('href="../privacy/"'))fail(file+': privacy policy cross-reference missing');
     if(page==='imprint' && !['HRB 70999','DE815247371','215/5808/2975','Stephan Hartmann','Arash Kaffamanesh'].every(token=>html.includes(token)))fail(file+': restored imprint details missing');
